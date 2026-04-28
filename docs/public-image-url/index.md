@@ -1,3 +1,3 @@
-# Public Image URL
+# Public Image Url Extension
 
-Placeholder landing page. Real docs are pulled from [`unopim/unopim-public-image-url`](https://github.com/unopim/unopim-public-image-url) at build time.
+Placeholder landing page. Real docs are pulled from the project repo at build time.

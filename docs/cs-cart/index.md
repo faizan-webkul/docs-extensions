@@ -1,3 +1,3 @@
-# CS-Cart Connector
+# Cs Cart Extension
 
-Placeholder landing page. Real docs are pulled from [`unopim/unopim-cs-cart-connector`](https://github.com/unopim/unopim-cs-cart-connector) at build time.
+Placeholder landing page. Real docs are pulled from the project repo at build time.

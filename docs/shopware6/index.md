@@ -1,3 +1,3 @@
-# Shopware 6 Connector
+# Shopware6 Extension
 
-Placeholder landing page. Real docs are pulled from [`unopim/unopim-shopware6-connector`](https://github.com/unopim/unopim-shopware6-connector) at build time.
+Placeholder landing page. Real docs are pulled from the project repo at build time.

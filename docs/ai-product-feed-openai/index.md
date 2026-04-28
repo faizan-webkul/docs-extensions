@@ -1,3 +1,3 @@
-# AI Product Feed for OpenAI Search
+# Ai Product Feed Openai Extension
 
-Placeholder landing page. Real docs are pulled from [`unopim/unopim-ai-product-feed-openai`](https://github.com/unopim/unopim-ai-product-feed-openai) at build time.
+Placeholder landing page. Real docs are pulled from the project repo at build time.

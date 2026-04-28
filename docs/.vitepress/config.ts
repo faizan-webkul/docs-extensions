@@ -40,22 +40,44 @@ const projects = [
 ] as const
 
 export default defineConfig({
+  lang: 'en-US',
   title: 'Unopim Extensions',
   description: 'Documentation for Unopim extensions and connectors',
   base: '/',
   cleanUrls: true,
   lastUpdated: true,
+
   themeConfig: {
+    siteTitle: false,
+    logo: {
+      light: '/logo.svg',
+      dark: '/dark_logo.svg',
+    },
     nav: [
       { text: 'Home', link: '/' },
       {
         text: 'Extensions',
         items: projects.map(p => ({ text: p.label, link: `/${p.slug}/` })),
       },
+      { text: 'User Guide', link: 'https://docs.unopim.com/' },
+      { text: 'Contact Us', link: 'https://unopim.com/en/contacts/' },
     ],
     sidebar: Object.fromEntries(
       projects.map(p => [`/${p.slug}/`, loadSidebar(p.slug)])
     ),
+    editLink: {
+      pattern: 'https://github.com/unopim/docs-extensions/edit/main/docs/:path',
+      text: 'Help us improve this page on Github.',
+    },
+    lastUpdated: {
+      text: 'Last Updated',
+      formatOptions: { dateStyle: 'full' },
+    },
+    outline: { level: 'deep' },
+    footer: {
+      message: 'Released under the <a href="https://opensource.org/licenses/mit" target="_blank">MIT License</a>.',
+      copyright: `Copyright © ${new Date().getFullYear()} UnoPim`,
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/unopim' },
     ],

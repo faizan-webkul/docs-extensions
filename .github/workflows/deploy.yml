@@ -14,10 +14,26 @@ name: Build and deploy docs
 # Project repo = GitHub repo containing a top-level docs/ folder.
 #
 # Current projects:
-#   shopify     → unopim/unopim-shopify
-#   magento2    → unopim/unopim-magento2
-#   odoo-erp    → unopim/unopim-odoo-erp
-#   bigcommerce → unopim/unopim-bigcommerce
+#   shopify                 → unopim/unopim-shopify
+#   magento2                → unopim/unopim-magento2
+#   odoo-erp                → unopim/unopim-odoo-erp
+#   bigcommerce             → unopim/unopim-bigcommerce
+#   shopware6               → unopim/unopim-shopware6
+#   woocommerce             → unopim/unopim-woocommerce
+#   bagisto                 → unopim/unopim-bagisto
+#   cs-cart                 → unopim/unopim-cs-cart
+#   prestashop              → unopim/unopim-prestashop
+#   icecat                  → unopim/unopim-icecat
+#   xml-connector           → unopim/unopim-xml-connector
+#   aws-integration         → unopim/unopim-aws-integration
+#   ai-product-feed-openai  → unopim/unopim-ai-product-feed-openai
+#   job-scheduler           → unopim/unopim-job-scheduler
+#   supplier-data-portal    → unopim/unopim-supplier-data-portal
+#   public-image-url        → unopim/unopim-public-image-url
+#   maker-checker-workflow  → unopim/unopim-maker-checker-workflow
+#   pdf-generator           → unopim/unopim-pdf-generator
+#   dam                     → unopim/unopim-dam
+#   starter-pack            → unopim/unopim-starter-pack
 # ---------------------------------------------------------------------------
 
 on:
@@ -85,6 +101,150 @@ jobs:
           sparse-checkout: docs
           sparse-checkout-cone-mode: false
 
+      - name: Pull shopware6 docs
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          repository: unopim/unopim-shopware6
+          path: tmp/shopware6
+          sparse-checkout: docs
+          sparse-checkout-cone-mode: false
+
+      - name: Pull woocommerce docs
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          repository: unopim/unopim-woocommerce
+          path: tmp/woocommerce
+          sparse-checkout: docs
+          sparse-checkout-cone-mode: false
+
+      - name: Pull bagisto docs
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          repository: unopim/unopim-bagisto
+          path: tmp/bagisto
+          sparse-checkout: docs
+          sparse-checkout-cone-mode: false
+
+      - name: Pull cs-cart docs
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          repository: unopim/unopim-cs-cart
+          path: tmp/cs-cart
+          sparse-checkout: docs
+          sparse-checkout-cone-mode: false
+
+      - name: Pull prestashop docs
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          repository: unopim/unopim-prestashop
+          path: tmp/prestashop
+          sparse-checkout: docs
+          sparse-checkout-cone-mode: false
+
+      - name: Pull icecat docs
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          repository: unopim/unopim-icecat
+          path: tmp/icecat
+          sparse-checkout: docs
+          sparse-checkout-cone-mode: false
+
+      - name: Pull xml-connector docs
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          repository: unopim/unopim-xml-connector
+          path: tmp/xml-connector
+          sparse-checkout: docs
+          sparse-checkout-cone-mode: false
+
+      - name: Pull aws-integration docs
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          repository: unopim/unopim-aws-integration
+          path: tmp/aws-integration
+          sparse-checkout: docs
+          sparse-checkout-cone-mode: false
+
+      - name: Pull ai-product-feed-openai docs
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          repository: unopim/unopim-ai-product-feed-openai
+          path: tmp/ai-product-feed-openai
+          sparse-checkout: docs
+          sparse-checkout-cone-mode: false
+
+      - name: Pull job-scheduler docs
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          repository: unopim/unopim-job-scheduler
+          path: tmp/job-scheduler
+          sparse-checkout: docs
+          sparse-checkout-cone-mode: false
+
+      - name: Pull supplier-data-portal docs
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          repository: unopim/unopim-supplier-data-portal
+          path: tmp/supplier-data-portal
+          sparse-checkout: docs
+          sparse-checkout-cone-mode: false
+
+      - name: Pull public-image-url docs
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          repository: unopim/unopim-public-image-url
+          path: tmp/public-image-url
+          sparse-checkout: docs
+          sparse-checkout-cone-mode: false
+
+      - name: Pull maker-checker-workflow docs
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          repository: unopim/unopim-maker-checker-workflow
+          path: tmp/maker-checker-workflow
+          sparse-checkout: docs
+          sparse-checkout-cone-mode: false
+
+      - name: Pull pdf-generator docs
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          repository: unopim/unopim-pdf-generator
+          path: tmp/pdf-generator
+          sparse-checkout: docs
+          sparse-checkout-cone-mode: false
+
+      - name: Pull dam docs
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          repository: unopim/unopim-dam
+          path: tmp/dam
+          sparse-checkout: docs
+          sparse-checkout-cone-mode: false
+
+      - name: Pull starter-pack docs
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          repository: unopim/unopim-starter-pack
+          path: tmp/starter-pack
+          sparse-checkout: docs
+          sparse-checkout-cone-mode: false
+
       # -------------------------------------------------------------------
       # Stage project docs into docs/{slug}/.
       # If source repo had no docs/, the placeholder index.md is preserved.
@@ -92,7 +252,12 @@ jobs:
       - name: Stage project docs
         run: |
           set -e
-          for slug in shopify magento2 odoo-erp bigcommerce; do
+          for slug in \
+              shopify magento2 odoo-erp bigcommerce \
+              shopware6 woocommerce bagisto cs-cart prestashop icecat \
+              xml-connector aws-integration ai-product-feed-openai \
+              job-scheduler supplier-data-portal public-image-url \
+              maker-checker-workflow pdf-generator dam starter-pack; do
             src="tmp/${slug}/docs"
             dst="docs/${slug}"
             if [ -d "$src" ] && [ -n "$(ls -A "$src" 2>/dev/null)" ]; then

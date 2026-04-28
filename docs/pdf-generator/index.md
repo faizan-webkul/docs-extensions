@@ -1,3 +1,3 @@
-# PDF Generator
+# Pdf Generator Extension
 
-Placeholder landing page. Real docs are pulled from [`unopim/unopim-pdf-generator`](https://github.com/unopim/unopim-pdf-generator) at build time.
+Placeholder landing page. Real docs are pulled from the project repo at build time.

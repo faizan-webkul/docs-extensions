@@ -1,3 +1,3 @@
-# AWS Integration
+# Aws Integration Extension
 
-Placeholder landing page. Real docs are pulled from [`unopim/unopim-aws-integration`](https://github.com/unopim/unopim-aws-integration) at build time.
+Placeholder landing page. Real docs are pulled from the project repo at build time.

@@ -1,3 +1,3 @@
-# Supplier Data Portal
+# Supplier Data Portal Extension
 
-Placeholder landing page. Real docs are pulled from [`unopim/unopim-supplier-data-portal`](https://github.com/unopim/unopim-supplier-data-portal) at build time.
+Placeholder landing page. Real docs are pulled from the project repo at build time.
