@@ -1,0 +1,135 @@
+name: Build and deploy docs
+
+# ---------------------------------------------------------------------------
+# Project list
+#
+# To add a new project:
+#   1. Add a checkout step in the "Pull project docs" section below
+#      (copy an existing block, swap repo + path).
+#   2. Add a copy step in the "Stage project docs" section.
+#   3. Add nav + sidebar entries in docs/.vitepress/config.ts.
+#   4. Add docs/{slug}/index.md + sidebar.json placeholders.
+#
+# Project slug = folder name under docs/ and URL prefix.
+# Project repo = GitHub repo containing a top-level docs/ folder.
+#
+# Current projects:
+#   shopify     → unopim/unopim-shopify
+#   magento2    → unopim/unopim-magento2
+#   odoo-erp    → unopim/unopim-odoo-erp
+#   bigcommerce → unopim/unopim-bigcommerce
+# ---------------------------------------------------------------------------
+
+on:
+  push:
+    branches: [main]
+  repository_dispatch:
+    types: [docs-updated]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout site repo
+        uses: actions/checkout@v4
+
+      # -------------------------------------------------------------------
+      # Pull project docs (sparse checkout of docs/ folder only).
+      # continue-on-error so a missing/private repo doesn't break the build —
+      # the placeholder docs/{slug}/index.md will be used instead.
+      # -------------------------------------------------------------------
+
+      - name: Pull shopify docs
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          repository: unopim/unopim-shopify
+          path: tmp/shopify
+          sparse-checkout: docs
+          sparse-checkout-cone-mode: false
+
+      - name: Pull magento2 docs
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          repository: unopim/unopim-magento2
+          path: tmp/magento2
+          sparse-checkout: docs
+          sparse-checkout-cone-mode: false
+
+      - name: Pull odoo-erp docs
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          repository: unopim/unopim-odoo-erp
+          path: tmp/odoo-erp
+          sparse-checkout: docs
+          sparse-checkout-cone-mode: false
+
+      - name: Pull bigcommerce docs
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          repository: unopim/unopim-bigcommerce
+          path: tmp/bigcommerce
+          sparse-checkout: docs
+          sparse-checkout-cone-mode: false
+
+      # -------------------------------------------------------------------
+      # Stage project docs into docs/{slug}/.
+      # If source repo had no docs/, the placeholder index.md is preserved.
+      # -------------------------------------------------------------------
+      - name: Stage project docs
+        run: |
+          set -e
+          for slug in shopify magento2 odoo-erp bigcommerce; do
+            src="tmp/${slug}/docs"
+            dst="docs/${slug}"
+            if [ -d "$src" ] && [ -n "$(ls -A "$src" 2>/dev/null)" ]; then
+              echo "Staging $slug from $src"
+              cp -R "$src"/. "$dst"/
+            else
+              echo "No docs found for $slug — keeping placeholder"
+            fi
+          done
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site
+        run: npm run docs:build
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/.vitepress/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
