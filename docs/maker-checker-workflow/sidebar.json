@@ -2,7 +2,11 @@
   {
     "text": "Maker Checker Workflow",
     "items": [
-      { "text": "Overview", "link": "/maker-checker-workflow/" }
+      { "text": "Overview",      "link": "/maker-checker-workflow/" },
+      { "text": "Installation",  "link": "/maker-checker-workflow/installation" },
+      { "text": "Configuration", "link": "/maker-checker-workflow/configuration" },
+      { "text": "Maker Guide",   "link": "/maker-checker-workflow/maker-guide" },
+      { "text": "Checker Guide", "link": "/maker-checker-workflow/checker-guide" }
     ]
   }
 ]

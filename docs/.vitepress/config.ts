@@ -37,6 +37,7 @@ const projects = [
   { slug: 'pdf-generator', label: 'PDF Generator' },
   { slug: 'dam', label: 'DAM' },
   { slug: 'starter-pack', label: 'Starter Pack' },
+  { slug: 'auto-sku-generator', label: 'Auto SKU Generator' },
 ] as const
 
 export default defineConfig({

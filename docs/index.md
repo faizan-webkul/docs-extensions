@@ -94,4 +94,8 @@ features:
     details: Bundled starter pack for Unopim PIM.
     link: /starter-pack/
     linkText: Read docs
+  - title: Auto SKU Generator
+    details: Automatically generate unique, rule-based SKUs for products on creation.
+    link: /auto-sku-generator/
+    linkText: Read docs
 ---
