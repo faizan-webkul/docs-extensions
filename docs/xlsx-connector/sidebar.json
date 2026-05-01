@@ -1,0 +1,12 @@
+[
+  {
+    "text": "XLSX Connector",
+    "items": [
+      { "text": "Overview",       "link": "/xlsx-connector/" },
+      { "text": "Installation",   "link": "/xlsx-connector/installation" },
+      { "text": "Configuration",  "link": "/xlsx-connector/configuration" },
+      { "text": "Author Guide",   "link": "/xlsx-connector/author-guide" },
+      { "text": "Operator Guide", "link": "/xlsx-connector/operator-guide" }
+    ]
+  }
+]

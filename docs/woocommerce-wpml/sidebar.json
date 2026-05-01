@@ -1,0 +1,12 @@
+[
+  {
+    "text": "WooCommerce WPML",
+    "items": [
+      { "text": "Overview",       "link": "/woocommerce-wpml/" },
+      { "text": "Installation",   "link": "/woocommerce-wpml/installation" },
+      { "text": "Configuration",  "link": "/woocommerce-wpml/configuration" },
+      { "text": "Author Guide",   "link": "/woocommerce-wpml/author-guide" },
+      { "text": "Operator Guide", "link": "/woocommerce-wpml/operator-guide" }
+    ]
+  }
+]

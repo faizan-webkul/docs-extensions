@@ -1,0 +1,65 @@
+# Configuration
+
+The Pricing Rule Module does not have a dedicated settings page — its configuration lives at two places:
+
+1. **Per-rule configuration** inside each rule's editor (Conditions and Actions tabs).
+2. **Permissions** assigned via admin roles, which control who can view, create, edit, delete, and mass-delete rules.
+
+This page covers permissions and the prerequisites the module relies on. Per-rule configuration is documented in the [Author Guide](./author-guide).
+
+## Permissions
+
+The module registers the following ACL keys (defined in `packages/Webkul/PricingRuleModule/src/Config/acl.php`):
+
+| Permission key | Purpose |
+|---|---|
+| `pricingrulemodule` | View the Pricing Rule listing page |
+| `pricingrulemodule.create` | Create a new rule |
+| `pricingrulemodule.edit` | Open and modify an existing rule |
+| `pricingrulemodule.delete` | Delete a single rule from the grid |
+| `pricingrulemodule.mass_delete` | Delete multiple rules in one operation |
+
+To grant a user access:
+
+1. Go to **Settings → Roles** and open or create the relevant role.
+2. Enable the required permissions under **Pricing Rule**.
+3. Assign the role to the admin user.
+
+::: warning
+There is no separate "execute" permission in the current implementation — any user who can view the listing page can run rules from the grid. Restrict access at the listing level if rule execution must be limited.
+:::
+
+## Prerequisites
+
+Before authoring rules, make sure the following are in place:
+
+### Price-type attributes
+
+Actions can only target attributes whose type is `price`. If the attribute you want to update does not exist yet, create it first under **Configure → Attributes**.
+
+### Channels and locales
+
+Conditions and actions are stored per channel/locale combination. Make sure the channels and locales you intend to target are already configured under **Configure → Channels**.
+
+### Currencies
+
+Action values are written for a specific currency. The currency must already be assigned to the selected channel — otherwise it will not appear in the action's currency dropdown.
+
+### Queue worker
+
+Execution dispatches `ApplyPriceRule` and `ApplyPriceRuleToProducts` jobs. A queue worker must be running for any rule run to actually update product values:
+
+```bash
+php artisan queue:work
+```
+
+In production, run the worker under a process supervisor (Supervisor, systemd, etc.) so it restarts automatically.
+
+## Logs
+
+The module writes execution output to two places:
+
+- **Default Laravel log** — high-level run messages and errors.
+- **Per-execution tracker file** — `storage/logs/rule-tracker/{execution_id}/rule.log`, one folder per run.
+
+No configuration is required to enable these — they are produced automatically when a rule runs. Make sure `storage/logs/` is writable by the web server and the queue worker.
