@@ -1,0 +1,62 @@
+[
+  {
+    "label": "Pricing Rule Module",
+    "link": "/pricing-rule-module/"
+  },
+  {
+    "label": "Overview",
+    "anchor": "overview"
+  },
+  {
+    "label": "What This Module Does",
+    "anchor": "what-this-module-does"
+  },
+  {
+    "label": "Before You Start",
+    "anchor": "before-you-start"
+  },
+  {
+    "label": "How the Rule Flow Works",
+    "anchor": "how-the-rule-flow-works"
+  },
+  {
+    "label": "Open the Module",
+    "anchor": "open-the-module"
+  },
+  {
+    "label": "Create a New Rule",
+    "anchor": "create-a-new-rule"
+  },
+  {
+    "label": "Configure Conditions",
+    "anchor": "configure-conditions"
+  },
+  {
+    "label": "Configure Actions",
+    "anchor": "configure-actions"
+  },
+  {
+    "label": "Run a Rule",
+    "anchor": "run-a-rule"
+  },
+  {
+    "label": "CLI Command",
+    "anchor": "cli-command"
+  },
+  {
+    "label": "Queue and Logs",
+    "anchor": "queue-and-logs"
+  },
+  {
+    "label": "Permissions",
+    "anchor": "permissions"
+  },
+  {
+    "label": "Troubleshooting",
+    "anchor": "troubleshooting"
+  },
+  {
+    "label": "Best Practices",
+    "anchor": "best-practices"
+  }
+]
