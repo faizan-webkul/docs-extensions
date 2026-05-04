@@ -1,0 +1,18 @@
+[
+  {
+    "text": "DAM NextCloud",
+    "items": [
+      { "text": "Overview",          "link": "/dam-webdav/" },
+      { "text": "Installation",      "link": "/dam-webdav/installation" },
+      { "text": "Use Cases",         "link": "/dam-webdav/use-cases" },
+      { "text": "Dashboard",         "link": "/dam-webdav/dashboard" },
+      { "text": "Credentials",       "link": "/dam-webdav/credentials" },
+      { "text": "Sync Profiles",     "link": "/dam-webdav/sync-profiles" },
+      { "text": "Remote Sources",    "link": "/dam-webdav/remote-sources" },
+      { "text": "Activity",          "link": "/dam-webdav/activity" },
+      { "text": "Trash",             "link": "/dam-webdav/trash" },
+      { "text": "Settings",          "link": "/dam-webdav/settings" },
+      { "text": "Nextcloud Clients", "link": "/dam-webdav/nextcloud-clients" }
+    ]
+  }
+]
