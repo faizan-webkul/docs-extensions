@@ -39,6 +39,7 @@ const projects = [
   { slug: 'dam-webdav', label: 'DAM NextCloud' },
   { slug: 'starter-pack', label: 'Starter Pack' },
   { slug: 'auto-sku-generator', label: 'Auto SKU Generator' },
+  { slug: 'deepl', label: 'DeepL Translator' }
 ] as const
 
 export default defineConfig({
