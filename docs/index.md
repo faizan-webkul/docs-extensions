@@ -98,4 +98,8 @@ features:
     details: Automatically generate unique, rule-based SKUs for products on creation.
     link: /auto-sku-generator/
     linkText: Read docs
+  - title: DeepL Translation
+    details: Automatically generate translations from one locale to other locales.
+    link: /deepl/
+    linkText: Read docs
 ---
