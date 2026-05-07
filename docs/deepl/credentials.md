@@ -89,3 +89,5 @@ Click the trash icon on a row and confirm.
 ## See change history
 
 The edit page has a **History** tab that lists every change made to this key — label edits, status flips, mapping changes. Your API key itself is never shown there.
+
+![See change history](./images/credential_edit_hisotry_details.png)
