@@ -7,11 +7,6 @@
 
 <br> 
 
-<div align="left">
-  <a href="https://demo.unopim.com/unopim-shopify/" style="display:inline-block; padding:10px 24px; background-color:#6366f1; color:#ffffff; font-weight:bold; text-decoration:none; border-radius:6px; margin-right:12px;">Live Demo</a>
-  <a href="https://store.webkul.com/unopim-shopify-connector.html" style="display:inline-block; padding:10px 24px; background-color:#10b981; color:#ffffff; font-weight:bold; text-decoration:none; border-radius:6px;"> Buy Now</a>
-</div>
-
 ## What is the UnoPim Shopify Connector?
 
 The **UnoPim Shopify Connector** is a free, open-source tool that connects your **Shopify store** with **UnoPim** — an open-source Product Information Management (PIM) system.
