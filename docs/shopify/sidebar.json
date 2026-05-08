@@ -12,10 +12,8 @@
     "items": [
       { "text": "Setup Unopim Credentials", "link": "/shopify/setup" },
       { "text": "Export Attribute Mapping", "link": "/shopify/attribute-mapping" },
-      { "text": "Shopify Media Mapping", "link": "/shopify/media-mapping" },
-      {"text" : "Shopify Unit Mapping", "link": "/shopify/unit-mapping"},
+      { "text": "Shopify Media & Unit Mapping", "link": "/shopify/media-unit-mapping" },
       {"text" : "Import Attribute Mapping", "link": "/shopify/import-attribute-mapping"},
-      {"text" : "Shopify Others Mapping", "link": "/shopify/others-mapping"},
       {"text": "Add & Manage Shopify Meta Fields & Definations", "link": "/shopify/metafields"},
       {"text": "Shopify Connector settings", "link": "/shopify/connector-settings"}
     ]
@@ -25,21 +23,14 @@
     "items": [
       { "text": "Creating a Product in Unopim", "link": "/shopify/creating-product" },
       { "text": "Creating a Export Jobs", "link": "/shopify/export-jobs" },
-      { "text": "Export Categories", "link": "/shopify/export-categories" },
-      { "text": "Export Products", "link": "/shopify/export-products" },
-      { "text": "View Products in Shopify", "link": "/shopify/view-products" },
-      { "text": "Shopify Storefront", "link": "/shopify/storefront" },
-      { "text": "Export Metafields", "link": "/shopify/export-metafields" }
+      { "text": "Shopify Storefront", "link": "/shopify/storefront" }
     ]
   },
   {
     "text": "Import Jobs",
     "items": [
-      { "text": "Shopify Product Import", "link": "/shopify/product-import" },
-      { "text": "Shopify Attribute Import", "link": "/shopify/attribute-import" },
-      { "text": "Shopify Category Import", "link": "/shopify/category-import" },
-      { "text": "Shopify family variants &  Attribute assignment imports", "link": "/shopify/attribute-assignment-import" },
-      { "text": "Shopify Import Metafields", "link": "/shopify/import-metafields" }
+      { "text": "Create Import Job", "link": "/shopify/import-job" }
+    
     ]
   },
 

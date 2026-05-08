@@ -61,9 +61,6 @@ Export your product data in **multiple languages**. If you manage a multilingual
 ### Multiple Shopify Stores
 Connect **more than one Shopify store** to the same UnoPim instance by providing separate credentials for each store. Manage everything centrally without switching between systems.
 
-### Multiple Attribute Mapping (Concatenation)
-You can map **multiple UnoPim attributes to a single Shopify field** by concatenating them. This is useful when a Shopify field needs to combine information from more than one attribute.
-
 ### Sync Updates Easily
 Already exported your products? No problem. Simply re-run the export job at any time to **push updates** from UnoPim to Shopify — no manual edits needed on the Shopify side.
 
@@ -87,7 +84,7 @@ Before you begin, make sure the following are in place:
 | Requirement | Detail |
 |---|---|
 | **UnoPim Version** | v2.0.0 |
-| **Shopify API Version** | 2025-01 (only supported version) |
+| **Shopify API Version** | 2026-01 |
 | **Shopify Plan** | Any plan with Admin API access |
 | **Shopify Admin Access** | Needed to create a custom app and generate API credentials |
 | **Terminal / Server Access** | Required to run installation commands |
