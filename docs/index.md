@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: Browse extensions
-      link: /shopify/
+      link: /ai-product-feed-openai/
     - theme: alt
       text: GitHub
       link: https://github.com/unopim
