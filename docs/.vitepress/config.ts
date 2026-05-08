@@ -39,7 +39,8 @@ const projects = [
   { slug: 'dam-webdav', label: 'DAM NextCloud' },
   { slug: 'starter-pack', label: 'Starter Pack' },
   { slug: 'auto-sku-generator', label: 'Auto SKU Generator' },
-  { slug: 'deepl', label: 'DeepL Translator' }
+  { slug: 'deepl', label: 'DeepL Translator' },
+  { slug: 'cloudflare-r2-integration', label: 'Cloudflare R2 Integration' }
 ] as const
 
 export default defineConfig({

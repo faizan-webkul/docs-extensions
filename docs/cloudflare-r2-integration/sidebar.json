@@ -1,0 +1,24 @@
+[
+  {
+    "text": "Setup",
+    "items": [
+      { "text": "Overview",                "link": "/cloudflare-r2-integration/" },
+      { "text": "Installation",            "link": "/cloudflare-r2-integration/installation" },
+      { "text": "Configure R2 Keys",       "link": "/cloudflare-r2-integration/credentials" }
+    ]
+  },
+  {
+    "text": "Workflow",
+    "items": [
+      { "text": "Migrate Media",           "link": "/cloudflare-r2-integration/migration" },
+      { "text": "Cache Control",           "link": "/cloudflare-r2-integration/cache-rules" }
+    ]
+  },
+  {
+    "text": "Reference",
+    "items": [
+      { "text": "CLI Commands",            "link": "/cloudflare-r2-integration/cli" },
+      { "text": "Troubleshooting",         "link": "/cloudflare-r2-integration/troubleshooting" }
+    ]
+  }
+]

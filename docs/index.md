@@ -102,4 +102,8 @@ features:
     details: Automatically generate translations from one locale to other locales.
     link: /deepl/
     linkText: Read docs
+  - title: Cloudflare R2 Integration
+    details: Offload product and category media to Cloudflare R2 storage with CDN delivery.
+    link: /cloudflare-r2-integration/
+    linkText: Read docs
 ---
