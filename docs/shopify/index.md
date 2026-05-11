@@ -52,6 +52,9 @@ Shopify supports **metafields** — custom data fields that go beyond standard p
 - Rating
 - URL
 - JSON
+- Unit Weight
+- Unit Volume
+- Unit Dimension
 
 These are exported without needing any additional mapping setup.
 

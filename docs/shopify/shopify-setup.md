@@ -46,7 +46,7 @@ Click Create app in the top-right corner.
 
 ## Step 6 — Name Your App
 
-Enter an App name — something like **UnoPim Connector** works perfectly. Then click Create.
+Enter an App name — something like **UnoPim Connector**. Then click Create.
 
 ![Shopify enter app name](./images/enter-app-name.png)
 
