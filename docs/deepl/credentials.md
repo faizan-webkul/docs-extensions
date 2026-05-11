@@ -45,21 +45,21 @@ Click the pencil icon on any row.
 
 ![Edit credential page](./images/deepl-credential-edit-page.png)
 
-You'll see three panels.
+The page has two tabs at the top — **General** (shown above) and **History**. General is split into four panels.
 
 ### Credential
 
 - **Label** — change the name.
 - **API Key** — leave blank to keep your current key. Type a new one to replace it.
 
-### Settings (right side)
+### Settings (top right)
 
 | Switch | What it does |
 |--|--|
 | **Status** | Turn the key on or off. Off keys are ignored everywhere. |
 | **Default** | Only one key can be the default. The default key is used for automatic translation. |
 | **Enable Auto Translate** | Turn on automatic translation after import / save. |
-| **Replace Existing Value** | If on, automatic translation overwrites values that are already filled. If off, only empty values are filled. |
+| **Replace Existing Value** | When on, auto-translate overwrites target values that are already filled. Off keeps existing values intact. |
 
 ### Mapping (only on the default key, when auto-translate is on)
 
@@ -67,6 +67,14 @@ Tell the extension which language to translate **from** and **into**:
 
 - **Source channel** + **Source locale** — where the original text lives.
 - **Target channels** + **Target locales** — where translations should be saved.
+
+### Attribute Mapping (right side, next to Mapping)
+
+By default, auto-translate covers **every** AI-translatable text or textarea attribute on the product (i.e. any attribute with **AI Translate** ticked — see [Mark fields](./attribute-setup)).
+
+If you only want auto-translate to touch a few of those attributes, pick them in **Attributes to auto-translate**. Leave the field empty to keep the default behaviour.
+
+This only narrows the list — it can't add attributes that aren't flagged **AI Translate**.
 
 Click **Save** when done.
 
@@ -89,3 +97,5 @@ Click the trash icon on a row and confirm.
 ## See change history
 
 The edit page has a **History** tab that lists every change made to this key — label edits, status flips, mapping changes. Your API key itself is never shown there.
+
+![See change history](./images/credential_edit_hisotry_details.png)
