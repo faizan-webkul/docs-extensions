@@ -2,7 +2,44 @@
   {
     "text": "Shopify",
     "items": [
-      { "text": "Overview", "link": "/shopify/" }
+      { "text": "Overview", "link": "/shopify/" },
+      { "text": "Shopify Setup", "link": "/shopify/shopify-setup" },
+      { "text": "Installation", "link": "/shopify/installation" }
+    ]
+  },
+  {
+    "text": "Configuration",
+    "items": [
+      { "text": "Setup Unopim Credentials", "link": "/shopify/setup" },
+      { "text": "Export Attribute Mapping", "link": "/shopify/attribute-mapping" },
+      { "text": "Shopify Media & Unit Mapping", "link": "/shopify/media-unit-mapping" },
+      {"text" : "Import Attribute Mapping", "link": "/shopify/import-attribute-mapping"},
+      {"text": "Add & Manage Shopify Meta Fields & Definations", "link": "/shopify/metafields"},
+      {"text": "Shopify Connector settings", "link": "/shopify/connector-settings"}
+    ]
+  },
+  {
+    "text": "Export Jobs",
+    "items": [
+      { "text": "Creating a Product in Unopim", "link": "/shopify/creating-product" },
+      { "text": "Creating a Export Jobs", "link": "/shopify/export-jobs" },
+      { "text": "Shopify Storefront", "link": "/shopify/storefront" }
+    ]
+  },
+  {
+    "text": "Import Jobs",
+    "items": [
+      { "text": "Create Import Job", "link": "/shopify/import-job" }
+    
+    ]
+  },
+
+  {
+    "text": "Support",
+    "items": [
+      { "text": "Support", "link": "/shopify/support" }
     ]
   }
+
+  
 ]
