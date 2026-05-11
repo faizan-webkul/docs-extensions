@@ -61,6 +61,3 @@ From now on, every product exported to Shopify will have its quantity set to `10
 
 > **Tip:** Fixed values are useful for fields like **Taxable**, **Inventory Tracked**, or **Status** where you want a consistent default across your entire catalog.
 
----
-
-Once your attribute mapping is configured, you're ready to set up media mappings. Continue to [Media & Unit Mapping](./media_mapping.md)

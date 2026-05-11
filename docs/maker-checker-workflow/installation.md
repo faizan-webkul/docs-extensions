@@ -63,7 +63,7 @@ php artisan queue:work
 
 Add your mail settings to `.env`:
 
-```env
+```bash
 MAIL_MAILER=smtp
 MAIL_HOST=smtp.mailtrap.io
 MAIL_PORT=2525
