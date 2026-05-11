@@ -79,6 +79,3 @@ Once either installation method is complete, log in to your UnoPim dashboard. Yo
 
 If the icon doesn't appear, try running `php artisan optimize:clear` again and refresh the page.
 
----
-
-Next, you'll need to connect your Shopify store. Head over to [Configuration](./03_configuration.md) to set up your credentials.
