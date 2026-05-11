@@ -35,7 +35,7 @@ const projects = [
   // { slug: 'public-image-url', label: 'Public Image URL' },
   { slug: 'maker-checker-workflow', label: 'Maker Checker Workflow' },
   // { slug: 'pdf-generator', label: 'PDF Generator' },
-  // { slug: 'dam', label: 'DAM' },
+  { slug: 'dam', label: 'DAM' },
   // { slug: 'dam-webdav', label: 'DAM NextCloud' },
   // { slug: 'starter-pack', label: 'Starter Pack' },
   { slug: 'auto-sku-generator', label: 'Auto SKU Generator' },

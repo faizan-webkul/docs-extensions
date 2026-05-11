@@ -1,8 +1,11 @@
 [
   {
-    "text": "Dam",
+    "text": "DAM",
     "items": [
-      { "text": "Overview", "link": "/dam/" }
+      { "text": "Overview", "link": "/dam/" },
+      {"text":"Installation", "link": "/dam/installation/"},
+      {"text" : "Setup DAM", "link": "/dam/setup/"}
+
     ]
   }
 ]

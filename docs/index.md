@@ -86,9 +86,9 @@ features:
   #   details: Custom PDF templates with dynamic fields.
   #   link: /pdf-generator/
   #   linkText: Read docs
-  # - title: DAM
-  #   details: Digital Asset Management for images and media.
-  #   link: /dam/
+  - title: DAM
+    details: Digital Asset Management for images and media.
+    link: /dam/
   #   linkText: Read docs
   # - title: Starter Pack
   #   details: Bundled starter pack for Unopim PIM.
