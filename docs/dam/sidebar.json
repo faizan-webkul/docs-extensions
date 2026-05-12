@@ -3,9 +3,30 @@
     "text": "DAM",
     "items": [
       { "text": "Overview", "link": "/dam/" },
-      {"text":"Installation", "link": "/dam/installation/"},
-      {"text" : "Setup DAM", "link": "/dam/setup/"}
+      { "text": "Installation", "link": "/dam/installation" },
+      { "text": "Setup DAM", "link": "/dam/setup" }
+    ]
+  },
 
+  {
+    "text" : "Managing Directories and Assets",
+    "items": [
+      { "text": "Directory & Asset Management", "link": "/dam/directory-and-asset-management" },
+      {"text" : "Asset Products" , "link": "/dam/asset-products" },
+      {"text" : "Asset Categories" , "link": "/dam/asset-categories" }
+    ]
+  },
+
+  {
+    "text" : "Export Assets",
+    "items": [
+      {"text" : "Exporting Assets with Product & Categories" , "link": "/dam/export-assets" }
+    ]
+  },
+  {
+    "text" : "Support",
+    "items": [
+      {"text" : "Contact Support" , "link": "/dam/contact-support" }
     ]
   }
 ]
