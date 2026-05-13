@@ -1,14 +1,12 @@
-# UnoPIM DAM Installation Guide
+# UnoPim DAM Installation Guide
 
 Digital Asset Management - Installation Documentation
 
 ---
 
-
-
 ## Installation Overview
 
-UnoPIM DAM offers two installation methods to suit your project needs:
+UnoPim DAM offers two installation methods to suit your project needs:
 
 1. **Composer Installation** - Quick and straightforward setup
 2. **Manual Installation** - For custom configurations and direct control
@@ -29,7 +27,7 @@ Execute the following command:
 composer require unopim/dam
 ```
 
-### Step 2: Run Migrations and Clear Cache
+### Step 2: Run the installation command and Clear Cache
 
 Run the following commands:
 
@@ -38,51 +36,49 @@ php artisan dam-package:install
 php artisan optimize:clear
 ```
 
-**Installation complete!** Your UnoPIM DAM is now ready to use.
+**Installation complete!** Your UnoPim DAM is now ready to use.
 
 ---
 
 ## Manual Installation
 
-Manual installation provides more control over the setup process.
+Installation without Composer
 
-### Step 1: Download and Extract
+For the source code and latest version, visit the [UnoPim DAM GitHub repository](https://github.com/unopim/unopim-digital-asset-management).
 
-Download and unzip the UnoPIM DAM extension to your computer.
+### Step 1: Download and Setup the Extension
 
-### Step 2: Place Files in Correct Directory
+1. Download and unzip the extension
+2. Rename the folder to `DAM`
+3. Place it in the `packages/Webkul` directory within the project's root
 
-1. Rename the extracted folder to `DAM`
-2. Place it in the `packages/Webkul` directory within your project root
+### Step 2: Register the Package Provider
 
-Your directory structure should look like:
-```
-your-project/
-├── packages/
-│   └── Webkul/
-│       └── DAM/
+Add the following to `bootstrap/providers.php`:
 
-```
-
-### Step 3: Register Service Provider
-
-Open `config/app.php` and add the following provider to the `providers` array:
+At the top, add the use statement:
 
 ```php
-Webkul\DAM\Providers\DAMServiceProvider::class,
+use Webkul\DAM\Providers\DAMServiceProvider;
 ```
 
-### Step 4: Register Autoload Path
+In the return array, in the Webkul package service providers section, add:
 
-Open `composer.json` and add the following entry under the `autoload` > `psr-4` section:
+```php
+DAMServiceProvider::class,
+```
+
+### Step 3: Update Autoload Configuration
+
+Register the DAM directory in `composer.json` under `autoload` > `psr-4`:
 
 ```json
 "Webkul\\DAM\\": "packages/Webkul/DAM/src"
 ```
 
-### Step 5: Complete Installation
+### Step 4: Run Installation Commands
 
-Run the following commands in order:
+Execute these commands to complete the installation:
 
 ```bash
 composer dump-autoload
@@ -92,7 +88,21 @@ php artisan vendor:publish --provider=Webkul\\DAM\\Providers\\DAMServiceProvider
 php artisan db:seed --class=Webkul\\DAM\\Database\\Seeders\\DirectoryTableSeeder
 ```
 
-**Installation complete!** Your UnoPIM DAM is now ready to use.
+### Step 5: Enable Queue Operations
+
+Start the queue to execute actions, such as job operations, by running the following command:
+
+```bash
+php artisan queue:work
+```
+
+If the `queue:work` command is managed by a process manager like Supervisor, restart the relevant service after installing the module to apply the changes:
+
+```bash
+sudo supervisorctl restart unopim-worker
+```
+
+**Installation complete!** Your UnoPim DAM is now ready to use.
 
 ---
 
@@ -116,4 +126,4 @@ sudo service supervisor restart
 
 ---
 
-**Your UnoPIM DAM installation is complete and ready to use.**
+**Your UnoPim DAM installation is complete and ready to use.**

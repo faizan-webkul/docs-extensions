@@ -1,4 +1,4 @@
-# UnoPIM DAM User Guide
+# UnoPim DAM User Guide
 
 ## Digital Asset Management Documentation
 
@@ -8,11 +8,11 @@
 
 ## Introduction
 
-### Welcome to UnoPIM DAM (Digital Asset Management)
+### Welcome to UnoPim DAM (Digital Asset Management)
 
-UnoPIM DAM is a powerful, open-source digital asset management solution designed to help organizations store, organize, and manage their digital assets efficiently. Whether you are managing images, PDFs, documents, videos, audio files, or other media types, UnoPIM DAM provides a comprehensive platform to streamline your workflow.
+UnoPim DAM is a powerful, open-source digital asset management solution designed to help organizations store, organize, and manage their digital assets efficiently. Whether you are managing images, PDFs, documents, videos, audio files, or other media types, UnoPim DAM provides a comprehensive platform to streamline your workflow.
 
-### Why Choose UnoPIM DAM?
+### Why Choose UnoPim DAM?
 
 - **Free and open-source software** – No licensing costs
 - **Support for multiple file types and formats** – Manage diverse digital assets
@@ -22,9 +22,9 @@ UnoPIM DAM is a powerful, open-source digital asset management solution designed
 
 ### Supported File Types
 
-UnoPIM DAM supports a wide range of digital asset formats, including:
+UnoPim DAM supports a wide range of digital asset formats, including:
 
-- **Images:** JPG, PNG, WEBP, JPEG, and more.
+- **Images:** JPG, PNG, WEBP, JPEG.
 - **Documents:** PDF and other document formats like CSV, XLSX, DOCX etc.
 - **Video files:** All common video formats.
 - **Audio files:** All common audio formats.

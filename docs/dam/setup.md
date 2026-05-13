@@ -1,4 +1,4 @@
-# UnoPIM DAM Configuration Guide
+# UnoPim DAM Configuration Guide
 
 Setting Up User Permissions and Asset Attributes
 
@@ -6,7 +6,7 @@ Setting Up User Permissions and Asset Attributes
 
 ## Set User Permissions
 
-User permissions control what actions each user can perform within UnoPIM DAM.
+User permissions control what actions each user can perform within UnoPim DAM.
 
 ### Steps to Configure User Permissions
 
@@ -20,7 +20,7 @@ User permissions control what actions each user can perform within UnoPIM DAM.
 
 ![Create Role](./assets/setup/create-role.png)
 
-2. Find and enable **DAM** in the permissions list & Set the permission level to **Custom**
+3. Find and enable **DAM** in the permissions list & Set the permission level to **Custom**
 
 ![Enable DAM Permissions](./assets/setup/DAM-controller.png)
 
@@ -73,6 +73,8 @@ Product asset attributes allow you to attach digital assets to your products.
 
 **Once created:** The asset attribute will be available when creating or editing products in that product family.
 
+![Product Asset Attribute](./assets/setup/Asset-product-verify.png)
+
 ---
 
 ## Create Category Asset Field
@@ -112,4 +114,4 @@ Category asset fields allow you to attach digital assets to your product categor
 
 ---
 
-**Your UnoPIM DAM configuration is now complete with user permissions and asset management fields.**
+**Your UnoPim DAM configuration is now complete with user permissions and asset management fields.**
