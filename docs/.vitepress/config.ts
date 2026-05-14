@@ -19,7 +19,7 @@ function loadSidebar(project: string): DefaultTheme.SidebarItem[] {
 const projects = [
   // { slug: 'shopify', label: 'Shopify' },
   // { slug: 'magento2', label: 'Magento 2' },
-  // { slug: 'odoo-erp', label: 'Odoo ERP' },
+  { slug: 'odoo-erp', label: 'Odoo ERP' },
   // { slug: 'bigcommerce', label: 'BigCommerce' },
   // { slug: 'shopware6', label: 'Shopware 6' },
   // { slug: 'woocommerce', label: 'WooCommerce' },

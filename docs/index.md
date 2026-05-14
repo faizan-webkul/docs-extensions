@@ -22,10 +22,10 @@ features:
   #   details: Push enriched product data from Unopim into Magento 2 stores.
   #   link: /magento2/
   #   linkText: Read docs
-  # - title: Odoo ERP
-  #   details: Connect Unopim with Odoo ERP for end-to-end product lifecycle.
-  #   link: /odoo-erp/
-  #   linkText: Read docs
+  - title: Odoo ERP
+    details: Connect Unopim with Odoo ERP for end-to-end product lifecycle.
+    link: /odoo-erp/
+    linkText: Read docs
   # - title: BigCommerce
   #   details: Push product data from Unopim into BigCommerce storefronts.
   #   link: /bigcommerce/

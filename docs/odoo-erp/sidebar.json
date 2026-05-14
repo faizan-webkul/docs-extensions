@@ -2,7 +2,10 @@
   {
     "text": "Odoo ERP",
     "items": [
-      { "text": "Overview", "link": "/odoo-erp/" }
+      { "text": "Overview", "link": "/odoo-erp/" },
+      {"text" : "Odoo Setup", "link": "/odoo-erp/odoo-setup" },
+      {"text" : "Installation", "link": "/odoo-erp/installation" },
+      {"text" : "Setup Odoo Credentials in  Unopim", "link": "/odoo-erp/setup-credentials" }
     ]
   }
 ]
