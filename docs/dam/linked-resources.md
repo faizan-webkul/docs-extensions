@@ -1,4 +1,4 @@
-# UnoPIM DAM - Linked Resources Endpoints
+# Unopim DAM - Linked Resources Endpoints
 
 Comprehensive guide for managing linked resources via API
 

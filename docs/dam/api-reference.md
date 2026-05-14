@@ -1,4 +1,4 @@
-# UnoPIM DAM API Documentation
+# Unopim DAM API Documentation
 
 RESTful API for Digital Asset Management
 
@@ -6,7 +6,7 @@ RESTful API for Digital Asset Management
 
 ## Overview
 
-The UnoPIM DAM (Digital Asset Management) API provides a comprehensive RESTful interface for managing digital assets, directories, properties, tags, comments, and linked resources. This API enables developers to integrate UnoPIM's DAM capabilities into their applications.
+The Unopim DAM (Digital Asset Management) API provides a comprehensive RESTful interface for managing digital assets, directories, properties, tags, comments, and linked resources. This API enables developers to integrate Unopim's DAM capabilities into their applications.
 
 ---
 
@@ -44,7 +44,7 @@ All API requests should use the following base URL:
 ```
 
 **Parameters:**
-- `{url}` - Your UnoPIM installation URL (e.g., https://yourdomain.com)
+- `{url}` - Your Unopim installation URL (e.g., https://yourdomain.com)
 
 **Example:**
 ```
@@ -55,7 +55,7 @@ https://yourdomain.com/api/v1/rest
 
 ## Official Documentation
 
-To interact with UnoPem DAM's API, you can use our official Postman collection:
+To interact with Unopim DAM's API, you can use our official Postman collection:
 
 - **[UnoPim DAM APIs Documentation](https://documenter.getpostman.com/view/21990056/2sA3kXE17F)** - Detailed information about all available API endpoints, parameters, and response formats
 - **[UnoPim DAM APIs on Postman](https://www.postman.com/unopim/unopim-apis/collection/4385199-086948c4-9e81-4271-abb7-6d6995a67304?ctx=info)** - Official Postman collection with ready-to-use API requests

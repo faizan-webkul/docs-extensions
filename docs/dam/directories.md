@@ -1,4 +1,4 @@
-# UnoPIM DAM - Directories Endpoints
+# Unopim DAM - Directories Endpoints
 
 Comprehensive guide for managing directories via API
 

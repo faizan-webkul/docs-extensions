@@ -1,4 +1,4 @@
-# UnoPIM DAM - Tags Endpoints
+# Unopim DAM - Tags Endpoints
 
 Comprehensive guide for managing tags via API
 

@@ -1,4 +1,4 @@
-# UnoPIM DAM - Comments Endpoints
+# Unopim DAM - Comments Endpoints
 
 Comprehensive guide for managing comments via API
 

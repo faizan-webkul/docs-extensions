@@ -1,4 +1,4 @@
-# UnoPIM DAM - Properties Endpoints
+# Unopim DAM - Properties Endpoints
 
 Comprehensive guide for managing properties via API
 

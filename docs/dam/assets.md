@@ -1,4 +1,4 @@
-# UnoPIM DAM - Assets Endpoints
+# Unopim DAM - Assets Endpoints
 
 Comprehensive guide for managing digital assets via API
 
