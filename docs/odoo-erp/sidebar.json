@@ -7,5 +7,41 @@
       {"text" : "Installation", "link": "/odoo-erp/installation" },
       {"text" : "Setup Odoo Credentials in  Unopim", "link": "/odoo-erp/setup-credentials" }
     ]
+  },
+
+  {
+    "text": "Configuration",
+    "items": [
+  {"text" : "Attribute Mapping", "link": "/odoo-erp/attribute-mapping" },
+  {"text" : "Additional Mapping", "link" : "/odoo-erp/additional-mapping" },
+  {"text" : "Category Mapping", "link" : "/odoo-erp/category-mapping" }
+
+]
+  },
+
+  {
+    "text":"Export Jobs",
+    "items":[
+      {"text" : "Export Attributes", "link": "/odoo-erp/export-attributes" },
+      {"text" : "Export Categories", "link": "/odoo-erp/export-categories" },
+      {"text" : "Export Products", "link": "/odoo-erp/export-products" }
+    ]
+  },
+
+  {
+    "text":"Import Jobs",
+    "items":[
+      {"text" : "Attribute import", "link": "/odoo-erp/attribute-import" },
+      {"text" : "Category Import", "link": "/odoo-erp/category-import" },
+      {"text" : "Product Import", "link": "/odoo-erp/product-import" },
+      {"text" : "Product Model", "link": "/odoo-erp/product-model-import" }
+    ]
+  }
+
+  {
+    "text":"Support",
+    "items":[
+      {"text" : "Contact & Support", "link": "/odoo-erp/contact" }
+    ]
   }
 ]

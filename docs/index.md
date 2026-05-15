@@ -14,10 +14,10 @@ hero:
       link: https://github.com/unopim
 
 features:
-  # - title: Shopify
-  #   details: Sync products, attributes, and inventory between Unopim and Shopify.
-  #   link: /shopify/
-  #   linkText: Read docs
+  - title: Shopify
+    details: Sync products, attributes, and inventory between Unopim and Shopify.
+    link: /shopify/
+    linkText: Read docs
   # - title: Magento 2
   #   details: Push enriched product data from Unopim into Magento 2 stores.
   #   link: /magento2/

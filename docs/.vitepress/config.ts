@@ -17,7 +17,7 @@ function loadSidebar(project: string): DefaultTheme.SidebarItem[] {
 }
 
 const projects = [
-  // { slug: 'shopify', label: 'Shopify' },
+  { slug: 'shopify', label: 'Shopify' },
   // { slug: 'magento2', label: 'Magento 2' },
   { slug: 'odoo-erp', label: 'Odoo ERP' },
   // { slug: 'bigcommerce', label: 'BigCommerce' },
@@ -64,6 +64,7 @@ export default defineConfig({
         items: projects.map(p => ({ text: p.label, link: `/${p.slug}/` })),
       },
       { text: 'User Guide', link: 'https://docs.unopim.com/' },
+      {text: 'Dev Doc', link: 'https://devdocs.unopim.com/'}, 
       { text: 'Contact Us', link: 'https://unopim.com/en/contacts/' },
     ],
     sidebar: Object.fromEntries(
@@ -82,9 +83,6 @@ export default defineConfig({
       message: 'Released under the <a href="https://opensource.org/licenses/mit" target="_blank">MIT License</a>.',
       copyright: `Copyright © ${new Date().getFullYear()} UnoPim`,
     },
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/unopim' },
-    ],
     search: {
       provider: 'local',
     },

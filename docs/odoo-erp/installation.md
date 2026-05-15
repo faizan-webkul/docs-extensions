@@ -69,5 +69,3 @@ Once all commands have run successfully, log in to your UnoPim dashboard. You sh
 
 If the icon doesn't appear, try running `php artisan optimize:clear` again and refresh the page.
 
-
-Next, you'll need to connect your Odoo store to UnoPim. Head over to [Configuration](./configuration.md) to set up your credentials.
