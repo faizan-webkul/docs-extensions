@@ -17,7 +17,7 @@ Before importing attributes from Odoo, ensure that you have configured your Odoo
 
 Navigate to the **Data Transfer** section from the main menu in UnoPim.
 
-![Data Transfer](./assets/import-jobs/export-attribute.png)
+![Data Transfer](./assets/export-jobs/export-attribute.png)
 
 
 ## Step 2: Go to Imports
@@ -84,6 +84,5 @@ Once the import profile is saved, click the **Import Now** button to start the i
 In the execution process, you can check the progress of the import job and view any errors in the log.
 
 ![Import Progress](./assets/import-jobs/attribute-import-progress.png)
-
 
 
