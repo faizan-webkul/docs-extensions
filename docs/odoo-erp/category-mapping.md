@@ -58,7 +58,6 @@ Optional default values that can be assigned to Odoo fields. If set, all exporte
 
 **Mapping:** Map this to your UnoPim category image field
 
----
 
 ## How to Create Manual Mappings
 
@@ -82,7 +81,6 @@ Repeat steps 1-3 for additional category fields you want to map.
 
 Once you have configured all your category field mappings, click the **Save** button to save your configuration and apply the changes.
 
----
 
 ## Best Practices
 

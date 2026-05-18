@@ -2,23 +2,19 @@
 
 Product Attribute Mapping Between UnoPim and Odoo
 
----
-
 ## Overview
 
 When products are exported to Odoo, you can decide which product information should be included in the product database. First, you need to do the mapping of Odoo product fields with UnoPim attributes.
 
 ![Attribute Mapping](./assets/attribute-mapping/attribute-mapping.png)
 
----
 
-## Mapping Basics
+## Attribute Mapping
 
 ### Fixed Value
 
 In case you want to set any default value for a product field, you can enter it in the Fixed Value. So that all the exported products will have the same product field value.
 
----
 
 ## Default Mappable Product Fields
 

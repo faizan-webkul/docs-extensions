@@ -2,7 +2,6 @@
 
 Adding Additional Product Fields for Odoo Export
 
----
 
 ## Overview
 
@@ -10,7 +9,6 @@ In case you want to send more product information, you can add more product fiel
 
 ![Additional Mapping](./assets/attribute-mapping/additional-mapping.png)
 
----
 
 ## Steps to Add More Fields
 
@@ -20,7 +18,6 @@ In case you want to send more product information, you can add more product fiel
 
 3. The new mapping field will appear above
 
----
 
 ## Save Configuration
 
