@@ -28,7 +28,7 @@ const projects = [
   // { slug: 'prestashop', label: 'PrestaShop' },
   // { slug: 'icecat', label: 'Icecat' },
   // { slug: 'xml-connector', label: 'XML Connector' },
-  // { slug: 'aws-integration', label: 'AWS Integration' },
+  { slug: 'aws-integration', label: 'AWS Integration' },
   { slug: 'ai-product-feed-openai', label: 'AI Product Feed (OpenAI)' },
   // { slug: 'job-scheduler', label: 'Job Scheduler' },
   { slug: 'supplier-data-portal', label: 'Supplier Data Portal' },

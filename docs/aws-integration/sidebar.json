@@ -2,7 +2,26 @@
   {
     "text": "Aws Integration",
     "items": [
-      { "text": "Overview", "link": "/aws-integration/" }
+      { "text": "Overview", "link": "/aws-integration/" },
+      {"text" : "Installation", "link": "/aws-integration/installation" },
+      {"text" : "Setup Credentials in Amazon S3", "link": "/aws-integration/setup-amazon" }
+    ]
+  },
+
+  {
+    "text": "Configuration",
+    "items": [
+      {"text" : "AWS S3 Setup in UnoPim", "link": "/aws-integration/aws-s3-setup-in-unopim" },
+      {"text" : "Migrate Existing Files to S3", "link": "/aws-integration/migrate-existing-files" },
+      {"text" : "Media Upload on Amazon S3", "link": "/aws-integration/media-upload-on-amazon-s3" }
+
+    ]
+  },
+
+  {
+    "text":"Support",
+    "items":[
+      {"text" : "Contact & Support", "link": "/aws-integration/contact" }
     ]
   }
 ]

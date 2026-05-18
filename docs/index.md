@@ -58,10 +58,10 @@ features:
   #   details: Streamlined XML imports with validation and mapping.
   #   link: /xml-connector/
   #   linkText: Read docs
-  # - title: AWS Integration
-  #   details: Cloud storage via Amazon S3.
-  #   link: /aws-integration/
-  #   linkText: Read docs
+  - title: AWS Integration
+    details: Cloud storage via Amazon S3.
+    link: /aws-integration/
+    linkText: Read docs
   - title: AI Product Feed (OpenAI)
     details: AI product feed for ChatGPT / OpenAI Search.
     link: /ai-product-feed-openai/
