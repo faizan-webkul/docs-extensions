@@ -83,3 +83,5 @@ Before saving the configuration, make sure:
 If you have not prepared your AWS account yet, follow [Setup Credentials in Amazon S3](./setup-amazon.md) first.
 
 Once your credentials are saved, continue to [Migrate Existing Files to S3](./migrate-existing-files.md) if you want to move older local media into Amazon S3.
+
+If you also use **UnoPim DAM** and want to move DAM asset files from private local storage to S3, follow [DAM Asset Migration to AWS S3](./dam-asset-migration-to-aws-s3.md).

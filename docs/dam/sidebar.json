@@ -20,7 +20,8 @@
   {
     "text" : "Export Assets",
     "items": [
-      {"text" : "Exporting Assets with Product & Categories" , "link": "/dam/export-assets" }
+      {"text" : "Exporting Assets with Product & Categories" , "link": "/dam/export-assets" },
+      {"text" : "DAM Asset Migration to AWS S3" , "link": "/dam/dam-asset-migration-to-aws-s3" }
     ]
   },
 

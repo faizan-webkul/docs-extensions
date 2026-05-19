@@ -13,7 +13,9 @@
     "items": [
       {"text" : "AWS S3 Setup in UnoPim", "link": "/aws-integration/aws-s3-setup-in-unopim" },
       {"text" : "Migrate Existing Files to S3", "link": "/aws-integration/migrate-existing-files" },
-      {"text" : "Media Upload on Amazon S3", "link": "/aws-integration/media-upload-on-amazon-s3" }
+      {"text" : "Media Upload on Amazon S3", "link": "/aws-integration/media-upload-on-amazon-s3" },
+      {"text" : "DAM Asset Migration to AWS S3", "link": "/aws-integration/dam-asset-migration-to-aws-s3" }
+
 
     ]
   },
