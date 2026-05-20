@@ -1,0 +1,11 @@
+[
+  {
+    "text": "Auto SKU Generator",
+    "items": [
+      { "text": "Overview",       "link": "/auto-sku-generator/" },
+      { "text": "Installation",   "link": "/auto-sku-generator/installation" },
+      { "text": "Configuration",  "link": "/auto-sku-generator/configuration" },
+      { "text": "Usage",          "link": "/auto-sku-generator/usage" }
+    ]
+  }
+]

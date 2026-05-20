@@ -1,0 +1,34 @@
+[
+  {
+    "text": "Setup",
+    "items": [
+      { "text": "Overview",                "link": "/deepl/" },
+      { "text": "Installation",            "link": "/deepl/installation" },
+      { "text": "Add your DeepL key",      "link": "/deepl/credentials" },
+      { "text": "Mark fields",             "link": "/deepl/attribute-setup" }
+    ]
+  },
+  {
+    "text": "Translate",
+    "items": [
+      { "text": "Translate one field",     "link": "/deepl/per-field-translate" },
+      { "text": "Translate one product",   "link": "/deepl/product-wizard" },
+      { "text": "Translate many products", "link": "/deepl/bulk-translate" }
+    ]
+  },
+  {
+    "text": "Automate",
+    "items": [
+      { "text": "After import or save",    "link": "/deepl/auto-translate" },
+      { "text": "AI agent",                "link": "/deepl/agentic-pim" }
+    ]
+  },
+  {
+    "text": "Reference",
+    "items": [
+      { "text": "Watch progress",          "link": "/deepl/tracker" },
+      { "text": "Supported languages",     "link": "/deepl/supported-locales" },
+      { "text": "If something doesn't work","link": "/deepl/troubleshooting" }
+    ]
+  }
+]

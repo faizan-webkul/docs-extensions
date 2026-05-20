@@ -1,8 +1,11 @@
 [
   {
-    "text": "Ai Product Feed Openai",
+    "text": "AI Product Feed (OpenAI)",
     "items": [
-      { "text": "Overview", "link": "/ai-product-feed-openai/" }
+      { "text": "Overview",                     "link": "/ai-product-feed-openai/" },
+      { "text": "Installation",                 "link": "/ai-product-feed-openai/installation" },
+      { "text": "Configuration",                "link": "/ai-product-feed-openai/configuration" },
+      { "text": "Generating & Submitting Feed", "link": "/ai-product-feed-openai/feed-generation" }
     ]
   }
 ]

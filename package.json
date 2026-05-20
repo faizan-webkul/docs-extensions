@@ -5,11 +5,15 @@
   "type": "module",
   "description": "Centralized documentation site for Unopim extensions",
   "scripts": {
-    "docs:dev": "vitepress dev docs",
+    "docs:dev": "vitepress dev docs --host",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "docs:dam-webdav:capture": "cd ../unopim/tests/e2e-pw && npx playwright test --project=docs-screenshots",
+    "docs:dam-webdav:process": "node scripts/capture-dam-webdav.mjs",
+    "docs:dam-webdav": "npm run docs:dam-webdav:capture && npm run docs:dam-webdav:process"
   },
   "devDependencies": {
+    "sharp": "0.33.5",
     "vitepress": "^1.6.4"
   }
 }
