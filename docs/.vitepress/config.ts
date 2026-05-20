@@ -20,7 +20,7 @@ const projects = [
   { slug: 'ai-product-feed-openai', label: 'AI Product Feed (OpenAI)' },
   { slug: 'auto-sku-generator', label: 'Auto SKU Generator' },
   { slug: 'aws-integration', label: 'AWS Integration' },
-  // { slug: 'bagisto', label: 'Bagisto' },
+  { slug: 'bagisto', label: 'Bagisto' },
   // { slug: 'bigcommerce', label: 'BigCommerce' },
   { slug: 'azure-integration', label: 'Azure Integration' },
   { slug: 'cloudflare-r2-integration', label: 'Cloudflare R2 Integration' },

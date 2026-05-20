@@ -26,10 +26,10 @@ features:
     details: Cloud storage via Amazon S3.
     link: /aws-integration/
     linkText: Read docs
-  # - title: Bagisto
-  #   details: Connect Unopim with Bagisto stores.
-  #   link: /bagisto/
-  #   linkText: Read docs
+  - title: Bagisto
+    details: Connect Unopim with Bagisto stores.
+    link: /bagisto/
+    linkText: Read docs
   # - title: BigCommerce
   #   details: Push product data from Unopim into BigCommerce storefronts.
   #   link: /bigcommerce/
