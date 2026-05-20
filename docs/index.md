@@ -102,10 +102,10 @@ features:
     details: Manage supplier product data.
     link: /supplier-data-portal/
     linkText: Read docs
-  # - title: WooCommerce
-  #   details: Export and import product data with WooCommerce stores.
-  #   link: /woocommerce/
-  #   linkText: Read docs
+  - title: WooCommerce
+    details: Export and import product data with WooCommerce stores.
+    link: /woocommerce/
+    linkText: Read docs
   # - title: XML Connector
   #   details: Streamlined XML imports with validation and mapping.
   #   link: /xml-connector/

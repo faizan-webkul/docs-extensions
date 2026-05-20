@@ -2,7 +2,42 @@
   {
     "text": "Woocommerce",
     "items": [
-      { "text": "Overview", "link": "/woocommerce/" }
+      { "text": "Overview", "link": "/woocommerce/" },
+      {"text" : "Installation", "link": "/woocommerce/installation" },
+      {"text" : "Generate WooCommerce API Credentials", "link": "/woocommerce/api-credentials" },
+      {"text" : "Setup Credentials in UnoPim", "link": "/woocommerce/setup-credentials" }
+    ]
+  },
+
+  {
+    "text" : "Mapping",
+    "items" : [
+      {"text" : "Attribute Mapping Template", "link": "/woocommerce/attribute-mapping" }
+    ]
+  },
+
+  {
+    "text" : "Export Jobs",
+    "items" : [
+      {"text": "Attribute Export", "link": "/woocommerce/attribute-export" },
+      {"text": "Category Export", "link": "/woocommerce/category-export" },
+      {"text" : "Products Export", "link": "/woocommerce/product-export" }
+    ]
+  },
+
+  {
+    "text" : "Import Jobs",
+    "items" : [
+      {"text": "Attribute Import", "link": "/woocommerce/attribute-import" },
+      {"text": "Category Import", "link": "/woocommerce/category-import" },
+      {"text": "Product Import", "link": "/woocommerce/product-import" }
+    ]
+  },
+
+  {
+    "text" : "Support",
+    "items" : [
+      {"text" : "Contact Support", "link": "/woocommerce/contact-support" }
     ]
   }
 ]
