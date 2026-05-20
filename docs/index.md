@@ -66,10 +66,10 @@ features:
     details: Role-based product and asset approvals.
     link: /maker-checker-workflow/
     linkText: Read docs
-  # - title: Magento 2
-  #   details: Push enriched product data from Unopim into Magento 2 stores.
-  #   link: /magento2/
-  #   linkText: Read docs
+  - title: Magento 2
+    details: Push enriched product data from Unopim into Magento 2 stores.
+    link: /magento2/
+    linkText: Read docs
   - title: Odoo ERP
     details: Connect Unopim with Odoo ERP for end-to-end product lifecycle.
     link: /odoo-erp/

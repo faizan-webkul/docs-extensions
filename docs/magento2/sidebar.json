@@ -2,7 +2,9 @@
   {
     "text": "Magento 2",
     "items": [
-      { "text": "Overview", "link": "/magento2/" }
+      { "text": "Overview", "link": "/magento2/" },
+      { "text": "Installation", "link": "/magento2/installation" },
+      { "text": "Setup Credentials in UnoPim", "link": "/magento2/setup-credentials" }
     ]
   }
 ]
