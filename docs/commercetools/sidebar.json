@@ -1,0 +1,12 @@
+[
+  {
+    "text": "Commercetools",
+    "items": [
+      { "text": "Overview",       "link": "/commercetools/" },
+      { "text": "Installation",   "link": "/commercetools/installation" },
+      { "text": "Configuration",  "link": "/commercetools/configuration" },
+      { "text": "Author Guide",   "link": "/commercetools/author-guide" },
+      { "text": "Operator Guide", "link": "/commercetools/operator-guide" }
+    ]
+  }
+]
