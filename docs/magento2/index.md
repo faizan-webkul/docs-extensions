@@ -2,6 +2,12 @@
 
 The UnoPim Magento 2 Connector allows businesses to integrate one or more Magento 2 stores with the UnoPim PIM platform.
 
+
+<div align="center">
+  <img src="./assets/intro-banner.png" alt="UnoPim Shopify Connector" width="100%" style="max-height:330px; object-fit:cover; border-radius:8px;" />
+</div>
+
+
 ## Introduction
 
 With this connector, store owners can synchronize catalog data between UnoPim and Magento 2, including Adobe Commerce Cloud stores, through API-based integration.

@@ -4,12 +4,12 @@ Follow the steps below to install the UnoPim WooCommerce Connector. You'll need 
 
 > **Note:** UnoPim 2.0.0 uses the **Laravel 12 bootstrap architecture** (`bootstrap/app.php` fluent API). 
 
-## Step 1 — Add the Package Files
+## Step 1  Add the Package Files
 
-Unzip the extension ZIP file. Inside, you'll find a `packages` folder — merge it into the **root directory** of your UnoPim project.
+Unzip the extension ZIP file. Inside, you'll find a `packages` folder  merge it into the **root directory** of your UnoPim project.
 
 
-## Step 2 — Register the Service Provider
+## Step 2  Register the Service Provider
 
 Open `bootstrap/providers.php` and add the following:
 
@@ -23,7 +23,7 @@ return [
 ```
 
 
-## Step 3 — Update Composer Autoload
+## Step 3  Update Composer Autoload
 
 Open `composer.json` and add the following line under the `autoload > psr-4` section:
 
@@ -32,7 +32,7 @@ Open `composer.json` and add the following line under the `autoload > psr-4` sec
 ```
 
 
-## Step 4 — Run the Setup Commands
+## Step 4  Run the Setup Commands
 
 Run the following commands one by one. Wait for each to complete before moving to the next.
 
@@ -64,12 +64,12 @@ php artisan optimize:clear
 ```bash
 php artisan queue:restart
 ```
-> The queue worker must be restarted whenever application code changes. This command sends a safe restart signal — it waits for the current job to finish before restarting, so no jobs are lost.
+> The queue worker must be restarted whenever application code changes. This command sends a safe restart signal  it waits for the current job to finish before restarting, so no jobs are lost.
 
 
 ## Verify the Installation
 
-Once all commands have completed, log in to your UnoPim dashboard. You should see the **WooCommerce** option appear in the left sidebar — this confirms the connector is installed and ready to configure.
+Once all commands have completed, log in to your UnoPim dashboard. You should see the **WooCommerce** option appear in the left sidebar  this confirms the connector is installed and ready to configure.
 
 If it doesn't appear, run `php artisan optimize:clear` again and refresh the page.
 

@@ -40,4 +40,6 @@ After completing the required fields, click **Save Export** to create and save t
 
 Once the job is run, the export progress can be tracked from the **Job Tracker**.
 
+![Job Tracker](assets/jobs/attribute-complete.png)
+
 After the export completes successfully, the selected attributes will be available in the connected WooCommerce store.
