@@ -30,10 +30,10 @@ features:
     details: Connect Unopim with Bagisto stores.
     link: /bagisto/
     linkText: Read docs
-  # - title: BigCommerce
-  #   details: Push product data from Unopim into BigCommerce storefronts.
-  #   link: /bigcommerce/
-  #   linkText: Read docs
+  - title: BigCommerce
+    details: Push product data from Unopim into BigCommerce storefronts.
+    link: /bigcommerce/
+    linkText: Read docs
   - title: Azure Integration
     details: Azure-based storage and media integration for UnoPim extensions.
     link: /azure-integration/
@@ -42,10 +42,10 @@ features:
     details: Offload product and category media to Cloudflare R2 storage with CDN delivery.
     link: /cloudflare-r2-integration/
     linkText: Read docs
-  # - title: CS-Cart
-  #   details: Link CS-Cart stores with Unopim (coming soon).
-  #   link: /cs-cart/
-  #   linkText: Read docs
+  - title: CS-Cart
+    details: Link CS-Cart stores with Unopim (coming soon).
+    link: /cs-cart/
+    linkText: Read docs
   - title: DAM
     details: Digital Asset Management for images and media.
     link: /dam/

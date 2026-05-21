@@ -24,7 +24,7 @@ const projects = [
   // { slug: 'bigcommerce', label: 'BigCommerce' },
   { slug: 'azure-integration', label: 'Azure Integration' },
   { slug: 'cloudflare-r2-integration', label: 'Cloudflare R2 Integration' },
-  // { slug: 'cs-cart', label: 'CS-Cart' },
+  { slug: 'cs-cart', label: 'CS-Cart' },
   { slug: 'dam', label: 'DAM' },
   // { slug: 'dam-webdav', label: 'DAM NextCloud' },
   { slug: 'deepl', label: 'DeepL Translator' },
