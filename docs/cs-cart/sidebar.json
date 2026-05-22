@@ -27,14 +27,6 @@
     ]
   },
   {
-    "text": "Reference",
-    "items": [
-      { "text": "Watch progress",            "link": "/cs-cart/tracker" },
-      { "text": "Data transfer mappings",    "link": "/cs-cart/data-transfer-mappings" },
-      { "text": "If something doesn't work", "link": "/cs-cart/troubleshooting" }
-    ]
-  },
-  {
     "text": "Support",
     "items": [
       { "text": "Contact Support",           "link": "/cs-cart/contact-support" }

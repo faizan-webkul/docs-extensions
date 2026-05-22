@@ -134,14 +134,21 @@ Go to:
 
 `Magento 2 Connector > Credentials`
 
+![UnoPim Magento 2 Connector Credentials](./assets/cred.png)
+
 Then:
 
 1. Click **Create Login-Based Credentials**.
+
+![Login-Based Credentials](./assets/login.png)
+
 2. Enter the following details:
    - **Magento Shop URL**
    - **Admin Username**
    - **Admin Password**
 3. Click **Save**.
+
+![add-login-credentials](./assets/add-cred.png)
 
 This creates login-based authentication for the connector and makes the credential available for the next configuration steps.
 

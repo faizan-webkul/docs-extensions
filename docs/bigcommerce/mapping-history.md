@@ -1,8 +1,8 @@
 # Mapping history
 
-Every change made to a [standard](./standard-mapping), [custom](./custom-mapping), or [other](./other-mapping) mapping is recorded automatically. Use the history page to see *who changed what, when*, and which mapping the change applied to.
+Every change made to [attribute](./standard-mapping), [custom](./custom-mapping), or [other](./other-mapping) mapping is recorded automatically. Use the history page to see *who changed what, when*, and which mapping the change applied to.
 
-**Open it from:** *BigCommerce → Export Mappings → History*
+**Open it from:** *BigCommerce → Attribute Mappings → History*
 
 <!-- TODO: capture screenshot — bigcommerce-mapping-history.png — Mapping history grid -->
 
@@ -17,6 +17,8 @@ Each row in the list is one change to a mapping:
 | **Changed By** | The admin user that made the change. |
 | **Action** | `created`, `updated`, or `deleted`. |
 | **Changed At** | Timestamp of the change. |
+
+![History detail view](./assets/mapping/history.png)
 
 Click into a row to see the full **before / after** state of the mapping — which attributes were added, removed, or repointed.
 
@@ -40,7 +42,7 @@ That way you can answer questions like *"who repointed the `weight` field last T
 
 - Changes to a **credential's connection settings** (label, API URL, tokens, status). Those are tracked separately on the credential edit page's history tab.
 - Changes to **products / categories** themselves — the connector doesn't audit your catalog, only the mappings.
-- Job runs (imports / exports). Those live in the **Data Transfer Tracker** — see [Watch progress](./tracker).
+- Job runs (imports / exports). Those live in the **Data Transfer Tracker**.
 
 ---
 
@@ -48,7 +50,7 @@ That way you can answer questions like *"who repointed the `weight` field last T
 
 If yesterday's export sent products with the wrong values, the history is the first place to look:
 
-1. Open *BigCommerce → Export Mappings → History*.
+1. Open *BigCommerce → Attribute Mappings → History*.
 2. Filter by **Credential** to the one that ran the export.
 3. Sort by **Changed At** descending — look for changes around the time before yesterday's run.
 4. Open the detail view of any suspicious change and confirm which field moved.

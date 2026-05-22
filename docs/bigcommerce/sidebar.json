@@ -10,7 +10,7 @@
   {
     "text": "Mappings",
     "items": [
-      { "text": "Standard mapping",          "link": "/bigcommerce/standard-mapping" },
+      { "text": "Attribute mapping",         "link": "/bigcommerce/standard-mapping" },
       { "text": "Custom mapping",            "link": "/bigcommerce/custom-mapping" },
       { "text": "Other mapping",             "link": "/bigcommerce/other-mapping" },
       { "text": "Mapping history",           "link": "/bigcommerce/mapping-history" }
@@ -31,13 +31,7 @@
       { "text": "Import products",           "link": "/bigcommerce/import-products" }
     ]
   },
-  {
-    "text": "Reference",
-    "items": [
-      { "text": "Watch progress",            "link": "/bigcommerce/tracker" },
-      { "text": "If something doesn't work", "link": "/bigcommerce/troubleshooting" }
-    ]
-  },
+
   {
     "text": "Support",
     "items": [

@@ -11,12 +11,23 @@ Push a few selected products to CS-Cart straight from the product list — no ne
 ## Steps
 
 1. Open **Catalog → Products**.
+
+![Products list](./assets/export/products.png)
 2. Tick one or more rows.
-3. Click **Selected actions → CS-Cart Quick Export**.
+
+![Selected products](./assets/export/selected-export.png)
+
+3. Click **Quick Export → CS-Cart Quick Export**.
+
+![Quick export action](./assets/export/quick-export.png)
+
+![Quick export form](./assets/export/c-product-export.png)
 
 The selected products are queued straight to CS-Cart. You'll see *Products queued for CS-Cart export.*
 
-Watch the job on [Tracker](./tracker).
+![Export success message](./assets/export/quick-export-progress.png)
+
+Watch the job in the Data Transfer Tracker.
 
 ## What it uses
 

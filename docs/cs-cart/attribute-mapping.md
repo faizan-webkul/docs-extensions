@@ -4,6 +4,8 @@ CS-Cart products have a fixed set of system fields (`product_code`, `product`, `
 
 **Open it from:** *CS-Cart → Credentials → (edit a credential) → Attribute Mapping*
 
+![Attribute Mapping tab](./assets/attribute-mapping/attribute-mappings.png)
+
 <!-- TODO: capture screenshot — cscart-attribute-mapping.png — Attribute Mapping tab -->
 
 ---
@@ -32,6 +34,9 @@ At minimum, map these to run a product export:
 | **Product Name** | `name` |
 | **Price** | `price` |
 | **Quantity Amount** | `quantity` (or fixed value `0`) |
+
+
+![Required mappings filled](./assets/attribute-mapping/attribute-mapping-fields.png)
 
 The rest are optional. The connector skips any CS-Cart field that has neither an attribute nor a fixed value.
 

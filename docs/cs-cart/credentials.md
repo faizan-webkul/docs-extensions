@@ -4,6 +4,8 @@ This is where you store the connection details for your CS-Cart store. Add at le
 
 **Open it from:** *CS-Cart → Credentials*
 
+![CS-Cart credentials list](./assets/cs-cart.png)
+
 ---
 
 ## The credentials page
@@ -15,6 +17,8 @@ Each row in the list shows one credential:
 - **Name** — the label you gave it.
 - **Shop URL** — the CS-Cart store URL.
 - **Active** — whether the credential is on or off.
+
+![CS-Cart credentials list](./assets/cred-page/cred-page.png)
 
 You can search by name, sort columns, or click **Filter** to narrow the list. The pencil icon edits a row, the trash icon deletes it. Mass-update and mass-delete are available from the **Selected actions** menu.
 
@@ -34,7 +38,8 @@ Fill in:
 | **Shop URL** | Your CS-Cart store URL, including `https://`. |
 | **Admin Email** | The email of a CS-Cart admin with API access. |
 | **API Key** | Paste the API key from CS-Cart *User Profile → API* tab. |
-| **Company ID** | *(Multi-Vendor only)* The vendor company ID. Leave blank for a single-store setup. |
+
+![Create credential form filled](./assets/cred-page/cred-fields.png)
 
 Click **Save Credential**.
 
@@ -58,6 +63,8 @@ The edit page has four tabs at the top:
 | **Locale Mapping** | Map every UnoPim locale to a CS-Cart `lang_code` — see [Map locales](./locale-mapping). |
 | **Attribute Mapping** | Map UnoPim attributes to CS-Cart product fields — see [Map attributes](./attribute-mapping). |
 | **History** | Every change made to this credential is logged here. |
+
+![Credential edit page tabs](./assets/cred-page/edit-cred.png)
 
 ### Credential Settings
 
@@ -84,4 +91,4 @@ Click the trash icon on a row and confirm. Or tick several rows and use **Select
 
 The **History** tab on the edit page lists every change made to this credential — name edits, URL changes, active flips, locale and attribute mapping changes. Your API key itself is never shown there.
 
-<!-- TODO: capture screenshot — cscart-credential-history.png — History tab on the credential edit page -->
+![Credential history tab](./assets/cred-page/history.png)

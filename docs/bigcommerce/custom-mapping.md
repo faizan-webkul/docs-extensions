@@ -2,7 +2,9 @@
 
 BigCommerce **custom fields** are key/value pairs you can attach to any product to store extra information (warranty period, technical specs, fit guides — anything that doesn't fit a standard field). The **Custom Mapping** page tells the connector which UnoPim attributes get pushed as BigCommerce custom fields.
 
-**Open it from:** *BigCommerce → Export Mappings → Custom Mappings*
+**Open it from:** *BigCommerce → Attribute Mappings → Custom Mappings*
+
+![Custom Mappings page](./assets/mapping/custom.png)
 
 <!-- TODO: capture screenshot — bigcommerce-custom-mapping.png — Custom Mappings page -->
 
@@ -26,7 +28,9 @@ Mappings are saved **per credential** — different stores can have different se
 1. Click **+ Add Custom Mapping**.
 2. **UnoPim Attribute** — pick the source attribute.
 3. **Custom Field Name** — type the label the field should have in BigCommerce.
-4. Click **Save Mapping**.
+4. Click **Save**.
+
+![Add custom mapping form](./assets/mapping/custom-field.png)
 
 The custom field appears on every exported product that has a value for the source attribute. Products with an empty value for that attribute don't get the custom field at all.
 
@@ -49,7 +53,7 @@ Click the trash icon next to a row.
 | The value is **per product**, not per locale. | The data is informational rather than functional. |
 
 > [!TIP]
-> Don't use custom fields to duplicate something that already has a standard slot. Standard fields are indexed and searchable; custom fields aren't. If there's a real built-in equivalent, map it on [Standard mapping](./standard-mapping) instead.
+> Don't use custom fields to duplicate something that already has a built-in slot. Standard product fields are indexed and searchable; custom fields aren't. If there's a real built-in equivalent, map it on [Attribute mapping](./standard-mapping) instead.
 
 ---
 

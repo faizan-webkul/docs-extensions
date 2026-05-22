@@ -4,7 +4,9 @@ Push UnoPim attributes to CS-Cart as **features**. Run this once before exportin
 
 > **Before you start.** Add a [CS-Cart credential](./credentials) and map every locale you plan to export — see [Map locales](./locale-mapping).
 
-**Open it from:** *Data Transfer → Export → + Create Export Profile*
+**Open it from:** *Data Transfer → Export*
+
+![Create export profile page](./assets/export/data-transfer.png)
 
 <!-- TODO: capture screenshot — cscart-export-attributes-profile.png — Create export profile for attributes -->
 
@@ -12,10 +14,15 @@ Push UnoPim attributes to CS-Cart as **features**. Run this once before exportin
 
 ### 1. Create the profile
 
-1. Open **Data Transfer → Export → + Create Export Profile**.
+1. Open **Data Transfer → Export → + Create Export**.
+
+![Create export profile form](./assets/export/create_export.png)
+
 2. **Type** — pick **CsCart Attributes Export**.
 3. **Code** — any short identifier, e.g. `cscart_attributes_daily`.
-4. Click **Save**.
+
+![Export profile form filled](./assets/export/attribute-export.png)
+
 
 ### 2. Fill the filters
 
@@ -28,25 +35,16 @@ The export needs:
 | **Channel** | The UnoPim channel whose attribute values you're exporting. |
 | **Locale** | One or more UnoPim locales to push translations for. **Each must be mapped** — see [Map locales](./locale-mapping). |
 
+![Export profile filters](./assets/export/attribute-fields.png)
+
 Click **Save**.
 
 ### 3. Run it
 
-Open the profile and click **Start Export**.
+Open the profile and click **Export Now**.
 
-The job is queued. Watch it on **Settings → Data Transfer → Tracker** — see [Watch progress](./tracker).
+![Start export button](./assets/export/attribute-export-now.png)
 
-## What gets pushed
+The job is queued. Watch it on **Settings → Data Transfer → Tracker**.
 
-For each UnoPim attribute the job:
-
-1. Creates the matching CS-Cart **feature** if it doesn't exist yet.
-2. Updates its label in every selected locale.
-3. Pushes the attribute's **options** (for select / multiselect attributes) as feature variants in CS-Cart.
-
-Attributes that already exist in CS-Cart are matched by code and updated in place — duplicates are not created.
-
-## Notes
-
-- Run the **attribute** export before the **product** export. Products reference attributes; if the feature doesn't exist in CS-Cart, the product value can't be stored.
-- The job is idempotent — running it again only writes what has changed.
+![Tracker export progress](./assets/export/attribute-export-progress.png)

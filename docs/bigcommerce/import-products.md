@@ -4,56 +4,41 @@ Pull BigCommerce products into UnoPim — both **simple products** and **configu
 
 > **Before you start.** Add a [BigCommerce credential](./credentials) and run [Import categories](./import-categories) so the products land with all of their category links intact.
 
-**Open it from:** *Data Transfer → Import → + Create Import Profile*
+**Open it from:** *Data Transfer → Import*
 
-<!-- TODO: capture screenshot — bigcommerce-import-products.png — Create import profile for products -->
+![Create import profile page](./assets/import/data-transfer.png)
 
 ## Steps
 
 ### 1. Create the profile
 
-1. Open **Data Transfer → Import → + Create Import Profile**.
-2. **Type** — pick **Import Products from BigCommerce**.
-3. **Code** — e.g. `bigcommerce_products_import`.
-4. Click **Save**.
+1. Open **Data Transfer → Import → + Create Import**.
 
-### 2. Fill the filter
+![Create import profile form](./assets/import/create-import.png)
+
+2. **Type** — pick **Import Products from BigCommerce**, **Code** — any short identifier, e.g. `bigcommerce_products_import`.
+
+![Import profile form filled](./assets/import/product-import.png)
+
+3. **Fill the filter**
 
 | Filter | Required | What it does |
 |--|--|--|
 | **Credential** | ✓ | Which BigCommerce store to pull from. Only **active** credentials appear. |
 
+![Import profile filters](./assets/import/product-imprt-filter.png)
+
+There are no other filters — the job pulls every available product from the selected BigCommerce store.
+
 Click **Save**.
 
-### 3. Run it
+4. **Run it**
 
-Open the profile and click **Start Import**. Watch progress on [Tracker](./tracker).
+Open the profile and click **Start Import**.
 
-## What gets pulled
+![Start import button](./assets/import/product-import-now.png)
 
-For every BigCommerce product the job:
+The job is queued. Watch progress in the Data Transfer Tracker.
 
-1. Creates the matching UnoPim product if it doesn't exist yet (matched by SKU).
-2. Writes attribute values into UnoPim attributes using your [Standard mapping](./standard-mapping) and [Custom mapping](./custom-mapping) — in reverse.
-3. Imports **name**, **description**, **price**, **weight**, **inventory level**, **visibility**.
-4. Links the product to imported **categories** (categories must exist in UnoPim — run [Import categories](./import-categories) first).
-5. Downloads **images** — main image and gallery — into UnoPim media.
-6. **Variants** — child variants of a BigCommerce variable product come in as configurable variants in UnoPim under their parent. The variation axes are detected from BigCommerce option names.
 
-Products already in UnoPim are matched by SKU and updated in place. No duplicates are created.
-
-## Notes
-
-- The tracker row shows a counter — *X of Y products imported*. Failed products are logged in the tracker and don't stop the run.
-- Categories the product links to but that **don't exist in UnoPim** are dropped (and logged). Run [Import categories](./import-categories) first to avoid this.
-- Custom fields come in as **attribute values** in UnoPim if their name matches a UnoPim attribute. Otherwise they're dropped — the import only writes data into attributes that already exist.
-- Image filenames are kept exactly as BigCommerce reports them — re-running the import doesn't re-download the same image twice.
-
-## Recommended import order
-
-For a clean catalog ingestion from BigCommerce into UnoPim:
-
-1. **[Import categories](./import-categories)** — so the category links resolve.
-2. **Import products** — once.
-
-Re-running either job is safe — both are idempotent.
+![Tracker import progress](./assets/import/product-import-progress.png)

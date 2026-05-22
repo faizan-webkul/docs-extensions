@@ -93,4 +93,4 @@ Without these the menu and buttons stay hidden.
 3. **Export profile shows up.** Open **Data Transfer → Export → Create Export Profile** — **CsCart Categories Export**, **CsCart Attributes Export**, and **CsCart Product Export** appear in the type dropdown.
 4. **Import profile shows up.** Open **Data Transfer → Import → Create Import Profile** — **CsCart Attributes Import**, **CsCart Categories Import**, and **CsCart Product Import** appear in the type dropdown.
 
-If any of these don't work, see [Troubleshooting](./troubleshooting).
+If any of these don't work, check your credential, queue worker, and CS-Cart configuration again.

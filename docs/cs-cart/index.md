@@ -18,6 +18,3 @@ You need:
 2. A **CS-Cart store** (4.x or higher) with admin access.
 3. A **CS-Cart API key** from *User Profile → API* on your CS-Cart admin.
 4. The **CS-Cart Connector** extension installed — see [Installation](./installation).
-
-> [!IMPORTANT]
-> For CS-Cart to download product images, your UnoPim instance **must be reachable from CS-Cart's server** over the public internet — `localhost` or private IPs won't work for the media sync.

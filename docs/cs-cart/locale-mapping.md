@@ -9,9 +9,20 @@ CS-Cart uses two-letter language codes (e.g. `en`, `fr`, `de`) while UnoPim uses
 ## Steps
 
 1. Open the credential edit page.
+
+![Credential edit page](./assets/cred-page/edit-cred.png)
+
 2. Click the **Locale Mapping** tab.
+
+![Locale Mapping tab](./assets/locales-mapping/locales-mapping-tab.png)
+
 3. For each UnoPim locale on the left, pick the matching CS-Cart `lang_code` on the right.
+
+![Locale mapping form filled](./assets/locales-mapping/cs-locale.png)
+
 4. Click **Save Mapping**.
+
+![Save mapping button](./assets/locales-mapping/save-locale.png)
 
 You'll see *Locale mapping updated successfully.*
 

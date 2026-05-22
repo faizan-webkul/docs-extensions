@@ -8,7 +8,7 @@ Sync your **BigCommerce** storefront with UnoPim. Push enriched products and cat
 - **Export to BigCommerce** — push UnoPim **categories**, **simple products**, and **configurable products** (with variants) into your store.
 - **Import from BigCommerce** — pull existing **categories**, **simple products**, and **configurable products** into UnoPim.
 - **Three mapping modes**:
-  - **Standard mapping** — wire UnoPim attributes to BigCommerce's built-in product fields.
+  - **Attribute mapping** — wire UnoPim attributes to BigCommerce product fields.
   - **Custom mapping** — map UnoPim attributes to BigCommerce **custom fields**.
   - **Other mapping** — variant axes, category mappings, and modifier configuration.
 - **Per-credential locale + currency mapping** — drive multi-storefront catalogs from a single UnoPim instance.

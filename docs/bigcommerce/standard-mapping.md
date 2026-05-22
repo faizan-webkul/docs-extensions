@@ -1,14 +1,45 @@
-# Standard mapping
+# Attribute mapping
 
-BigCommerce products have a fixed set of built-in fields — *name*, *price*, *sku*, *weight*, *description*, *meta title*, and so on. The **Standard Mapping** page tells the connector which UnoPim attribute fills each BigCommerce built-in field.
+You need to map UnoPim attributes with BigCommerce product fields before exporting products to your BigCommerce store.
 
-**Open it from:** *BigCommerce → Export Mappings → Standard Mappings*
+While exporting products from UnoPim to BigCommerce, the connector sends product information based on the attribute mapping you configure for that credential.
 
-<!-- TODO: capture screenshot — bigcommerce-standard-mapping.png — Standard Mappings page -->
+**Open it from:** *BigCommerce → Attribute Mapping*
+
+![Attribute Mapping page](./assets/mapping/attribute-mapping.png)
+
+## Attribute mapping fields
+
+You can map the following BigCommerce product fields with UnoPim attributes:
+
+- `SKU`
+- `Name`
+- `Description`
+- `Weight`
+- `Price`
+- `Cost Price`
+- `Model Price`
+- `Product Type`
+- `Meta Title`
+- `Meta Keywords`
+- `Meta Description`
+
+![BigCommerce product fields](./assets/mapping/attribute-mapping-fields.png)
+
+## Other mapping fields
+
+You can also configure the following fields under Other Mapping:
+
+- `Attributes to be used as Image`
+- `Attribute to be used as Cover Image`
+- `Image Description`
+- `Is Featured`
+- `Is Free Shipping`
+- `Brand Id`
 
 ## What you'll see
 
-The page lists every BigCommerce standard product field with three columns:
+The page lists BigCommerce product fields with three columns:
 
 | Column | What it means |
 |--|--|
@@ -18,7 +49,6 @@ The page lists every BigCommerce standard product field with three columns:
 
 The page is **per credential** — pick the credential first, then the mapping shown belongs to that store. Different stores can have different mappings.
 
----
 
 ## Required mappings
 
@@ -34,47 +64,24 @@ At minimum, map these to run a product export:
 
 The rest are optional. BigCommerce uses default values for any unmapped optional field.
 
----
 
-## Picking an attribute
 
-The dropdown only shows UnoPim attributes whose **type** matches the BigCommerce field. For example, *Price* only lets you pick numeric / price attributes; *Description* only lets you pick text / textarea attributes.
 
-> [!TIP]
-> If the attribute you want isn't in the list, check its **type** in *Catalog → Attributes* — it probably doesn't match the field's expected data type.
 
----
+## Add an additional attribute
 
-## Add an additional standard attribute
-
-Some BigCommerce stores need a few extra standard fields that aren't shown by default. Use **+ Add Additional Attribute** at the bottom of the page to expose them:
+Some BigCommerce stores need a few extra product fields that are not shown by default. Use **+ Add Additional Attribute** at the bottom of the page to expose them:
 
 1. Click **+ Add Additional Attribute**.
 2. Pick the BigCommerce field from the dropdown.
 3. Pick the matching UnoPim attribute.
 
+![Add additional attribute form](./assets/mapping/add.png)
+
 Click the trash icon next to a row to remove an additional attribute.
 
----
 
 ## Save the mapping
 
-Click **Save Mapping** at the bottom. You'll see a success message.
+Click **Save** at the top. You'll see a success message.
 
-Mapping changes are picked up by the **next** export run — exports already queued use the mapping that was in place when they were queued.
-
----
-
-## What's *not* on this page
-
-- **BigCommerce custom fields** — they live under [Custom mapping](./custom-mapping).
-- **Variant axes** (the attributes a configurable product varies on, e.g. *color* + *size*) — they live under [Other mapping](./other-mapping).
-- **Category mappings** — also on [Other mapping](./other-mapping).
-
-For a full picture of how the three mapping pages relate, the rule of thumb is:
-
-| If you're mapping… | Go to |
-|--|--|
-| A BigCommerce **standard / built-in** field | Standard mapping |
-| A BigCommerce **custom field** | [Custom mapping](./custom-mapping) |
-| A **variant axis** or **category** | [Other mapping](./other-mapping) |
