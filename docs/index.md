@@ -74,10 +74,10 @@ features:
     details: Connect Unopim with Odoo ERP for end-to-end product lifecycle.
     link: /odoo-erp/
     linkText: Read docs
-  # - title: PDF Generator
-  #   details: Custom PDF templates with dynamic fields.
-  #   link: /pdf-generator/
-  #   linkText: Read docs
+  - title: PDF Generator
+    details: Custom PDF templates with dynamic fields.
+    link: /pdf-generator/
+    linkText: Read docs
   # - title: PrestaShop
   #   details: Link PrestaShop stores with Unopim (coming soon).
   #   link: /prestashop/

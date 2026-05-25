@@ -33,7 +33,7 @@ const projects = [
   { slug: 'maker-checker-workflow', label: 'Maker Checker Workflow' },
   { slug: 'magento2', label: 'Magento 2' },
   { slug: 'odoo-erp', label: 'Odoo ERP' },
-  // { slug: 'pdf-generator', label: 'PDF Generator' },
+  { slug: 'pdf-generator', label: 'PDF Generator' },
   // { slug: 'prestashop', label: 'PrestaShop' },
   { slug: 'public-image-url', label: 'Public Image URL' },
   { slug: 'shopify', label: 'Shopify' },
