@@ -35,7 +35,7 @@ const projects = [
   { slug: 'odoo-erp', label: 'Odoo ERP' },
   // { slug: 'pdf-generator', label: 'PDF Generator' },
   // { slug: 'prestashop', label: 'PrestaShop' },
-  // { slug: 'public-image-url', label: 'Public Image URL' },
+  { slug: 'public-image-url', label: 'Public Image URL' },
   { slug: 'shopify', label: 'Shopify' },
   // { slug: 'shopware6', label: 'Shopware 6' },
   // { slug: 'starter-pack', label: 'Starter Pack' },

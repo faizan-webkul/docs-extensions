@@ -82,10 +82,10 @@ features:
   #   details: Link PrestaShop stores with Unopim (coming soon).
   #   link: /prestashop/
   #   linkText: Read docs
-  # - title: Public Image URL
-  #   details: Link product media via public URLs.
-  #   link: /public-image-url/
-  #   linkText: Read docs
+  - title: Public Image URL
+    details: Link product media via public URLs.
+    link: /public-image-url/
+    linkText: Read docs
   - title: Shopify
     details: Sync products, attributes, and inventory between Unopim and Shopify.
     link: /shopify/
