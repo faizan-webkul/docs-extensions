@@ -43,7 +43,7 @@ features:
     link: /cloudflare-r2-integration/
     linkText: Read docs
   - title: CS-Cart
-    details: Link CS-Cart stores with Unopim (coming soon).
+    details: Sync your CS-Cart store with UnoPim for seamless product import, export, and catalog enrichment.
     link: /cs-cart/
     linkText: Read docs
   - title: DAM
@@ -58,10 +58,10 @@ features:
   #   details: Connect PIM with the Icecat catalog.
   #   link: /icecat/
   #   linkText: Read docs
-  # - title: Job Scheduler
-  #   details: Automate import and export tasks.
-  #   link: /job-scheduler/
-  #   linkText: Read docs
+  - title: Job Scheduler
+    details: Automate import and export tasks.
+    link: /job-scheduler/
+    linkText: Read docs
   - title: Maker Checker Workflow
     details: Role-based product and asset approvals.
     link: /maker-checker-workflow/

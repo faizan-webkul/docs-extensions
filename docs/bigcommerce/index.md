@@ -2,6 +2,14 @@
 
 Sync your **BigCommerce** storefront with UnoPim. Push enriched products and categories out, or pull existing catalog data in to enrich it in UnoPim.
 
+<br>
+
+<div align="center">
+  <img src="./assets/intro-banner.png" alt="UnoPim Shopify Connector" width="100%" style="max-height:330px; object-fit:cover; border-radius:18px;" />
+</div>
+
+<br> 
+
 ## What you can do
 
 - **Manage multiple stores** — store any number of BigCommerce credentials and switch between them per export / import.

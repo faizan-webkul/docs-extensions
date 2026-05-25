@@ -2,6 +2,14 @@
 
 Sync your **CS-Cart** store with UnoPim. Push enriched product data out, or pull existing catalog data in to enrich it in UnoPim.
 
+<br>
+
+<div align="center">
+  <img src="./assets/intro-banner.png" alt="UnoPim Shopify Connector" width="100%" style="max-height:330px; object-fit:cover; border-radius:18px;" />
+</div>
+
+<br> 
+
 ## What you can do
 
 - **Export to CS-Cart** — push UnoPim **attributes**, **categories**, and **products** (with prices, stock, statuses, and images) into your CS-Cart store.

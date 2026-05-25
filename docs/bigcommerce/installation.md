@@ -70,7 +70,7 @@ In production use Supervisor / systemd / Horizon. Every export and import is a b
 Open **Settings → Roles**, edit the role, and tick the BigCommerce permissions you want them to have:
 
 - **Credentials** — create, edit, delete BigCommerce credentials.
-- **Attribute Mapping** — open and update the product attribute mapping.
+- **Standard Mapping** — open and update the standard attribute mapping.
 - **Custom Mapping** — open and update the BigCommerce custom-fields mapping.
 - **Other Mapping** — variant axes and category mappings.
 - **Mapping History** — view the change history.
@@ -86,7 +86,9 @@ Without these the menu and buttons stay hidden.
 ![BigCommerce menu](./assets/big-comerce.png)
 
 2. **Add a credential works.** Open **BigCommerce → Credentials → Create Credential**, fill the form, and save. If the API URL or access token is wrong, you see a clear error.
+
+
 3. **Export profile shows up.** Open **Data Transfer → Export → Create Export Profile** — *Export Categories to BigCommerce*, *Export Products to BigCommerce*, and *Export Configurable Product to BigCommerce* appear in the type dropdown.
 4. **Import profile shows up.** Open **Data Transfer → Import → Create Import Profile** — *Import Categories from BigCommerce* and *Import Products from BigCommerce* appear in the type dropdown.
 
-If any of these don't work, check your credential, queue worker, and BigCommerce configuration again.
+If any of these don't work, see [Troubleshooting](./troubleshooting).
