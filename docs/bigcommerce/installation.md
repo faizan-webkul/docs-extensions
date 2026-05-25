@@ -91,4 +91,4 @@ Without these the menu and buttons stay hidden.
 3. **Export profile shows up.** Open **Data Transfer → Export → Create Export Profile** — *Export Categories to BigCommerce*, *Export Products to BigCommerce*, and *Export Configurable Product to BigCommerce* appear in the type dropdown.
 4. **Import profile shows up.** Open **Data Transfer → Import → Create Import Profile** — *Import Categories from BigCommerce* and *Import Products from BigCommerce* appear in the type dropdown.
 
-If any of these don't work, see [Troubleshooting](./troubleshooting).
+If any of these don't work, see [Contact Support](./contact-support).
