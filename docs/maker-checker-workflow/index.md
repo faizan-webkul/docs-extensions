@@ -1,6 +1,6 @@
 # Maker Checker Workflow
 
-The **Maker Checker Workflow** extension adds a structured approval process to Unopim for both products and DAM assets. Changes made by a **Maker** are saved as a draft and must be reviewed and approved by one or more **Checkers** before going live — preventing unreviewed data from entering the published catalog.
+The **Maker Checker Workflow** extension lets users manage product and asset approvals with clear roles and visual tracking. It helps approve or reject updates easily through a dedicated section and keeps everyone informed with instant notifications. Users can set how many approvals are needed and skip certain fields to speed up updates without losing control. The side-by-side view shows original and draft data, making it easy to compare changes before final approval. All approval actions are tracked in logs, so users can see who made changes and when.
 
 ## How it works
 
@@ -22,14 +22,15 @@ Each step is tracked in a visual workflow, and all participants receive real-tim
 
 ## Key features
 
-- **Products & DAM assets** — approval workflow covers both product catalog changes and digital asset updates.
-- **Configurable approval levels** — set the minimum number of approvals required before a draft can be published.
-- **Side-by-side comparison** — checkers see original and draft values next to each other before acting.
-- **Exclude attributes** — whitelist specific attributes (e.g., price, status) to skip the approval cycle entirely.
-- **Comments** — makers and checkers can leave comments on individual attributes throughout the review.
-- **Approval history** — full log of all configuration changes, approval actions, and who performed them.
-- **Notifications** — real-time in-app alerts and email notifications on approval, rejection, publish, and comments.
-- **Permission-based access** — only users with the correct role permissions can approve, reject, or publish.
+- Approve products and assets with a role-based maker-checker system.
+- Set minimum approval levels to ensure controlled updates.
+- Track every approval step with a clear visual workflow.
+- Exclude specific product attributes from the approval process.
+- View and manage all pending approval requests in one organized place.
+- Instantly notify users of approvals, rejections, publishing, and comments.
+- Compare original and draft data side by side before final approval.
+- Keep a log of all changes in approval settings for easy tracking.
+- Add comments during review to improve communication between users.
 
 ## Roles
 
@@ -40,15 +41,3 @@ Each step is tracked in a visual workflow, and all participants receive real-tim
 
 A user can hold both roles depending on their permissions.
 
-## Requirements
-
-- Unopim v2.0.0 or higher
-- PHP 8.3+, Laravel 12.x
-- Queue worker running (for email notifications)
-
-## In this guide
-
-- [Installation](./installation)
-- [Configuration](./configuration)
-- [Maker Guide](./maker-guide)
-- [Checker Guide](./checker-guide)

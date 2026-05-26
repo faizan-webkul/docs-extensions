@@ -1,12 +1,5 @@
 # Installation
 
-## Requirements
-
-- Unopim v2.0.0 or higher
-- PHP 8.3+, Laravel 12.x
-
-## Steps
-
 ### 1. Merge the package files
 
 Unzip the extension package and merge the `packages/` folder into your Unopim project root.
