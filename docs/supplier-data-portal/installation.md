@@ -59,3 +59,5 @@ npm run build
 
 - Open `http://your-domain.com/supplier/login` — you should see the supplier login page.
 - Open the Unopim admin panel — a **Supplier** section should appear in the sidebar.
+
+![alt text](./assets/supplier.png)

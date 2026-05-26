@@ -29,8 +29,3 @@ The **Supplier Data Portal** is a Unopim extension that gives external suppliers
 - **Unopim** v2.0.0 or higher
 - PHP 8.3+, Composer 2.5+, Node.js 20 LTS+
 
-## In this guide
-
-- [Installation](./installation)
-- [Admin Guide](./admin-guide)
-- [Supplier Guide](./supplier-guide)
