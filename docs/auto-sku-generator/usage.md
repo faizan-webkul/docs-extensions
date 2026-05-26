@@ -1,52 +1,124 @@
-# Using the SKU Generator
+# Auto SKU Generator - User Guide
 
-Once [configured](./configuration), the Auto SKU Generator works transparently during the normal product creation workflow.
+## Quick Start
 
-## Simple products
+The Auto SKU Generator automatically creates unique SKUs for your products. During product creation, the SKU field is populated automatically in real-time as you fill in details, showing a live preview before you save.
 
-1. Go to **Catalog → Products → Create Product** and select the **Simple** type.
-2. Leave the **SKU** field blank.
-3. Fill in the rest of the product details — including any attribute values you mapped in the generator options (e.g., color, size).
-4. Click **Save**. The extension generates a SKU automatically before the product is stored.
+---
 
-The generated SKU appears on the product edit page and in the product listing immediately after saving.
+## Basic Workflow
 
-## Live SKU preview on the product form
+### Creating a Simple Product with Auto SKU
 
-As you fill in attribute values on the product creation form, the SKU field updates in real time to show the SKU that will be generated. This gives you a chance to review the output before committing.
+1. **Go to Catalog → Products**
 
-The preview does **not** consume a sequence number — the counter only increments when the product is actually saved.
 
-## Configurable product variants
+2. **Click "Create Product"** and select **Simple Product**
 
-When adding a new variant to a configurable product:
+![alt text](./assets/simple-product.png)
 
-1. Open a configurable product and go to the **Variants** section.
-2. Add a new variant and leave its **SKU** field blank.
-3. Save the product. Each new variant with an empty SKU receives a unique auto-generated SKU.
+3. **Fill in product details** (name, description, etc.)
+4. **The SKU is automatically generated** and displayed in the SKU field in real-time.
+5. **Click Save**.
+6. The product is saved with the auto-generated SKU.
 
-Variants that already have a SKU assigned are not touched.
+**During Creation:**
+```
+SKU field: APPAREL-Red-M-1001 (auto-filled in real-time)
+```
 
-## Manual override
+**After saving:**
+```
+SKU field: APPAREL-Red-M-1001 (saved value)
+```
 
-If you type a SKU into the SKU field yourself, the auto-generator will not overwrite it. The rule is simple: **if the field has a value when the product is saved, that value is kept as-is.**
+---
 
-This lets you auto-generate SKUs for most products while still manually assigning SKUs for special cases.
 
-## Read-only mode
+## Working with Product Variants
 
-If **Read-only SKU field** is enabled in the configuration, the SKU input on the product form is disabled — it cannot be edited. All SKUs come exclusively from the generator. This is useful when you want to enforce strict catalog consistency across all users.
+### Adding Variants to Configurable Products
 
-## Troubleshooting
+Configurable products (like a shirt available in multiple colors and sizes) are supported.
 
-**SKU field is not being auto-filled**
-- Confirm the generator is set to **Enabled** in the configuration.
-- Check that the SKU field is actually blank when you save — a space counts as a value.
+**Steps:**
 
-**Generated SKU is missing attribute parts**
-- Make sure you selected the attributes in **Generator Options** and that those attributes have values set on the product before saving.
-- Confirm the correct **Locale** is selected in the configuration so attribute option labels resolve correctly.
+1. Create a **Configurable Product**
+2. Navigate to the **Variants** section click **Add Variant**
 
-**Sequence is not incrementing as expected**
-- The sequence only increments when a product is saved with an auto-generated SKU. Manual SKUs do not advance the counter.
-- If you changed **Start Sequence**, the counter resets to the new value from that point forward.
+
+![alt text](./assets/add-variant.png)
+
+
+
+4. Select attribute values (e.g., Color: Red, Size: M)
+
+![alt text](./assets/added-variant.png)
+
+5. SKU will be auto generated for each variant
+
+
+6. Save the product
+
+![alt text](./assets/variants.png)
+
+
+**Result:**
+- Variant 1: Red, Small → `TSH-Red-Small-2000`
+- Variant 2: Red, Medium → `TSH-Red-Medium-2001`
+- Variant 3: Blue, Small → `TSH-Blue-Small-2002`
+
+Each variant gets its own unique SKU automatically.
+
+---
+
+## Manual SKU Override
+
+Need a custom SKU for a special product? You can manually enter one.
+
+**When to use:**
+- Limited edition products
+- Special promotions
+- Products imported from other systems
+- Testing products
+
+**How:**
+
+1. Open product creation form
+2. **Enter your custom SKU** (e.g., `XMAS-SPECIAL-2024`)
+3. Save the product
+4. Your custom SKU is used (auto-generator is skipped)
+5. The sequence counter continues normally for other products
+
+**Result:**
+```
+Auto-generated SKU: SKU-1001
+Your manual entry: XMAS-SPECIAL-2024
+Next auto-generated: SKU-1002 (unaffected)
+```
+
+---
+
+## Read-Only SKU Mode
+
+### What is Read-Only?
+
+When read-only mode is enabled:
+- The SKU field is **locked and cannot be edited**
+- All SKUs come from auto-generation only
+- Users cannot manually override SKUs
+
+### When to Use
+
+- Enforce strict SKU naming rules
+- Prevent accidental SKU changes
+- Ensure catalog consistency
+
+### Example
+
+With read-only enabled:
+1. Create product → SKU field is grayed out and auto-filled
+2. Verify the auto-generated SKU (which cannot be edited manually)
+3. Save product
+4. SKU field remains locked (cannot edit)
+

@@ -1,65 +1,58 @@
 # Configuration
 
-Navigate to **Admin Panel → Auto SKU Generator → Configuration** to set up your SKU generation rules.
+To set up your automatic SKU generation rules, navigate to **Admin Panel → Auto SKU Generator** in your UnoPim dashboard.
 
-## Settings reference
+![Configuration Page](./assets/auto-sku.png)
 
-### General
+---
 
-| Field | Description |
-|---|---|
-| **Enable Auto SKU Generator** | Master toggle. When off, no SKUs are auto-generated and the product form behaves normally. |
-| **Read-only SKU field** | When on, the SKU input on the product creation form is locked and cannot be edited manually. Useful when you want all SKUs to come exclusively from the generator. |
+## 1. General Settings
 
-### SKU Format
+These settings control the activation and restriction of the SKU generator.
 
-| Field | Description |
-|---|---|
-| **Prefix** | Fixed string prepended to every generated SKU (e.g., `PROD`, `WK`). Leave blank for no prefix. |
-| **Suffix** | Fixed string appended to every generated SKU (e.g., `2024`, `INT`). Leave blank for no suffix. |
-| **Separator** | Character used to join the parts of a SKU. Choose `_` (underscore) or `-` (hyphen). |
-| **Locale** | Locale used when reading translatable attribute values for SKU parts. Select the locale your attribute options are defined in. |
+* **Enable Auto SKU Generation**  
+  Toggles automatic SKU generation on or off. When enabled, new products automatically receive a generated SKU.
+* **Read-Only SKU**  
+  Locks the generated SKU field on the product creation form. Enable this to prevent users from manually modifying auto-generated SKUs. *(Only works when Auto SKU Generation is ON)*.
 
-### Sequence
+---
 
-| Field | Description |
-|---|---|
-| **Start Sequence** | The number the auto-increment counter starts from (minimum 1). Changing this resets the current counter to the new value. |
+## 2. Sequence Settings
 
-::: warning
-Changing the **Start Sequence** resets the internal counter immediately. Make sure no duplicate SKUs will result before saving.
-:::
+* **Auto Start Sequence From**  
+  The starting number for the auto-increment sequence (e.g., `1`, `1001`, or `2026001`). The system increments this number by 1 for each new product.
+  
+  > [!IMPORTANT]
+  > Changing this number resets the active counter back to this starting value.
 
-### Attribute-based Parts
+---
 
-The **Generator Options** field lets you select one or more `select` or `multiselect` product attributes whose values will be included as parts of the SKU.
+## 3. SKU Format Settings
 
-For example, selecting the `color` attribute means the chosen color option value (e.g., `RED`, `BLUE`) will be inserted between the prefix and the sequence number.
+Define the structure and format of your generated SKUs.
 
-Only `select` and `multiselect` attribute types are available here, as they have discrete option values that translate cleanly into SKU parts.
+* **Prefix**  
+  A fixed text added at the beginning of the SKU (e.g., `SKU` or `PRD`).
+* **Suffix**  
+  A fixed text added at the end of the SKU (e.g., `2026` or `NEW`).
+* **SKU Separator**  
+  The character separating each part of the SKU. Options include:
+  * **Hyphen (`-`)** → `SKU-Red-M-1001`
+  * **Underscore (`_`)** → `SKU_Red_M_1001`
 
-## Live preview
 
-Click **Preview SKU** on the configuration page to see a sample SKU generated with your current settings — without incrementing the sequence counter. Use this to verify the format before saving.
+---
 
-The generated SKU format follows:
+## 4. Auto Generator Options
 
-```
-[prefix][separator][attribute value(s)][separator][sequence][suffix]
-```
+* **Auto Generator Options**  
+  Select product attributes (e.g., **Color**, **Size**, or **Brand**) to include in the SKU structure.
+  
+  * **How it works:** Values of these attributes are automatically extracted and placed into the SKU.
+  * **Example:** With a prefix of `PRD`, attributes `Color` (Red) and `Size` (M), and sequence `101`, the resulting SKU is:
+    ```
+    PRD-Red-M-101
+    ```
 
-**Example** — Prefix: `WK`, Separator: `-`, Attribute: color (`RED`), Sequence starts at `1`:
-
-```
-WK-RED-1
-```
-
-**Example** — Prefix: `PROD`, Separator: `_`, No attributes, Sequence starts at `100`:
-
-```
-PROD_100
-```
-
-## Saving settings
-
-Click **Save Configuration** to persist your settings. The next product created with a blank SKU will use the updated rules.
+  > [!NOTE]
+  > Only attributes of type *select* or *multiselect* that have values assigned to the product are included in the SKU.

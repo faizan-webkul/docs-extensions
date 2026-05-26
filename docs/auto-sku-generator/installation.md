@@ -57,3 +57,5 @@ php artisan vendor:publish --provider="Webkul\AutoSkuGenerator\Providers\AutoSku
 ### 6. Verify
 
 Open the Unopim admin panel — an **Auto SKU Generator** item should appear in the sidebar. Navigate to it to begin configuring your SKU rules.
+
+![alt text](./assets/auto-sku.png)
