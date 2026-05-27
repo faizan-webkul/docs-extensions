@@ -6,15 +6,15 @@ hero:
   text: Documentation hub
   tagline: Guides, references, and integration docs for every Unopim extension.
   image:
-    src: /doc-extn.png
+    src: /doc-banner.png
     alt: UnoPim Doc Extension
   actions:
     - theme: brand
       text: Browse extensions
-      link: /ai-product-feed-openai/
+      link: /auto-sku-generator/
     - theme: alt
       text: GitHub
-      link: https://github.com/unopim
+      link: https://github.com/unopim/docs-extensions
     - theme: alt
       text: Webkul Store
       link: https://store.webkul.com/unopim.html
