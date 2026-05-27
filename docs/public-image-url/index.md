@@ -1,5 +1,7 @@
 # UnoPim Public Image URL
 
+Store Link: [View on Webkul Store](https://store.webkul.com/unopim-public-image-url.html)
+
 The **UnoPim Public Image URL** extension simplifies product media management by letting you import and export product media using public URLs.
 
 <br>
@@ -17,6 +19,7 @@ After import, the media is available in UnoPim with a public URL under your doma
 The same flexibility applies during export. If product media was added through a public URL or uploaded from a local folder, the exported file will include the media using its public URL path.
 
 This helps businesses speed up catalog updates, reduce manual work, and keep product media organised and ready for use.
+
 
 ## Features
 
@@ -40,3 +43,11 @@ You can also explore these UnoPim modules:
 - **UnoPim DAM (Digital Asset Management)** to organise and manage digital assets such as images, videos, and documents in one place.
 
 > **Note:** This module also supports returning the product media type `image` attribute value as a public URL through the API.
+
+## Requirements
+
+| Requirement | Details |
+|---|---|
+| **Version** | 1.2.0 |
+| **Compatible with UnoPim** | v2.0.0 |
+

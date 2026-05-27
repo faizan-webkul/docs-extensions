@@ -16,7 +16,7 @@ Pull CS-Cart **features** into UnoPim as attributes, so you can enrich them in U
 
 ![Create import profile form](./assets/import/create-import.png)
 
-2. **Type** — pick **CsCart Attributes Import**, **Code** — any short identifier, e.g. `cscart_attributes_import`.
+2. **Type** - pick **CsCart Attributes Import**, **Code** - any short identifier, e.g. `cscart_attributes_import`.
 
 ![Import profile form filled](./assets/import/attribute-iport.png)
 

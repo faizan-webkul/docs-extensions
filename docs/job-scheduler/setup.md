@@ -1,12 +1,12 @@
 # Creating a Scheduled Job
 
-Once the Job Scheduler is installed, you'll find the **Job Scheduler** option in the left sidebar of your UnoPim dashboard. Click on it to expand the menu — you'll see three sub-sections:
+Once the Job Scheduler is installed, you'll find the **Job Scheduler** option in the left sidebar of your UnoPim dashboard. Click on it to expand the menu - you'll see three sub-sections:
 
 ![Job Scheduler Menu](./assets/setup/job-sch.png)
 
-- **Scheduled Jobs** — view and manage all your scheduled jobs
-- **Execution History** — see a record of past job runs
-- **Execution Logs** — view detailed logs for each execution
+- **Scheduled Jobs** - view and manage all your scheduled jobs
+- **Execution History** - see a record of past job runs
+- **Execution Logs** - view detailed logs for each execution
 
 Go to the **Scheduled Jobs** section and click **Create Scheduled Job** to set up a new automated job.
 
@@ -19,9 +19,9 @@ Fill in the following fields to define the job:
 | Field | What to enter |
 |---|---|
 | **Name** | A descriptive name for the job (e.g., `Daily Category Export`) |
-| **Code** | Auto-generated from the name — e.g., `daily_category_export`. You can change it if needed. |
+| **Code** | Auto-generated from the name - e.g., `daily_category_export`. You can change it if needed. |
 | **Type** | Select whether this is an **Import** or **Export** job |
-| **Entity Type** | Choose the data type the job will work with — e.g., **Products** or **Categories** |
+| **Entity Type** | Choose the data type the job will work with - e.g., **Products** or **Categories** |
 | **Job Instance** | Select the existing import or export job you want to schedule |
 | **Status** | Set to **Active** to enable the job, or disable it to pause scheduling without deleting it |
 
@@ -39,7 +39,7 @@ These optional settings control how the job behaves when it runs:
 |---|---|
 | **Retry Attempts** | How many times the job should automatically retry if it fails |
 | **Retry Delay** | How long to wait (in seconds) before retrying after a failure |
-| **Chunk Size** | How many records to process in each batch — useful for large datasets |
+| **Chunk Size** | How many records to process in each batch - useful for large datasets |
 | **Timeout** | Maximum time (in seconds) the job is allowed to run before it's stopped |
 
 ![Execution Settings](./assets/setup/execution-settings.png)
@@ -73,13 +73,13 @@ This field fills in automatically based on the preset you select. If you choose 
 
 ### Timezone
 
-Select the timezone the schedule should follow. This ensures the job runs at the correct local time — especially important if your server and your team are in different time zones.
+Select the timezone the schedule should follow. This ensures the job runs at the correct local time - especially important if your server and your team are in different time zones.
 
 ### Schedule Type
 
 | Type | What it means |
 |---|---|
-| **Recurring** | The job runs repeatedly on the defined schedule — every day, every hour, etc. |
+| **Recurring** | The job runs repeatedly on the defined schedule - every day, every hour, etc. |
 | **One-time** | The job runs once at the scheduled time and does not repeat |
 
 ![Schedule Settings](./assets/setup/schedule.png)

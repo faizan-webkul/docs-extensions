@@ -4,9 +4,9 @@ Follow the steps below to install the UnoPim Azure Blob Integration. Make sure y
 
 ---
 
-## Step 1 — Extract the Extension
+## Step 1 - Extract the Extension
 
-Unzip the extension package you downloaded. Inside, you'll find a `packages` folder — merge it into the **root directory** of your UnoPim project. Your project structure should look like this:
+Unzip the extension package you downloaded. Inside, you'll find a `packages` folder - merge it into the **root directory** of your UnoPim project. Your project structure should look like this:
 
 ```
 /your-unopim-project
@@ -17,7 +17,7 @@ Unzip the extension package you downloaded. Inside, you'll find a `packages` fol
 
 ---
 
-## Step 2 — Register the Service Provider
+## Step 2 - Register the Service Provider
 
 Open the `bootstrap/providers.php` file and add the following:
 
@@ -30,9 +30,12 @@ return [
 ];
 ```
 
+> [!NOTE]
+> This registers the `AzureBlobServiceProvider` in the Laravel service container, allowing it to load routes, configurations, and services required by the Azure Blob integration.
+
 ---
 
-## Step 3 — Update Composer Autoload
+## Step 3 - Update Composer Autoload
 
 Open `composer.json` and add the following line under the `autoload > psr-4` section:
 
@@ -40,26 +43,26 @@ Open `composer.json` and add the following line under the `autoload > psr-4` sec
 "Webkul\\AzureBlob\\": "packages/Webkul/AzureBlob/src"
 ```
 
+> [!TIP]
+> This configures PSR-4 autoloading so PHP can automatically resolve classes under the `Webkul\AzureBlob` namespace from the package directory.
+
 ---
 
-## Step 4 — Run the Setup Commands
+## Step 4 - Run the Setup Commands
 
-Run the following commands one by one from your project root directory. Wait for each one to complete before running the next.
+Run the following commands one by one from your project root directory:
 
-**Refresh the Composer autoloader**
 ```bash
 composer dump-autoload
-```
-
-**Install the Azure Blob package**
-```bash
 php artisan azure-blob-package:install
-```
-
-**Clear the application cache**
-```bash
 php artisan optimize:clear
 ```
+
+| Command | Purpose |
+|---|---|
+| `composer dump-autoload` | Regenerates Composer's autoloader mapping to include the newly added namespace. |
+| `php artisan azure-blob-package:install` | Installs the Azure Blob SDK dependencies, runs database migrations, and publishes package assets. |
+| `php artisan optimize:clear` | Clears all cached files (bootstrap, configuration, routes, and views) to load the new changes. |
 
 ---
 

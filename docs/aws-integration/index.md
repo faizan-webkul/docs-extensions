@@ -1,6 +1,8 @@
 # UnoPim AWS S3 Integration
 
-The **UnoPim AWS Integration** connects your UnoPim instance with **Amazon S3** — one of the world's most reliable cloud storage services — to store, manage, and serve your product images and PDFs securely in the cloud.
+Store Link: [View on Webkul Store](https://store.webkul.com/unopim-aws-integration.html)
+
+The **UnoPim AWS Integration** connects your UnoPim instance with **Amazon S3** - one of the world's most reliable cloud storage services - to store, manage, and serve your product images and PDFs securely in the cloud.
 
 Instead of storing media files on your local server, everything gets uploaded to Amazon S3 automatically. This means your assets are always available, load quickly for users, and can scale without any storage limitations as your catalog grows.
 
@@ -16,22 +18,22 @@ Instead of storing media files on your local server, everything gets uploaded to
 
 Once connected, the integration handles your media in two ways:
 
-- **New files** — any image or PDF you add to UnoPim is automatically synced to Amazon S3 without any manual action.
+- **New files** - any image or PDF you add to UnoPim is automatically synced to Amazon S3 without any manual action.
 
-The integration also includes a **cache refresh mechanism** — it refreshes cached images at regular intervals so your storefront and product pages always display the latest version of any updated asset. If no custom refresh time is set, a sensible default kicks in automatically to keep everything current.
+The integration also includes a **cache refresh mechanism** - it refreshes cached images at regular intervals so your storefront and product pages always display the latest version of any updated asset. If no custom refresh time is set, a sensible default kicks in automatically to keep everything current.
 
 
 ## Key Features
 
 ### Cloud Storage
 - Connect UnoPim with **Amazon S3** to store images and PDFs safely and reliably in the cloud.
-- Enjoy **unlimited, scalable storage** — no capacity limits, no need to manage server disk space.
+- Enjoy **unlimited, scalable storage** - no capacity limits, no need to manage server disk space.
 
 ### Easy Setup
 - Get connected quickly by entering just four details: **Access Key ID**, **Secret Key**, **Region**, and **Bucket Name**.
 
 ### Automatic Media Sync
-- All new images and PDFs added to UnoPim are **automatically uploaded to S3** — no manual uploads needed.
+- All new images and PDFs added to UnoPim are **automatically uploaded to S3** - no manual uploads needed.
 
 ### Cache Management
 - Set a custom **environment refresh time** to control how often cached images are updated.
@@ -41,18 +43,14 @@ The integration also includes a **cache refresh mechanism** — it refreshes cac
 ### DAM Integration *(requires UnoPim DAM)*
 If you have the **UnoPim Digital Asset Management (DAM)** extension installed, the AWS integration extends its capabilities further:
 
-- **DAM asset import for products** — when importing products, the system automatically resolves DAM asset file paths to their correct asset IDs, so media links stay accurate without manual correction.
-- **DAM asset import for categories** — the same automatic resolution applies to category fields of type `asset` during import.
-- **Category media in export archives** — when you export a ZIP file, it now includes all files referenced by category fields of type `image`, `file`, and `asset`, alongside your product media — giving you a complete export package every time.
-
+- **DAM asset import for products** - when importing products, the system automatically resolves DAM asset file paths to their correct asset IDs, so media links stay accurate without manual correction.
+- **DAM asset import for categories** - the same automatic resolution applies to category fields of type `asset` during import.
+- **Category media in export archives** - when you export a ZIP file, it now includes all files referenced by category fields of type `image`, `file`, and `asset`, alongside your product media - giving you a complete export package every time.
 
 ## Requirements
 
-| Requirement | Detail |
+| Requirement | Details |
 |---|---|
-| **Amazon AWS Account** | Required to create an S3 bucket and generate API keys |
-| **S3 Bucket** | A dedicated bucket for storing UnoPim media |
-| **Access Key ID & Secret Key** | Generated from your AWS IAM user settings |
-| **UnoPim DAM** *(optional)* | Required only for DAM-specific asset import and export features |
-
-
+| **UnoPim** | v2.0.0 or higher |
+| **PHP** | v8.2 or higher |
+| **AWS S3 Bucket** | Active bucket with API credentials (Access Key ID, Secret Key, Region, and Bucket Name) |

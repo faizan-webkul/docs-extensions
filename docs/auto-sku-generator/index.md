@@ -1,6 +1,18 @@
 # Auto SKU Generator
 
+Store Link: [View on Webkul Store](https://store.webkul.com/unopim-auto-sku-generator.html)
+
+---
+
 The **Auto SKU Generator** is a Unopim extension that automatically generates unique SKUs for products during creation. It eliminates manual SKU entry, enforces a consistent catalog naming format, and supports flexible rules built from prefixes, suffixes, attribute values, and an auto-incrementing sequence.
+
+<br>
+
+<div align="center">
+  <img src="./assets/intro-banner.png" alt="UnoPim Auto SKU Generator" width="100%" style="max-height:330px; object-fit:cover; border-radius:18px;" />
+</div>
+
+<br> 
 
 ## How it works
 
@@ -29,3 +41,8 @@ SKUs entered manually by a user are **never overwritten** — auto-generation on
 - **Variant support** — automatically generates SKUs for new configurable product variants when their SKU field is empty.
 - **Manual override protection** — user-defined SKUs are preserved and never touched.
 - **Read-only mode** — optionally lock the SKU field on the product form so it cannot be edited manually.
+
+## Requirements
+
+- Unopim v2.0.0 or higher
+- PHP 8.2+

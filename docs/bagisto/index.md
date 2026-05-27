@@ -1,5 +1,7 @@
 # UnoPim Bagisto Connector
 
+Store Link: [View on Webkul Store](https://store.webkul.com/unopim-bagisto-connector.html)
+
 ## Overview
 
 The UnoPim Bagisto Connector seamlessly integrates your UnoPim product information management system with your Bagisto e-commerce store. This powerful extension enables you to efficiently manage and synchronize product data, categories, attributes, and media files all from a centralized location.
@@ -9,6 +11,7 @@ The UnoPim Bagisto Connector seamlessly integrates your UnoPim product informati
 </div>
 
 With this connector, you can keep your Bagisto store up-to-date with the latest product information from UnoPim without switching between multiple platforms.
+
 
 ## What You Can Do
 
@@ -26,13 +29,20 @@ All your product images and videos are automatically synchronized from UnoPim to
 
 ## Key Features
 
-✓ Export UnoPim categories directly to Bagisto collections  
-✓ Seamlessly export UnoPim attributes into Bagisto  
-✓ Export UnoPim families into Bagisto  
-✓ Export both simple and configurable products  
-✓ Utilize bulk API for rapid large-scale product exports  
-✓ Synchronize all product images and videos  
-✓ Full AWS S3 compatibility for secure media storage and retrieval  
+- Export UnoPim categories directly to Bagisto collections  
+- Seamlessly export UnoPim attributes into Bagisto  
+- Export UnoPim families into Bagisto  
+- Export both simple and configurable products  
+- Utilize bulk API for rapid large-scale product exports  
+- Synchronize all product images and videos  
+- Full AWS S3 compatibility for secure media storage and retrieval  
+
+
+## Requirements
+
+- **UnoPim**: 2.0.x
+- **PHP**: 8.3+
+- **Bagisto with REST API installed**: 2.x.x
 
 ## Getting Started
 

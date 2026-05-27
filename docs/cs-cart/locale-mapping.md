@@ -4,7 +4,7 @@ CS-Cart uses two-letter language codes (e.g. `en`, `fr`, `de`) while UnoPim uses
 
 **Open it from:** *CS-Cart → Credentials → (edit a credential) → Locale Mapping*
 
-<!-- TODO: capture screenshot — cscart-locale-mapping.png — Locale Mapping tab -->
+<!-- TODO: capture screenshot - cscart-locale-mapping.png - Locale Mapping tab -->
 
 ## Steps
 
@@ -41,6 +41,6 @@ For example:
 
 ## Notes
 
-- **Every UnoPim locale you intend to export or import must be mapped.** Unmapped locales are skipped silently — the export still runs, but those translations never reach CS-Cart.
+- **Every UnoPim locale you intend to export or import must be mapped.** Unmapped locales are skipped silently - the export still runs, but those translations never reach CS-Cart.
 - Export and import job validators will refuse to start if a required locale isn't mapped. You'll see *Locale mapping is missing for the selected locale.*
-- If a CS-Cart language is missing from the dropdown, install it in CS-Cart first (*Administration → Languages*), then reopen the mapping tab — the new language appears.
+- If a CS-Cart language is missing from the dropdown, install it in CS-Cart first (*Administration → Languages*), then reopen the mapping tab - the new language appears.

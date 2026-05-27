@@ -22,6 +22,9 @@ return [
 ];
 ```
 
+> [!NOTE]
+> This registers `WooCommerceServiceProvider` in Laravel so the connector can bootstrap its services, routes, and package configuration during application startup.
+
 
 ## Step 3  Update Composer Autoload
 
@@ -65,6 +68,17 @@ php artisan optimize:clear
 php artisan queue:restart
 ```
 > The queue worker must be restarted whenever application code changes. This command sends a safe restart signal  it waits for the current job to finish before restarting, so no jobs are lost.
+
+| Command | Purpose |
+|---|---|
+| `composer dump-autoload` | Regenerates Composer's autoloader mapping to include the newly added namespace. |
+| `php artisan woocommerce-package:install` | Runs package setup tasks such as migrations and publish operations. |
+| `cd packages/Webkul/WooCommerce` | Changes into the WooCommerce package directory before running npm commands. |
+| `npm install` | Installs frontend build dependencies for the WooCommerce package. |
+| `npm run build` | Builds the package frontend assets for production use. |
+| `cd ../../..` | Returns to the UnoPim project root after building package assets. |
+| `php artisan optimize:clear` | Clears all cached files (bootstrap, configuration, routes, and views) to load the new changes. |
+| `php artisan queue:restart` | Sends a safe restart signal to queue workers so they reload the latest code. |
 
 
 ## Verify the Installation

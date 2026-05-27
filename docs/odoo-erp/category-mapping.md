@@ -1,91 +1,53 @@
-# UnoPim - Category Fields Mappings
+# Category Mapping
 
-Manual Mapping of Category Fields Between UnoPim and Odoo
-
+Map UnoPim category fields to Odoo category fields before exporting categories.
 
 ## Overview
 
-Here, you can create a mapping manually for categories. This allows you to connect UnoPim category fields with Odoo category fields for seamless data transfer when exporting categories.
+When you export categories to Odoo, UnoPim uses your category mapping to decide which category data is sent to each Odoo field. Configure these mappings once so every export uses the same field alignment.
 
 ![Category Mapping](./assets/attribute-mapping/category-mapping.png)
 
-## Understanding Category Field Mappings
+## How the mapping screen works
 
-Category field mappings define how your UnoPim category information is transferred to Odoo. The mapping interface consists of three main columns:
+The category mapping screen has three columns:
 
-### Odoo Fields
+| Column | Purpose |
+| --- | --- |
+| **Odoo Fields** | Destination fields in Odoo where UnoPim category data is written during export. |
+| **UnoPim Category Fields** | Source fields in UnoPim. Choose the category field that should populate each Odoo field. |
+| **Fixed Value** | Optional default value applied to an Odoo field for every exported category, regardless of UnoPim data. |
 
-The Odoo category fields available for mapping. These are the destination fields where your UnoPim data will be exported to.
+Use **Fixed Value** when all exported categories should share the same value for a specific Odoo field.
 
-### UnoPim Category Fields
+## Default mappable category fields
 
-The UnoPim category attributes that you want to map to Odoo fields. Select the corresponding UnoPim field for each Odoo field.
+The following Odoo category fields can be mapped to UnoPim category fields out of the box:
 
-### Fixed Value
+| Odoo field | Type | Notes |
+| --- | --- | --- |
+| **Name** | Text | Required category name that identifies the category in Odoo. |
+| **Description** | Textarea | Detailed category description. |
+| **Image** | Image | Category image or logo. |
 
-Optional default values that can be assigned to Odoo fields. If set, all exported categories will have this value for the respective field, regardless of the UnoPim data.
+## Configure category mapping
 
+### Step 1 — Open category mapping
 
-## Default Category Field Mappings
+In the Odoo connector settings, open the **Category Mapping** section.
 
-### Name 
+### Step 2 — Map Odoo fields to UnoPim category fields
 
-**Odoo Field:** Name 
+For each Odoo category field you want to export:
 
-**Type:** Text-type category field
+1. Select the **Odoo field** (or confirm it is already listed).
+2. Choose the matching **UnoPim category field** from the dropdown.
+3. Optionally enter a **Fixed Value** if every exported category should use the same value for that field.
 
-**Description:** The category name field is a required text attribute that identifies the category in Odoo.
+### Step 3 — Add more mappings
 
-**Mapping:** Map this to your UnoPim category name field
+Repeat Step 2 for any additional category fields you need in Odoo.
 
-### Description 
+### Step 4 — Save configuration
 
-**Odoo Field:** Description 
-
-**Type:** Textarea-type category field
-
-**Description:** The description field is a textarea-type category field used to provide detailed information about the category.
-
-**Mapping:** Map this to your UnoPim category description field
-
-### Image 
-
-**Odoo Field:** Image 
-
-**Type:** Image-type category field
-
-**Description:** The image field is an image-type category field used to store category images or logos.
-
-**Mapping:** Map this to your UnoPim category image field
-
-
-## How to Create Manual Mappings
-
-### Step 1: Select Odoo Field
-
-Choose an Odoo category field from the "Odoo Fields" column that you want to map.
-
-### Step 2: Select UnoPim Category Field
-
-Click on the dropdown under "UnoPim Category Fields" and select the corresponding UnoPim category field to map to the selected Odoo field.
-
-### Step 3: Set Fixed Value (Optional)
-
-If you want to assign a default value to an Odoo field, enter it in the "Fixed Value" column. This value will be used for all exported categories.
-
-### Step 4: Add More Mappings
-
-Repeat steps 1-3 for additional category fields you want to map.
-
-### Step 5: Save Configuration
-
-Once you have configured all your category field mappings, click the **Save** button to save your configuration and apply the changes.
-
-
-## Best Practices
-
-- Ensure all required Odoo fields are mapped
-- Use fixed values only when you want consistent data across all categories
-- Test your mappings before exporting large amounts of data
-- Review your mappings periodically to ensure they align with your business requirements
-
+Click **Save** to store your mapping. New category exports will use this configuration.

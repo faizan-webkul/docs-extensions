@@ -32,6 +32,13 @@ php bin/magento setup:di:compile
 php bin/magento setup:static-content:deploy
 ```
 
+| Command | Purpose |
+|---|---|
+| `php bin/magento module:enable Webkul_ProductImportQueue` | Enables the required Magento module. |
+| `php bin/magento setup:upgrade` | Applies module database/schema updates. |
+| `php bin/magento setup:di:compile` | Rebuilds Magento dependency injection classes. |
+| `php bin/magento setup:static-content:deploy` | Publishes static frontend/admin assets. |
+
 ### Step 3: Flush Cache and Reindex
 
 After enabling the module, run the following commands:
@@ -40,6 +47,11 @@ After enabling the module, run the following commands:
 php bin/magento cache:clean
 php bin/magento indexer:reindex
 ```
+
+| Command | Purpose |
+|---|---|
+| `php bin/magento cache:clean` | Clears Magento cache entries after module setup. |
+| `php bin/magento indexer:reindex` | Rebuilds Magento indexes for updated data visibility. |
 
 ## Install the UnoPim Magento 2 Connector
 
@@ -58,6 +70,9 @@ Then, inside the returned `providers` array, add:
 ```php
 Magento2ServiceProvider::class,
 ```
+
+> [!NOTE]
+> This registers `Magento2ServiceProvider` in Laravel so the connector can bootstrap its services, routes, and package configuration during application startup.
 
 ## Update Composer Autoload
 
@@ -88,3 +103,9 @@ php artisan magento-package:install
 ```bash
 php artisan optimize:clear
 ```
+
+| Command | Purpose |
+|---|---|
+| `composer dump-autoload` | Regenerates Composer's autoloader mapping to include the newly added namespace. |
+| `php artisan magento-package:install` | Runs the connector installer to apply required setup tasks. |
+| `php artisan optimize:clear` | Clears all cached files (bootstrap, configuration, routes, and views) to load the new changes. |

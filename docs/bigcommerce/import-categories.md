@@ -16,7 +16,7 @@ Pull your BigCommerce category tree into UnoPim, keeping the parent / child hier
 
 ![Create import profile form](./assets/import/create-import.png)
 
-2. **Type** — pick **Import Categories from BigCommerce**, **Code** — any short identifier, e.g. `bigcommerce_categories_import`.
+2. **Type** - pick **Import Categories from BigCommerce**, **Code** - any short identifier, e.g. `bigcommerce_categories_import`.
 
 ![Import profile form filled](./assets/import/category-import.png)
 
@@ -28,7 +28,7 @@ Pull your BigCommerce category tree into UnoPim, keeping the parent / child hier
 
 ![Import profile filters](./assets/import/category-import-filter.png)
 
-There are no other filters — the job pulls every available category from the selected BigCommerce store.
+There are no other filters - the job pulls every available category from the selected BigCommerce store.
 
 Click **Save**.
 

@@ -3,14 +3,14 @@
 Once the connector is installed, the next step is to connect your Odoo store to UnoPim. This is done by entering your Odoo server details inside the UnoPim dashboard.
 
 
-## Step 1 — Open the Credentials Page
+## Step 1 - Open the Credentials Page
 
 Log in to your UnoPim dashboard and navigate to **Odoo → Credentials → Create Credentials**.
 
 ![Create Credentials](./assets/odoo-credentials/create-cred.png)
 
 
-## Step 2 — Enter Your Odoo Server Details
+## Step 2 - Enter Your Odoo Server Details
 
 Fill in the following fields to establish the connection:
 
@@ -26,7 +26,7 @@ Fill in the following fields to establish the connection:
 > **Note:** Each set of credentials must have a unique database name. If you enter a database name that's already in use, UnoPim will show an error and the credentials won't be saved.
 
 
-## Step 3 — Configure Export Settings
+## Step 3 - Configure Export Settings
 
 After entering the server details, you'll need to define how products should be exported. Fill in the following settings:
 
@@ -58,7 +58,7 @@ Toggle this **on** if you want your UnoPim categories to be exported directly as
 
 ![Export as eCommerce Categories](./assets/odoo-credentials/store-configuration.png)
 
-## Step 4 — Save Your Credentials
+## Step 4 - Save Your Credentials
 
 Once all fields are filled in, click **Save**. Your Odoo store is now connected to UnoPim and ready for export and import jobs.
 

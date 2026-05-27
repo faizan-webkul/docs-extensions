@@ -1,12 +1,12 @@
 # Custom mapping
 
-BigCommerce **custom fields** are key/value pairs you can attach to any product to store extra information (warranty period, technical specs, fit guides — anything that doesn't fit a standard field). The **Custom Mapping** page tells the connector which UnoPim attributes get pushed as BigCommerce custom fields.
+BigCommerce **custom fields** are key/value pairs you can attach to any product to store extra information (warranty period, technical specs, fit guides - anything that doesn't fit a standard field). The **Custom Mapping** page tells the connector which UnoPim attributes get pushed as BigCommerce custom fields.
 
 **Open it from:** *BigCommerce → Attribute Mappings → Custom Mappings*
 
 ![Custom Mappings page](./assets/mapping/custom.png)
 
-<!-- TODO: capture screenshot — bigcommerce-custom-mapping.png — Custom Mappings page -->
+<!-- TODO: capture screenshot - bigcommerce-custom-mapping.png - Custom Mappings page -->
 
 ## What you'll see
 
@@ -17,17 +17,17 @@ Each row has two columns:
 | Column | What it means |
 |--|--|
 | **UnoPim Attribute** | Pick the attribute whose value will become a custom field on the BigCommerce product. |
-| **Custom Field Name** | The name the field will appear under on the BigCommerce product. Defaults to the attribute code — change it to whatever label you want shown in BigCommerce. |
+| **Custom Field Name** | The name the field will appear under on the BigCommerce product. Defaults to the attribute code - change it to whatever label you want shown in BigCommerce. |
 
-Mappings are saved **per credential** — different stores can have different sets of custom fields.
+Mappings are saved **per credential** - different stores can have different sets of custom fields.
 
 ---
 
 ## Add a custom field
 
 1. Click **+ Add Custom Mapping**.
-2. **UnoPim Attribute** — pick the source attribute.
-3. **Custom Field Name** — type the label the field should have in BigCommerce.
+2. **UnoPim Attribute** - pick the source attribute.
+3. **Custom Field Name** - type the label the field should have in BigCommerce.
 4. Click **Save**.
 
 ![Add custom mapping form](./assets/mapping/custom-field.png)
@@ -61,4 +61,4 @@ Click the trash icon next to a row.
 
 - BigCommerce allows up to **200 custom fields per product** on most plans.
 - Each custom field has a **name limit of 250 characters** and a **value limit of 65,535 characters**.
-- The export trims values to BigCommerce's limits — you'll see a warning entry in the tracker for any row that got trimmed.
+- The export trims values to BigCommerce's limits - you'll see a warning entry in the tracker for any row that got trimmed.

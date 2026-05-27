@@ -10,9 +10,9 @@ This is where you store the API connection for your BigCommerce store. Add at le
 
 Each row in the list shows one credential:
 
-- **Label** — the name you gave it.
-- **API URL** — the BigCommerce API endpoint.
-- **Status** — whether the credential is active.
+- **Label** - the name you gave it.
+- **API URL** - the BigCommerce API endpoint.
+- **Status** - whether the credential is active.
 
 ![BigCommerce credentials list](./assets/cred/cred-page.png)
 
@@ -38,15 +38,15 @@ Before adding a credential in UnoPim, create an **API account** in BigCommerce:
 ![Pick BigCommerce API account type](./assets/cred/api-fields.png)
 
 5. Give it a name (e.g. *UnoPim Connector*) and set scopes:
-   - **Products** — Modify (for export) or Read-only (import only).
-   - **Information & Settings** — Read-only / Modify.
+   - **Products** - Modify (for export) or Read-only (import only).
+   - **Information & Settings** - Read-only / Modify.
 
    ![BigCommerce API account scopes](./assets/cred/information-setting.png)
 
    ![BigCommerce API account products scope](./assets/cred/products.png)
 
 
-6. Save the account. BigCommerce shows the **Client ID**, **Client Secret**, **Access Token**, and **API path** **once** — copy them now.
+6. Save the account. BigCommerce shows the **Client ID**, **Client Secret**, **Access Token**, and **API path** **once** - copy them now.
 
 ![BigCommerce API account credentials](./assets/cred/api-cred.png)
 
@@ -58,7 +58,7 @@ You'll paste these into UnoPim next.
 
 In UnoPim, click **+ Create Credential** in the top-right corner.
 
-<!-- TODO: capture screenshot — bigcommerce-add-credential.png — Create BigCommerce credential form -->
+<!-- TODO: capture screenshot - bigcommerce-add-credential.png - Create BigCommerce credential form -->
 
 Fill in:
 
@@ -85,15 +85,15 @@ After saving, you land on the edit page where you can adjust the credential sett
 
 Click the pencil icon on any row.
 
-<!-- TODO: capture screenshot — bigcommerce-credential-edit.png — Edit BigCommerce credential page -->
+<!-- TODO: capture screenshot - bigcommerce-credential-edit.png - Edit BigCommerce credential page -->
 
 You can:
 
 - Change any of the values you set when creating.
-- Leave **Access Token** and **Client Secret** blank (or as `**********`) to keep the current values — type a new value to replace.
+- Leave **Access Token** and **Client Secret** blank (or as `**********`) to keep the current values - type a new value to replace.
 - Set the **Default Currency** and **Default Locale** that BigCommerce expects when a product doesn't carry a locale-specific value.
-- Configure the **Locale Mapping** — match each UnoPim locale to a BigCommerce locale.
-- Configure the **Currency Mapping** — match each UnoPim currency to a BigCommerce currency.
+- Configure the **Locale Mapping** - match each UnoPim locale to a BigCommerce locale.
+- Configure the **Currency Mapping** - match each UnoPim currency to a BigCommerce currency.
 
 ![Edit credential form](./assets/cred/edit-cred.png)
 

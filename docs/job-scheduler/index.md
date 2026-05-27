@@ -1,6 +1,8 @@
 # UnoPim Job Scheduler
 
-The **UnoPim Job Scheduler** lets you automate your import and export jobs so they run on their own — no need to manually trigger them every time. Set a schedule once and the system handles the rest.
+Store Link: [View on Webkul Store](https://store.webkul.com/unopim-job-scheduler.html)
+
+The **UnoPim Job Scheduler** lets you automate your import and export jobs so they run on their own - no need to manually trigger them every time. Set a schedule once and the system handles the rest.
 
 <br>
 
@@ -10,13 +12,14 @@ The **UnoPim Job Scheduler** lets you automate your import and export jobs so th
 
 <br> 
 
+
 Whether you need products exported to your store every morning, categories synced weekly, or a custom task running at a specific time, the Job Scheduler gives you full control from a simple admin panel inside UnoPim.
 
 ---
 
 ## What Can It Do?
 
-Instead of logging in and running export or import jobs by hand, you define when they should run — daily, weekly, monthly, or at a custom time using a cron expression — and the scheduler fires them automatically at the right moment.
+Instead of logging in and running export or import jobs by hand, you define when they should run - daily, weekly, monthly, or at a custom time using a cron expression - and the scheduler fires them automatically at the right moment.
 
 ---
 
@@ -33,7 +36,7 @@ Instead of logging in and running export or import jobs by hand, you define when
 | **Notifications** | Get notified when a job completes successfully or fails |
 | **Role-Based Access** | Control who can create or manage scheduled jobs using UnoPim's permission system |
 | **Multi-Job Management** | Manage multiple scheduled jobs from one centralised place |
-| **Simple Interface** | Easy to set up and use — no technical expertise required for common schedules |
+| **Simple Interface** | Easy to set up and use - no technical expertise required for common schedules |
 
 ---
 
@@ -45,6 +48,18 @@ The Job Scheduler is ideal when:
 - You want to **import updated data from an external platform** on a regular schedule without manual effort.
 - Your team handles **large catalogs** and running jobs manually is time-consuming.
 - You want **peace of mind** that syncs are happening in the background even when no one is logged in.
+
+---
+
+
+## Requirements
+
+| Requirement | Version |
+|---|---|
+| **PHP** | ^8.3 |
+| **UnoPim** | 2.0.1 or newer |
+| **webkul/data-transfer** | Bundled with UnoPim core |
+| **Queue Driver** | Any (database, redis, sqs, etc.) |
 
 ---
 

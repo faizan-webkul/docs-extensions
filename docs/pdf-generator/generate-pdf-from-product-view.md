@@ -29,21 +29,3 @@ User can see a pop-up of templates that has been created and then select the des
 Once on this page, you'll find the section dedicated to PDF Settings, where the generated PDF is ready for download.
 
 ![downloaded pdf](./assets/generate-pdf/downloadedpdf.webp)
-
-## Product Detail Page
-
-The product detail page provides a complete view of the selected product. It is the main place where product information is managed for admin use and prepared for customer-facing display.
-
-## Template Selection
-
-Users can view the list of templates that have already been created and select the desired template from the template dropdown before downloading the PDF.
-
-## PDF Download
-
-Once the correct template is selected, the PDF settings section allows the generated PDF to be downloaded directly from the product detail page.
-
-## Benefits
-
-- Uses live product data
-- Saves time during document creation
-- Makes it easy to share product-ready PDFs with customers or teams

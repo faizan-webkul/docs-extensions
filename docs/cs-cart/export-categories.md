@@ -16,7 +16,7 @@ Push your UnoPim category tree to CS-Cart, keeping the parent / child hierarchy 
 
 ![Create export profile form](./assets/export/create_export.png)
 
-2. **Type** — pick **CsCart Categories Export**, **Code** — any short identifier, e.g. `cscart_categories`.
+2. **Type** - pick **CsCart Categories Export**, **Code** - any short identifier, e.g. `cscart_categories`.
 
 ![Export profile form filled](./assets/export/category-export.png)
 

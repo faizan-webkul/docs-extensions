@@ -17,7 +17,7 @@ Push your UnoPim category tree to BigCommerce, keeping the parent / child hierar
 
 ![Create export profile form](./assets/export/create_export.png)
 
-2. **Type** — pick **Export Categories to BigCommerce** , **Code** — any short identifier, e.g. `bigcommerce_categories`.
+2. **Type** - pick **Export Categories to BigCommerce** , **Code** - any short identifier, e.g. `bigcommerce_categories`.
 
 ![Export profile form filled](./assets/export/category-export.png)
 
@@ -30,7 +30,7 @@ Push your UnoPim category tree to BigCommerce, keeping the parent / child hierar
 
 ![Export profile filters](./assets/export/category-filter.png)
 
-There are no other filters — the job pushes every UnoPim category visible to the user.
+There are no other filters - the job pushes every UnoPim category visible to the user.
 
 Click **Save**.
 

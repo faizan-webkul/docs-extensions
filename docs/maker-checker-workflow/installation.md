@@ -17,6 +17,9 @@ return [
 ];
 ```
 
+> [!NOTE]
+> This registers `MakerCheckerServiceProvider` in Laravel so the module can bootstrap its services, workflow bindings, and package configuration during application startup.
+
 ### 3. Update Composer autoload
 
 In `composer.json`, add under `autoload.psr-4`:
@@ -37,12 +40,25 @@ php artisan vendor:publish --provider="Webkul\MakerChecker\Providers\MakerChecke
 php artisan db:seed --class="Webkul\MakerChecker\Database\Seeders\MakerCheckerStagesSeeder"
 ```
 
+Command purpose:
+
+- `composer dump-autoload`: Regenerates Composer's autoloader mapping to include the newly added namespace.
+- `php artisan optimize:clear`: Clears all cached files (bootstrap, configuration, routes, and views) to load the new changes.
+- `php artisan migrate`: Runs pending database migrations required by the package.
+- `php artisan vendor:publish --provider="Webkul\MakerChecker\Providers\MakerCheckerServiceProvider"`: Publishes Maker Checker package resources and configuration.
+- `php artisan db:seed --class="Webkul\MakerChecker\Database\Seeders\MakerCheckerStagesSeeder"`: Seeds default Maker Checker workflow stages into the database.
+
 ### 5. Build front-end assets
 
 ```bash
 npm install
 npm run build
 ```
+
+| Command | Purpose |
+|---|---|
+| `npm install` | Installs frontend dependencies required by the Maker Checker package UI. |
+| `npm run build` | Builds Maker Checker frontend assets for production/admin usage. |
 
 ### 6. Start the queue worker
 
@@ -51,6 +67,10 @@ Email notifications are dispatched as queued jobs. Keep a worker running:
 ```bash
 php artisan queue:work
 ```
+
+| Command | Purpose |
+|---|---|
+| `php artisan queue:work` | Starts a queue worker to process Maker Checker background jobs (including notifications). |
 
 ### 7. Configure email notifications
 

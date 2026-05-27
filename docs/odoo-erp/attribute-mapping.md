@@ -1,84 +1,71 @@
-# UnoPim - Attribute Mapping
+# Attribute Mapping
 
-Product Attribute Mapping Between UnoPim and Odoo
+Map UnoPim product attributes to Odoo product fields before exporting products.
 
 ## Overview
 
-When products are exported to Odoo, you can decide which product information should be included in the product database. First, you need to do the mapping of Odoo product fields with UnoPim attributes.
+When you export products to Odoo, UnoPim uses your attribute mapping to decide which product data is sent to each Odoo field. Configure these mappings once so every export uses the same field alignment.
 
 ![Attribute Mapping](./assets/attribute-mapping/attribute-mapping.png)
 
+## How the mapping screen works
 
-## Attribute Mapping
+The attribute mapping screen has three columns:
 
-### Fixed Value
+| Column | Purpose |
+| --- | --- |
+| **Odoo Fields** | Destination fields in Odoo where UnoPim data is written during export. |
+| **UnoPim Attributes** | Source attributes in UnoPim. Choose the attribute that should populate each Odoo field. |
+| **Fixed Value** | Optional default value applied to an Odoo field for every exported product, regardless of UnoPim data. |
 
-In case you want to set any default value for a product field, you can enter it in the Fixed Value. So that all the exported products will have the same product field value.
+Use **Fixed Value** when all exported products should share the same value for a specific Odoo field (for example, a default route or tax setting).
 
+## Default mappable product fields
 
-## Default Mappable Product Fields
+The following Odoo product fields can be mapped to UnoPim attributes out of the box:
 
-The following product fields can be mapped between UnoPim and Odoo by default:
+| Odoo field | Type | Notes |
+| --- | --- | --- |
+| **Internal Reference** | Text | Unique, required identifier for the product. |
+| **Barcode** | Text | Optional unique barcode. |
+| **Name** | Text | Required product name. |
+| **Weight** | Number | Product weight. |
+| **Volume** | Number | Product volume. |
+| **Description for Internal** | Textarea | Required internal description. |
+| **Description for Customers / Quotations** | Textarea | Optional customer or quotation description. |
+| **Ecommerce Description** | Textarea | Optional e-commerce description. |
+| **Description for Vendors** | Textarea | Optional vendor description. |
+| **Description for Delivery Orders** | Text | Optional delivery order notes. |
+| **Description for Receptions** | Text | Optional reception notes. |
+| **Description for Internal Transfers / Pickings** | Text | Optional internal transfer or picking notes. |
+| **Cost** | Price | Required cost price. |
+| **Sale Price** | Price | Required retail or sale price. |
+| **Can be Sold** | Boolean | Required flag for sellable products. |
+| **Routes** | Multi-select | Stock movement routes for the product. |
+| **Taxes** | Multi-select | Customer or sales taxes applied to the product. |
+| **Purchase Taxes** | Multi-select | Supplier or purchase taxes applied to the product. |
+| **Product Type** | Selection | Defines the product category or type in Odoo. |
+| **Can be Purchased** | Boolean | Required flag for purchasable products. |
+| **Images** | Images | One or more product images. |
 
-### Internal Reference 
-The internal reference field is a unique and required text attribute.
+## Configure attribute mapping
 
-### Barcode 
-The product barcode field is a unique and optional text attribute.
+### Step 1 - Open attribute mapping
 
-### Name 
-The product name field is a required text attribute.
+In the Odoo connector settings, open the **Attribute Mapping** section.
 
-### Weight 
-The product weight field is a numeric attribute representing weight.
+### Step 2 - Map Odoo fields to UnoPim attributes
 
-### Volume 
-The product volume field is a numeric attribute representing volume.
+For each Odoo field you want to export:
 
-### Description for Internal 
-The internal description field is a required textarea attribute.
+1. Select the **Odoo field** (or confirm it is already listed).
+2. Choose the matching **UnoPim attribute** from the dropdown.
+3. Optionally enter a **Fixed Value** if every exported product should use the same value for that field.
 
-### Description for Customers / Quotations
-The customer/quotation description field is an optional textarea attribute.
+### Step 3 - Add more mappings
 
-### Ecommerce Description 
-The e-commerce product description field is an optional textarea attribute.
+Repeat Step 2 for all required and optional fields you need in Odoo.
 
-### Description for Vendors 
-The vendor description field is an optional textarea attribute.
+### Step 4 - Save configuration
 
-### Description for Delivery Orders 
-The delivery order notes field is an optional text attribute.
-
-### Description for Receptions 
-The reception notes field is an optional text attribute.
-
-### Description for Internal Transfers / Pickings 
-The internal transfer/picking notes field is an optional text attribute.
-
-### Cost 
-The cost price field is a required price attribute.
-
-### Sale Price 
-The retail price field is a required price attribute.
-
-### Can be Sold 
-The available for sale field is a required boolean attribute.
-
-### Routes 
-The stock routes field defines the movement of stock. The applicable routes field is a multiple selection attribute.
-
-### Taxes 
-The applicable taxes field is a multiple selection attribute.
-
-### Purchase Taxes 
-The supplier taxes field is a multiple selection attribute.
-
-### Product Type 
-The product category field defines the type of product.
-
-### Can be Purchased 
-The available for purchase field is a required boolean attribute.
-
-### Images 
-The product images field allows multiple image uploads.
+Click **Save** to store your mapping. New product exports will use this configuration.

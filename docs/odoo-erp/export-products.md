@@ -106,7 +106,7 @@ Check out the Odoo e-commerce storefront view. A customer can see:
 
 For exporting products that have variations, you need to run the Odoo product export job.
 
-In product management systems like UnoPim, many products are not just single items—they come in multiple variations such as:
+In product management systems like UnoPim, many products are not just single items-they come in multiple variations such as:
 - Size
 - Color
 - Material

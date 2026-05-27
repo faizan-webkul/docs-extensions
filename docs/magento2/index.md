@@ -1,10 +1,12 @@
 # Magento 2 Connector
 
+Store Link: [View on Webkul Store](https://store.webkul.com/unopim-magento2-connector.html)
+
 The UnoPim Magento 2 Connector allows businesses to integrate one or more Magento 2 stores with the UnoPim PIM platform.
 
 
 <div align="center">
-  <img src="./assets/intro-banner.png" alt="UnoPim Shopify Connector" width="100%" style="max-height:330px; object-fit:cover; border-radius:8px;" />
+  <img src="./assets/intro-banner.png" alt="UnoPim Shopify Connector" width="100%" style="max-height:330px; object-fit:cover; border-radius:15px;" />
 </div>
 
 
@@ -27,13 +29,7 @@ Whether you manage a single Magento 2 storefront or multiple stores, the UnoPim 
 It keeps product data consistent across platforms and supports important product details such as title, description, SKU, price, quantity, weight, SEO data, images, videos, category assignments, attribute options, and association data.
 
 
-## Basic Requirements
 
-- Magento 2.3.x up to the latest supported Magento 2 version.
-- Make sure the Magento reindex cron job is running properly.
-- UnoPim version `v0.2.x or Later`.
-- Node.js and Yarn packages must be installed.
-- Your server must meet the UnoPim system requirements before installation.
 
 ## Features of UnoPim Magento 2 Connector
 
@@ -77,3 +73,12 @@ It keeps product data consistent across platforms and supports important product
 - Automatically enables required locales and currencies during the import process.
 
 You can also explore the UnoPim Maker Checker Workflow extension for product and asset approvals, as well as the UnoPim Public Image URL extension for simplified media handling.
+
+
+## Basic Requirements
+
+- Magento 2.3.x up to the latest supported Magento 2 version.
+- Make sure the Magento reindex cron job is running properly.
+- UnoPim version `v0.2.x or Later`.
+- Node.js and Yarn packages must be installed.
+- Your server must meet the UnoPim system requirements before installation.

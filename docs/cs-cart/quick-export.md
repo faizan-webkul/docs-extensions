@@ -1,12 +1,12 @@
 # Quick export
 
-Push a few selected products to CS-Cart straight from the product list — no need to create an export profile.
+Push a few selected products to CS-Cart straight from the product list - no need to create an export profile.
 
 > **Before you start.** Add a [CS-Cart credential](./credentials) and tick **Default for quick Export** on it in *Credential Settings*. The connector uses **the default credential** for every quick export. [Map locales](./locale-mapping) and [Map attributes](./attribute-mapping) on that credential too.
 
 **Open it from:** *Catalog → Products*
 
-<!-- TODO: capture screenshot — cscart-quick-export-action.png — Quick export action in the products list -->
+<!-- TODO: capture screenshot - cscart-quick-export-action.png - Quick export action in the products list -->
 
 ## Steps
 
@@ -43,6 +43,6 @@ If you need finer control (specific locales, a non-default credential, a differe
 
 ## If the action doesn't appear
 
-1. No credential is marked **Default for quick Export** — open *CS-Cart → Credentials → edit → Credential Settings* and turn it on.
+1. No credential is marked **Default for quick Export** - open *CS-Cart → Credentials → edit → Credential Settings* and turn it on.
 2. Your role doesn't have **Export to CS-Cart** permission. See [Installation → Give your role permission](./installation#_6-give-your-role-permission).
-3. Refresh the page — the action list is loaded once when the page opens.
+3. Refresh the page - the action list is loaded once when the page opens.

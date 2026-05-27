@@ -1,8 +1,10 @@
 # UnoPim Odoo Connector
 
-The **UnoPim Odoo Connector** bridges your **Odoo store** and **UnoPim** — letting you manage your entire product catalog from one place and push it directly to Odoo whenever you're ready.
+Store Link: [View on Webkul Store](https://store.webkul.com/unopim-odoo-connector.html)
 
-Instead of updating products in two systems separately, you handle everything in UnoPim — categories, products, attributes, images, and variations — and the connector takes care of getting it all into Odoo accurately and efficiently.
+The **UnoPim Odoo Connector** bridges your **Odoo store** and **UnoPim** - letting you manage your entire product catalog from one place and push it directly to Odoo whenever you're ready.
+
+Instead of updating products in two systems separately, you handle everything in UnoPim - categories, products, attributes, images, and variations - and the connector takes care of getting it all into Odoo accurately and efficiently.
 
 <br>
 
@@ -17,8 +19,8 @@ Instead of updating products in two systems separately, you handle everything in
 
 The connector works in two directions:
 
-- **Export** — push your product data from UnoPim into Odoo
-- **Import** — pull existing data from Odoo back into UnoPim
+- **Export** - push your product data from UnoPim into Odoo
+- **Import** - pull existing data from Odoo back into UnoPim
 
 
 ## Features
@@ -27,12 +29,12 @@ The connector works in two directions:
 
 Everything you build in UnoPim can be exported to Odoo:
 
-- **Categories** — export all categories, or only the ones linked to a specific channel. Categories can also be exported directly to **Odoo eCommerce categories**.
-- **Attributes and Options** — export product attributes along with all their selectable options.
-- **Product Models and Products** — export your full product catalog, including product models and individual products.
-- **Product Images** — export multiple images per product.
-- **Targeted Export** — need to export just one product? Use its **SKU**, **internal reference**, or **barcode** to export a specific item without running a full catalog export.
-- **Update Existing Products** — re-run an export job at any time to push the latest changes to products already in Odoo.
+- **Categories** - export all categories, or only the ones linked to a specific channel. Categories can also be exported directly to **Odoo eCommerce categories**.
+- **Attributes and Options** - export product attributes along with all their selectable options.
+- **Product Models and Products** - export your full product catalog, including product models and individual products.
+- **Product Images** - export multiple images per product.
+- **Targeted Export** - need to export just one product? Use its **SKU**, **internal reference**, or **barcode** to export a specific item without running a full catalog export.
+- **Update Existing Products** - re-run an export job at any time to push the latest changes to products already in Odoo.
 
 ### Mapping & Configuration
 
@@ -40,7 +42,7 @@ Before exporting, you can set up mappings to make sure data lands in the right f
 
 - Map UnoPim categories to their corresponding Odoo categories.
 - Map both standard and custom attributes to Odoo fields.
-- Set **default values** for attribute mappings — useful when a field is required in Odoo but not always filled in UnoPim.
+- Set **default values** for attribute mappings - useful when a field is required in Odoo but not always filled in UnoPim.
 - Map additional standard attributes as needed.
 
 ### Import
@@ -65,7 +67,7 @@ When running a product export, you can filter exactly what gets exported using:
 | **Media** | Choose whether to include or exclude product images |
 
 
-## Compatibility
+## Requirements
 
 | Requirement | Version |
 |---|---|

@@ -1,14 +1,16 @@
 # UnoPim Azure Integration
 
+Store Link: [View on Webkul Store](https://store.webkul.com/unopim-azure-integration.html)
+
 ## What Is the UnoPim Azure Integration?
 
-The **UnoPim Azure Integration** connects your UnoPim product catalog with **Microsoft Azure Blob Storage** — Microsoft's cloud-based storage service designed to handle large volumes of media like images, videos, and documents.
+The **UnoPim Azure Integration** connects your UnoPim product catalog with **Microsoft Azure Blob Storage** - Microsoft's cloud-based storage service designed to handle large volumes of media like images, videos, and documents.
 <br>
 <div align="center">
   <img src="./assets/overview/intro-banner.png" alt="UnoPim Shopify Connector" width="100%" style="max-height:330px; object-fit:cover; border-radius:8px;" />
 </div>
 <br>
-Instead of storing your product images and PDFs on your local server, this integration lets you move everything to the cloud — keeping your assets secure, accessible, and easy to manage no matter how large your catalog grows.
+Instead of storing your product images and PDFs on your local server, this integration lets you move everything to the cloud - keeping your assets secure, accessible, and easy to manage no matter how large your catalog grows.
 
 
 
@@ -17,7 +19,7 @@ Instead of storing your product images and PDFs on your local server, this integ
 - Upload product images and PDFs **directly to Azure Blob Storage** from UnoPim.
 - **Migrate existing local media files** to Azure Blob Storage in one go.
 - Optionally **remove local copies** of files after a successful migration to free up server space.
-- **View Azure Blob URLs** directly on the product page — no need to download assets locally to access them.
+- **View Azure Blob URLs** directly on the product page - no need to download assets locally to access them.
 - **Export product data** with public image URLs included, in CSV, XLS, and XLSX formats.
 
 
@@ -43,6 +45,6 @@ Before you begin, make sure the following are in place:
 |---|---|
 | **UnoPim** | Installed and running on your system |
 | **Microsoft Azure Account** | An active Azure account with Blob Storage enabled |
-| **Azure Storage Credentials** | Your Azure **Storage Account Name** and **Access Key** — available from your Azure portal |
+| **Azure Storage Credentials** | Your Azure **Storage Account Name** and **Access Key** - available from your Azure portal |
 
 

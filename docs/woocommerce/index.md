@@ -1,5 +1,7 @@
 # UnoPim WooCommerce Connector
 
+Store Link: [View on Webkul Store](https://store.webkul.com/unopim-woocommerce-connector.html)
+
 The **UnoPim WooCommerce Connector** links your **WooCommerce store** with **UnoPim**  a powerful Product Information Management (PIM) system  so you can manage all your product data from one place and keep both platforms in sync automatically.
 
 <br>
@@ -37,6 +39,14 @@ The connector works in **both directions**:
 ### Sync & Credentials
 - **Auto Sync**  product creates, updates, and deletes in UnoPim are automatically pushed to WooCommerce.
 - **Multiple credentials**  connect more than one WooCommerce store to the same UnoPim instance.
+
+## Requirements
+
+| Requirement | Version |
+|---|---|
+| **UnoPim** | 2.0.0 |
+| **PHP** | 8.3 or higher |
+| **Laravel** | 12.x |
 
 
 

@@ -1,6 +1,6 @@
 # Export products
 
-Push UnoPim products — with attribute values, prices, stock, statuses, and images — to CS-Cart.
+Push UnoPim products - with attribute values, prices, stock, statuses, and images - to CS-Cart.
 
 > **Before you start.** Add a [CS-Cart credential](./credentials), [map locales](./locale-mapping), [map attributes](./attribute-mapping), and run [Export attributes](./export-attributes) and [Export categories](./export-categories) at least once so CS-Cart has the features and categories the products reference.
 
@@ -16,7 +16,7 @@ Push UnoPim products — with attribute values, prices, stock, statuses, and ima
 
 ![Create export profile form](./assets/export/create_export.png)
 
-2. **Type** — pick **CsCart Product Export**, **Code** — any short identifier, e.g. `cscart_products`.
+2. **Type** - pick **CsCart Product Export**, **Code** - any short identifier, e.g. `cscart_products`.
 
 ![Export profile form filled](./assets/export/product-export.png)
 
@@ -27,10 +27,10 @@ Push UnoPim products — with attribute values, prices, stock, statuses, and ima
 | **Credential** | ✓ | Which CS-Cart store to export to. |
 | **Store** | ✓ | The target CS-Cart storefront. |
 | **Channel** | ✓ | UnoPim channel whose product values are exported. |
-| **Locale** | ✓ | One or more UnoPim locales — must all be mapped. |
+| **Locale** | ✓ | One or more UnoPim locales - must all be mapped. |
 | **Currency** | ✓ | Which UnoPim currency the price is read from. |
-| **Product SKU** | — | Optional. Pick specific SKUs to export. Leave empty to export everything in the channel. |
-| **With media** | — | When on, product images are pushed to CS-Cart too. |
+| **Product SKU** | - | Optional. Pick specific SKUs to export. Leave empty to export everything in the channel. |
+| **With media** | - | When on, product images are pushed to CS-Cart too. |
 
 ![Export profile filters](./assets/export/product-filter.png)
 

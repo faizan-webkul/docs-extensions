@@ -1,10 +1,10 @@
 # Creating Products with Azure Media
 
-Once your Azure integration is set up and enabled, any media you attach to a product — images or PDFs — will automatically be uploaded to Azure Blob Storage. Here's how to create a product and attach media to it.
+Once your Azure integration is set up and enabled, any media you attach to a product - images or PDFs - will automatically be uploaded to Azure Blob Storage. Here's how to create a product and attach media to it.
 
 ---
 
-## Step 1 — Create a New Product
+## Step 1 - Create a New Product
 
 Go to **Catalog → Products** and click the **Create Product** button.
 
@@ -15,7 +15,7 @@ Fill in the following fields:
 | Field | What to enter |
 |---|---|
 | **Product Type** | Select **Simple** for a standard product, or **Configurable** for a product with variants |
-| **Family** | A family named `Default` is already available — select it or choose another if you've created custom families |
+| **Family** | A family named `Default` is already available - select it or choose another if you've created custom families |
 | **SKU** | Enter a unique identifier for the product |
 
 > **Note:** The SKU must be unique across all products. No two products can share the same SKU.
@@ -26,7 +26,7 @@ Click **Save Product** to continue.
 
 ---
 
-## Step 2 — Fill in the Product Details
+## Step 2 - Fill in the Product Details
 
 After saving, you'll be taken to the product edit page. Complete the following fields:
 
@@ -44,7 +44,7 @@ After saving, you'll be taken to the product edit page. Complete the following f
 
 ---
 
-## Step 3 — Add an Image
+## Step 3 - Add an Image
 
 In the **Image attribute field**, click to select and upload a product image. Once uploaded, the image will be stored directly in your Azure Blob container and the product page will display its Azure Blob URL.
 
@@ -52,7 +52,7 @@ In the **Image attribute field**, click to select and upload a product image. On
 
 ---
 
-## Step 4 — Add a PDF File
+## Step 4 - Add a PDF File
 
 In the **File attribute field**, select a PDF file to attach to the product.
 
@@ -68,9 +68,9 @@ If you haven't already created a file attribute, follow these steps:
 
 1. Go to **Catalog → Attributes** and click **Create Attribute**.
 2. Fill in the following:
-   - **Code** — enter a unique code for the attribute (e.g., `product_pdf`)
-   - **Type** — select **File** from the dropdown
-   - **Label / Name** — enter a display name for the attribute (e.g., `Product PDF`)
+   - **Code** - enter a unique code for the attribute (e.g., `product_pdf`)
+   - **Type** - select **File** from the dropdown
+   - **Label / Name** - enter a display name for the attribute (e.g., `Product PDF`)
 3. Click **Save Attribute**.
 
 ![Save Product Button](./assets/verify/img-7.webp)
@@ -82,14 +82,14 @@ Once created, this attribute will appear on the product edit page under the file
 
 ---
 
-## Step 5 — Save the Product
+## Step 5 - Save the Product
 
 Once all fields are filled in and your media is attached, click **Save Product** at the top of the page.
 
 ![Create Attribute Form](./assets/verify/img-6.webp)
 
 
-After saving, both the image and the PDF file will show an **Azure Blob Storage URL** — confirming they have been successfully uploaded to Azure and are being served from the cloud.
+After saving, both the image and the PDF file will show an **Azure Blob Storage URL** - confirming they have been successfully uploaded to Azure and are being served from the cloud.
 
 ![Azure Blob URLs](./assets/verify/133-img-8.webp)
 

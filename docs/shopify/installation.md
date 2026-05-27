@@ -16,6 +16,10 @@ Open your terminal, navigate to your UnoPim project root, and run:
 composer require unopim/shopify-connector
 ```
 
+| Command | Purpose |
+|---|---|
+| `composer require unopim/shopify-connector` | Downloads and installs the Shopify connector package and updates Composer dependencies. |
+
 Wait for Composer to finish downloading and installing the package.
 
 **Step 2 — Run the installer and clear the cache**
@@ -26,6 +30,11 @@ Once the package is installed, run these two commands one after the other:
 php artisan shopify-package:install
 php artisan optimize:clear
 ```
+
+| Command | Purpose |
+|---|---|
+| `php artisan shopify-package:install` | Runs the Shopify connector installer and required setup steps. |
+| `php artisan optimize:clear` | Clears all cached files (bootstrap, configuration, routes, and views) to load the new changes. |
 
 That's it — the connector is installed and ready to configure.
 
@@ -51,6 +60,9 @@ Open the `config/app.php` file and add the following line inside the `providers`
 Webkul\Shopify\Providers\ShopifyServiceProvider::class,
 ```
 
+> [!NOTE]
+> This registers `ShopifyServiceProvider` in Laravel so the connector can bootstrap its services, routes, and package configuration during application startup.
+
 **Step 3 — Update Composer autoload**
 
 Open `composer.json` and add the following line under the `autoload > psr-4` section:
@@ -68,6 +80,12 @@ composer dump-autoload
 php artisan shopify-package:install
 php artisan optimize:clear
 ```
+
+| Command | Purpose |
+|---|---|
+| `composer dump-autoload` | Regenerates Composer's autoloader mapping to include the newly added namespace. |
+| `php artisan shopify-package:install` | Runs the Shopify connector installer and required setup steps. |
+| `php artisan optimize:clear` | Clears all cached files (bootstrap, configuration, routes, and views) to load the new changes. |
 
 ---
 

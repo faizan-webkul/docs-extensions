@@ -1,6 +1,6 @@
 # Import products
 
-Pull CS-Cart products into UnoPim so you can enrich them — better descriptions, more locales, richer attributes — and push them back out later.
+Pull CS-Cart products into UnoPim so you can enrich them - better descriptions, more locales, richer attributes - and push them back out later.
 
 > **Before you start.** Add a [CS-Cart credential](./credentials), [map locales](./locale-mapping), [map attributes](./attribute-mapping), and ideally run [Import attributes](./import-attributes) and [Import categories](./import-categories) first so the products land with all their features and category links intact.
 
@@ -16,7 +16,7 @@ Pull CS-Cart products into UnoPim so you can enrich them — better descriptions
 
 ![Create import profile form](./assets/import/create-import.png)
 
-2. **Type** — pick **CsCart Product Import**, **Code** — any short identifier, e.g. `cscart_products_import`.
+2. **Type** - pick **CsCart Product Import**, **Code** - any short identifier, e.g. `cscart_products_import`.
 
 ![Import profile form filled](./assets/import/product-import.png)
 
@@ -27,8 +27,8 @@ Pull CS-Cart products into UnoPim so you can enrich them — better descriptions
 | **Credential** | ✓ | Which CS-Cart store to pull from. |
 | **Store** | ✓ | The source CS-Cart storefront. |
 | **Channel** | ✓ | UnoPim channel the products will belong to. |
-| **Locale** | ✓ | One or more UnoPim locales — must all be mapped. |
-| **With media** | — | When on, downloads product images from CS-Cart into UnoPim. |
+| **Locale** | ✓ | One or more UnoPim locales - must all be mapped. |
+| **With media** | - | When on, downloads product images from CS-Cart into UnoPim. |
 
 ![Import profile filters](./assets/import/products-settings.png)
 

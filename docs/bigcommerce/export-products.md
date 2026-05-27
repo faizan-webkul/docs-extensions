@@ -1,6 +1,6 @@
 # Export products
 
-Push **simple products** from UnoPim to BigCommerce — with attribute values, prices, stock, statuses, custom fields, and images.
+Push **simple products** from UnoPim to BigCommerce - with attribute values, prices, stock, statuses, custom fields, and images.
 
 For configurable products with variants, use [Export configurable products](./export-product-models).
 
@@ -18,7 +18,7 @@ For configurable products with variants, use [Export configurable products](./ex
 
 ![Create export profile form](./assets/export/create_export.png)
 
-2. **Type** — pick **Export Products to BigCommerce**, **Code** — any short identifier, e.g. `bigcommerce_products`.
+2. **Type** - pick **Export Products to BigCommerce**, **Code** - any short identifier, e.g. `bigcommerce_products`.
 
 ![Export profile form filled](./assets/export/simple-product-export.png)
 
@@ -30,7 +30,7 @@ For configurable products with variants, use [Export configurable products](./ex
 
 ![Export profile filters](./assets/export/product-fileter.png)
 
-There are no other filters — the job pushes every eligible simple product visible to the user.
+There are no other filters - the job pushes every eligible simple product visible to the user.
 
 Click **Save**.
 

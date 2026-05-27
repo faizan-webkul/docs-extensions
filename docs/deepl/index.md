@@ -1,6 +1,13 @@
 # DeepL Translation
 
 Translate your product content into other languages with one click.
+<br>
+
+<div align="center">
+  <img src="./images/intro-banner.png" alt="UnoPim DeepL Translation" width="100%" style="max-height:330px; object-fit:cover; border-radius:18px;" />
+</div>
+
+<br> 
 
 ## What you can do
 
@@ -9,6 +16,14 @@ Translate your product content into other languages with one click.
 - Translate **lots of products at once** from the products list.
 - Have new products **translated automatically** after import or save.
 - Ask the **AI agent** to translate a product for you.
+
+## Requirements
+
+| Requirement | Details |
+|---|---|
+| **UnoPim** | 2.0.0 or higher |
+| **PHP** | 8.2 or higher |
+| **DeepL API** | Active DeepL API key (Free or Pro) |  
 
 ## Before you start
 

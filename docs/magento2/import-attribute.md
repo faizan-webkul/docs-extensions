@@ -2,10 +2,10 @@
 
 The Magento 2 connector provides several import jobs for bringing attribute-related data from Magento 2 into UnoPim:
 
-- **Magento Attribute Import** — imports product attributes from Magento into UnoPim.
-- **Magento Attribute Set Import** — imports Magento attribute sets into UnoPim as attribute families.
-- **Magento Attribute Group Import** — imports attribute groups from Magento attribute sets into UnoPim.
-- **Magento Attribute Mapping Import** — imports the attribute mapping configuration from Magento into UnoPim.
+- **Magento Attribute Import** - imports product attributes from Magento into UnoPim.
+- **Magento Attribute Set Import** - imports Magento attribute sets into UnoPim as attribute families.
+- **Magento Attribute Group Import** - imports attribute groups from Magento attribute sets into UnoPim.
+- **Magento Attribute Mapping Import** - imports the attribute mapping configuration from Magento into UnoPim.
 
 These jobs help you avoid manually re-creating your entire Magento attribute structure inside UnoPim.
 
@@ -40,10 +40,10 @@ Enter a unique code and a recognizable name, then save.
 
 ### What Gets Imported
 
-- **Attribute code** — unique identifier.
-- **Attribute type** — mapped to the closest UnoPim attribute type.
-- **Attribute labels** — localized labels from the selected store view.
-- **Attribute options** — all available options for select and multiselect attributes.
+- **Attribute code** - unique identifier.
+- **Attribute type** - mapped to the closest UnoPim attribute type.
+- **Attribute labels** - localized labels from the selected store view.
+- **Attribute options** - all available options for select and multiselect attributes.
 
 ### Attribute Type Mapping
 
@@ -81,9 +81,9 @@ Select **Magento Attribute Set Import** as the import type when creating the job
 
 ### What Gets Imported
 
-- **Attribute family name** — created in UnoPim from the Magento attribute set name.
-- **Attribute groups** — each group inside the Magento attribute set is created as a group in the UnoPim family.
-- **Attribute assignments** — attributes are assigned to their correct groups inside the family.
+- **Attribute family name** - created in UnoPim from the Magento attribute set name.
+- **Attribute groups** - each group inside the Magento attribute set is created as a group in the UnoPim family.
+- **Attribute assignments** - attributes are assigned to their correct groups inside the family.
 - If no matching attribute group is found for an attribute, it is automatically placed in an **Others** group.
 
 ---
@@ -109,8 +109,8 @@ Select **Magento Attribute Group Import** as the import type when creating the j
 
 ### What Gets Imported
 
-- **Group name** — the name of each attribute group.
-- **Group assignments** — which attributes belong to each group.
+- **Group name** - the name of each attribute group.
+- **Group assignments** - which attributes belong to each group.
 
 ---
 

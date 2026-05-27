@@ -10,13 +10,13 @@ This is where you store the connection details for your CS-Cart store. Add at le
 
 ## The credentials page
 
-<!-- TODO: capture screenshot — cscart-credentials-list.png — CS-Cart Credentials list grid -->
+<!-- TODO: capture screenshot - cscart-credentials-list.png - CS-Cart Credentials list grid -->
 
 Each row in the list shows one credential:
 
-- **Name** — the label you gave it.
-- **Shop URL** — the CS-Cart store URL.
-- **Active** — whether the credential is on or off.
+- **Name** - the label you gave it.
+- **Shop URL** - the CS-Cart store URL.
+- **Active** - whether the credential is on or off.
 
 ![CS-Cart credentials list](./assets/cred-page/cred-page.png)
 
@@ -28,7 +28,7 @@ You can search by name, sort columns, or click **Filter** to narrow the list. Th
 
 Click **+ Create Credential** in the top-right corner.
 
-<!-- TODO: capture screenshot — cscart-add-credential.png — Create CS-Cart credential form -->
+<!-- TODO: capture screenshot - cscart-add-credential.png - Create CS-Cart credential form -->
 
 Fill in:
 
@@ -53,15 +53,15 @@ After saving, you land on the edit page where you can map locales and attributes
 
 Click the pencil icon on any row.
 
-<!-- TODO: capture screenshot — cscart-credential-edit.png — Edit CS-Cart credential page with tabs -->
+<!-- TODO: capture screenshot - cscart-credential-edit.png - Edit CS-Cart credential page with tabs -->
 
 The edit page has four tabs at the top:
 
 | Tab | What it does |
 |--|--|
 | **Credential Settings** | Edit name / URL / API key, switch the credential on or off, set it as the default for quick export. |
-| **Locale Mapping** | Map every UnoPim locale to a CS-Cart `lang_code` — see [Map locales](./locale-mapping). |
-| **Attribute Mapping** | Map UnoPim attributes to CS-Cart product fields — see [Map attributes](./attribute-mapping). |
+| **Locale Mapping** | Map every UnoPim locale to a CS-Cart `lang_code` - see [Map locales](./locale-mapping). |
+| **Attribute Mapping** | Map UnoPim attributes to CS-Cart product fields - see [Map attributes](./attribute-mapping). |
 | **History** | Every change made to this credential is logged here. |
 
 ![Credential edit page tabs](./assets/cred-page/edit-cred.png)
@@ -89,6 +89,6 @@ Click the trash icon on a row and confirm. Or tick several rows and use **Select
 
 ## See change history
 
-The **History** tab on the edit page lists every change made to this credential — name edits, URL changes, active flips, locale and attribute mapping changes. Your API key itself is never shown there.
+The **History** tab on the edit page lists every change made to this credential - name edits, URL changes, active flips, locale and attribute mapping changes. Your API key itself is never shown there.
 
 ![Credential history tab](./assets/cred-page/history.png)

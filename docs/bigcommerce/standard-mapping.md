@@ -47,7 +47,7 @@ The page lists BigCommerce product fields with three columns:
 | **UnoPim Attribute** | Pick the UnoPim attribute whose value populates this field. |
 | **Supported Types** | The UnoPim attribute types the field accepts (e.g. *Text* only, or *Text / Textarea*). The dropdown filters to those types. |
 
-The page is **per credential** — pick the credential first, then the mapping shown belongs to that store. Different stores can have different mappings.
+The page is **per credential** - pick the credential first, then the mapping shown belongs to that store. Different stores can have different mappings.
 
 
 ## Required mappings
@@ -60,7 +60,7 @@ At minimum, map these to run a product export:
 | **SKU** | `sku` |
 | **Price** | `price` |
 | **Weight** | `weight` (or fixed value `0`) |
-| **Type** | `physical` or `digital` — usually a fixed value attribute. |
+| **Type** | `physical` or `digital` - usually a fixed value attribute. |
 
 The rest are optional. BigCommerce uses default values for any unmapped optional field.
 

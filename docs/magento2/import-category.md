@@ -2,8 +2,8 @@
 
 The Magento 2 connector provides two import jobs for bringing category-related data from your Magento 2 store into UnoPim:
 
-- **Magento Category Import** — imports categories from Magento 2 into UnoPim.
-- **Magento Category Attribute Import** — imports category attributes from Magento 2 into UnoPim.
+- **Magento Category Import** - imports categories from Magento 2 into UnoPim.
+- **Magento Category Attribute Import** - imports category attributes from Magento 2 into UnoPim.
 
 These jobs are useful when you already have a well-structured category catalog in Magento and want to bring it into UnoPim without manual re-entry.
 
@@ -38,12 +38,12 @@ Enter a unique code and a recognizable name for this job, then save it.
 
 ### What Gets Imported
 
-- **Category name** — pulled from the selected store view.
-- **Category hierarchy** — parent-child relationships are preserved in UnoPim.
-- **URL key** — imported from Magento where available.
-- **Enabled status** — active and inactive categories are imported.
-- **Locale-specific values** — category names are imported using the store view mapping configured in your credentials.
-- **Category attributes** — common and locale-specific category field values are imported.
+- **Category name** - pulled from the selected store view.
+- **Category hierarchy** - parent-child relationships are preserved in UnoPim.
+- **URL key** - imported from Magento where available.
+- **Enabled status** - active and inactive categories are imported.
+- **Locale-specific values** - category names are imported using the store view mapping configured in your credentials.
+- **Category attributes** - common and locale-specific category field values are imported.
 
 ### Running the Import
 
@@ -92,10 +92,10 @@ Enter a unique code and a name for the job, then save it.
 
 ### What Gets Imported
 
-- **Attribute code** — the unique code for each category attribute.
-- **Attribute label** — the display name from the selected store view.
-- **Attribute type** — resolved to the closest matching UnoPim field type.
-- **Attribute options** — for select-type attributes, available options are also imported.
+- **Attribute code** - the unique code for each category attribute.
+- **Attribute label** - the display name from the selected store view.
+- **Attribute type** - resolved to the closest matching UnoPim field type.
+- **Attribute options** - for select-type attributes, available options are also imported.
 
 ### Running the Import
 

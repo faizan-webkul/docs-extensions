@@ -45,12 +45,41 @@ const projects = [
 ] as const
 
 export default defineConfig({
+  base: '/',
   lang: 'en-US',
   title: 'Unopim Extensions',
   description: 'Documentation for Unopim extensions and connectors',
-  base: '/',
   cleanUrls: true,
   lastUpdated: true,
+
+  vite: {
+    server: {
+      host: '0.0.0.0',
+      port: 8080
+    },
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `@import "./src/styles/variables.scss";`
+        }
+      }
+    }
+  },
+
+  head: [
+    ['link', { rel: 'icon', type: 'image/png', href: '/favicon.ico' }],
+    [
+      'script',
+      {},
+      `
+        (function() {
+            var script = document.createElement('script');
+            script.innerHTML = 'window.chatbotConfig = { url: "https://ask.unopim.com:5001/chat", logoUrl: "https://docs.unopim.com/logoBot.png" };';
+            document.head.appendChild(script);
+        })();
+      `
+    ]
+  ],
 
   themeConfig: {
     siteTitle: false,
@@ -65,7 +94,7 @@ export default defineConfig({
         items: projects.map(p => ({ text: p.label, link: `/${p.slug}/` })),
       },
       { text: 'User Guide', link: 'https://docs.unopim.com/' },
-      {text: 'Dev Doc', link: 'https://devdocs.unopim.com/'}, 
+      { text: 'Dev Doc', link: 'https://devdocs.unopim.com/' },
       { text: 'Contact Us', link: 'https://unopim.com/en/contacts/' },
     ],
     sidebar: Object.fromEntries(

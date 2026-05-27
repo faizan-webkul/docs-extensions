@@ -18,7 +18,7 @@ For non-configurable products, use [Export products](./export-products) instead.
 
 ![Create export profile form](./assets/export/create_export.png)
 
-2. **Type** — pick **Export Configurable Product to BigCommerce**, **Code** — any short identifier, e.g. `bigcommerce_configurable_products`.
+2. **Type** - pick **Export Configurable Product to BigCommerce**, **Code** - any short identifier, e.g. `bigcommerce_configurable_products`.
 
 
 ![Export profile form filled](./assets/export/conf-file.png)
@@ -31,7 +31,7 @@ For non-configurable products, use [Export products](./export-products) instead.
 
 ![Export profile filters](./assets/export/conf-filter.png)
 
-There are no other filters — the job pushes every eligible configurable product visible to the user.
+There are no other filters - the job pushes every eligible configurable product visible to the user.
 
 Click **Save**.
 

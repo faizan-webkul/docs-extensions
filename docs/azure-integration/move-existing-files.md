@@ -32,7 +32,7 @@ Once the command completes:
 
 - All transferred media files will be stored in your **Azure Blob container**.
 - Product pages in UnoPim will serve media via **Azure Blob URLs** instead of local paths.
-- Any **new media** uploaded going forward will also go directly to Azure — no additional commands needed.
+- Any **new media** uploaded going forward will also go directly to Azure - no additional commands needed.
 
 ---
 

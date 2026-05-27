@@ -7,7 +7,7 @@ After installing the UnoPim Bagisto Connector, you need to configure it with you
 
 Once the UnoPim Bagisto Connector is installed, it appears in the left sidebar of your UnoPim dashboard.
 
-### Step 1 — Open the Connector
+### Step 1 - Open the Connector
 
 1. Log in to your UnoPim dashboard
 2. Navigate to the left sidebar
@@ -18,7 +18,7 @@ Once the UnoPim Bagisto Connector is installed, it appears in the left sidebar o
 
 ## Setting Up Store Credentials
 
-### Step 1 — Navigate to Credentials
+### Step 1 - Navigate to Credentials
 
 From the Bagisto section, navigate to:
 
@@ -26,7 +26,7 @@ From the Bagisto section, navigate to:
 
 ![Create Credentials](./assets/setup/create-cred.png)
 
-### Step 2 — Enter Bagisto Store Details
+### Step 2 - Enter Bagisto Store Details
 
 Fill in the following information to connect your Bagisto store:
 
@@ -38,7 +38,7 @@ Fill in the following information to connect your Bagisto store:
 
 ![Credentials Form](./assets/setup/cred.png)
 
-### Step 3 — Save Credentials
+### Step 3 - Save Credentials
 
 Click the **Save** button to add the credential to UnoPim.
 

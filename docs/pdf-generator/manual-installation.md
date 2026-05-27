@@ -1,4 +1,4 @@
-# Manual Installation
+#  Installation
 
 Use the following steps to manually install the UnoPim PDF Template extension in your project.
 
@@ -30,6 +30,9 @@ Then add the provider class inside the providers array:
 PdfTemplateServiceProvider::class,
 ```
 
+> [!NOTE]
+> This registers `PdfTemplateServiceProvider` in Laravel so the extension can bootstrap its services, routes, and package configuration during application startup.
+
 ## 3. Update Composer Autoload
 
 Open `composer.json` and register the `PdfTemplate` namespace under `autoload.psr-4`:
@@ -49,7 +52,12 @@ php artisan migrate
 php artisan vendor:publish --provider=Webkul\\PdfTemplate\\Providers\\PdfTemplateServiceProvider
 ```
 
-These commands refresh Composer autoloading, clear cached Laravel data, run the required database migrations, and publish the package assets or configuration files.
+| Command | Purpose |
+|---|---|
+| `composer dump-autoload` | Regenerates Composer's autoloader mapping to include the newly added namespace. |
+| `php artisan optimize:clear` | Clears all cached files (bootstrap, configuration, routes, and views) to load the new changes. |
+| `php artisan migrate` | Runs pending database migrations required by the package. |
+| `php artisan vendor:publish --provider=Webkul\\PdfTemplate\\Providers\\PdfTemplateServiceProvider` | Publishes package assets and configuration files to the application. |
 
 ## 5. Start Queue Processing
 
@@ -58,6 +66,10 @@ Start the queue worker so the package can handle directory-related background op
 ```bash
 php artisan queue:work
 ```
+
+| Command | Purpose |
+|---|---|
+| `php artisan queue:work` | Starts a queue worker to process PDF Template background jobs. |
 
 ## Notes
 

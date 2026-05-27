@@ -16,7 +16,7 @@ Pull your CS-Cart category tree into UnoPim, keeping the parent / child hierarch
 
 ![Create import profile form](./assets/import/create-import.png)
 
-2. **Type** — pick **CsCart Categories Import**, **Code** — any short identifier, e.g. `cscart_categories_import`.
+2. **Type** - pick **CsCart Categories Import**, **Code** - any short identifier, e.g. `cscart_categories_import`.
 
 ![Import profile form filled](./assets/import/category-import.png)
 

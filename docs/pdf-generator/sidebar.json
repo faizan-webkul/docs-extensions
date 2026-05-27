@@ -2,25 +2,40 @@
   {
     "text": "Pdf Generator",
     "items": [
-      { "text": "Overview", "link": "/pdf-generator/" },
-      { "text": "Manual Installation", "link": "/pdf-generator/manual-installation" }
+      {
+        "text": "Overview",
+        "link": "/pdf-generator/"
+      },
+      {
+        "text": "Installation",
+        "link": "/pdf-generator/manual-installation"
+      }
     ]
   },
-
   {
     "text": "Usage",
     "items": [
-      { "text": "Module Configurations", "link": "/pdf-generator/module-configurations" },
-      { "text": "Flexible Attribute Layout", "link": "/pdf-generator/flexible-attribute-layout" },
-      { "text": "Product Identification & Description", "link": "/pdf-generator/product-identification" },
-      {"text" : "Generate PDF from Product View", "link" : "/pdf-generator/generate-pdf-from-product-view" }
+      {
+        "text": "Flexible Attribute Layout",
+        "link": "/pdf-generator/flexible-attribute-layout"
+      },
+      {
+        "text": "Product Identification & Description",
+        "link": "/pdf-generator/product-identification"
+      },
+      {
+        "text": "Generate PDF from Product View",
+        "link": "/pdf-generator/generate-pdf-from-product-view"
+      }
     ]
   },
-
   {
-    "text" : "Support",
-    "items" : [
-      { "text": "Contact Support", "link": "/pdf-generator/contact-support" }
+    "text": "Support",
+    "items": [
+      {
+        "text": "Contact Support",
+        "link": "/pdf-generator/contact-support"
+      }
     ]
   }
 ]

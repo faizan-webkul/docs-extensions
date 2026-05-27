@@ -2,11 +2,11 @@
 
 The Magento 2 connector provides three import jobs for bringing product data from Magento 2 into UnoPim:
 
-- **Magento Simple Product Import** — imports simple products and their attribute values.
-- **Magento Configurable Product Import** — imports configurable products with their child variants.
-- **Magento Product Association Import** — imports product-to-product relationships (related, up-sell, cross-sell).
+- **Magento Simple Product Import** - imports simple products and their attribute values.
+- **Magento Configurable Product Import** - imports configurable products with their child variants.
+- **Magento Product Association Import** - imports product-to-product relationships (related, up-sell, cross-sell).
 
-These jobs are useful when you already have a populated Magento catalog and want to enrich it inside UnoPim — better descriptions, more locales, richer attributes — before pushing data back out.
+These jobs are useful when you already have a populated Magento catalog and want to enrich it inside UnoPim - better descriptions, more locales, richer attributes - before pushing data back out.
 
 ---
 
@@ -41,12 +41,12 @@ Enter a unique code and a recognizable name for this job, then save it.
 
 ### What Gets Imported
 
-- **SKU** — product unique identifier in UnoPim.
-- **Attribute family** — resolved from the Magento attribute set via the imported attribute set mapping.
-- **Attribute values** — every attribute exposed by the API is written through the [Attribute Mapping](./attribute-mapping).
-- **Categories** — the Magento categories the product belongs to (categories must already exist in UnoPim — run [Import Category](./import-category) first).
-- **Status** — Enabled / Disabled.
-- **Media** — images and gallery values are downloaded into UnoPim media (see [Image Mapping](./image-mapping) for which attributes receive what).
+- **SKU** - product unique identifier in UnoPim.
+- **Attribute family** - resolved from the Magento attribute set via the imported attribute set mapping.
+- **Attribute values** - every attribute exposed by the API is written through the [Attribute Mapping](./attribute-mapping).
+- **Categories** - the Magento categories the product belongs to (categories must already exist in UnoPim - run [Import Category](./import-category) first).
+- **Status** - Enabled / Disabled.
+- **Media** - images and gallery values are downloaded into UnoPim media (see [Image Mapping](./image-mapping) for which attributes receive what).
 
 ### Running the Import
 
@@ -66,7 +66,7 @@ Open **Catalog > Products** in UnoPim and you should see the imported simple pro
 
 ### What This Job Does
 
-This job imports configurable products from Magento 2 into UnoPim. The configurable parent and each of its variants come in together — the connector preserves the variation axis (e.g. *color* + *size*) and links each child variant to the parent.
+This job imports configurable products from Magento 2 into UnoPim. The configurable parent and each of its variants come in together - the connector preserves the variation axis (e.g. *color* + *size*) and links each child variant to the parent.
 
 ### How to Create the Import Job
 
@@ -85,18 +85,18 @@ Select **Magento Configurable Product Import** as the import type when creating 
 ### What Gets Imported
 
 - The **configurable parent** is created as a UnoPim configurable product.
-- Each **variant** comes in as a child of the parent — matched by SKU.
+- Each **variant** comes in as a child of the parent - matched by SKU.
 - The **variation axis** (the attributes the variants differ on) is preserved.
-- All the same fields as the simple product import — attribute family, attribute values, categories, status, media.
+- All the same fields as the simple product import - attribute family, attribute values, categories, status, media.
 
 ### Pre-requisites
 
 Run these imports first so the connector has the structure the products need:
 
-1. [Magento Attribute Import](./import-attribute) — attributes exist.
-2. [Magento Attribute Set Import](./import-attribute) — attribute families exist.
-3. [Magento Category Import](./import-category) — categories exist.
-4. **Magento Simple Product Import** — variants are imported as simple products first. The configurable import then links them under the parent.
+1. [Magento Attribute Import](./import-attribute) - attributes exist.
+2. [Magento Attribute Set Import](./import-attribute) - attribute families exist.
+3. [Magento Category Import](./import-category) - categories exist.
+4. **Magento Simple Product Import** - variants are imported as simple products first. The configurable import then links them under the parent.
 
 ### Running the Import
 
@@ -108,7 +108,7 @@ After completion, the import summary shows how many configurable parents and chi
 
 ### After the Import
 
-Open one of the configurable products in **Catalog > Products** — you should see the parent with its variation axis and every variant listed under it.
+Open one of the configurable products in **Catalog > Products** - you should see the parent with its variation axis and every variant listed under it.
 
 ---
 
@@ -116,7 +116,7 @@ Open one of the configurable products in **Catalog > Products** — you should s
 
 ### What This Job Does
 
-This job imports the **related**, **up-sell**, and **cross-sell** relationships between products from Magento 2 into UnoPim. The products themselves must already exist in UnoPim — this job only writes the link data.
+This job imports the **related**, **up-sell**, and **cross-sell** relationships between products from Magento 2 into UnoPim. The products themselves must already exist in UnoPim - this job only writes the link data.
 
 ### How to Create the Import Job
 
@@ -136,9 +136,9 @@ Select **Magento Product Association Import** as the import type when creating t
 
 For each product, the connector reads:
 
-- **Related products** — items shown alongside on the product page.
-- **Up-sell products** — premium alternatives.
-- **Cross-sell products** — checkout add-ons.
+- **Related products** - items shown alongside on the product page.
+- **Up-sell products** - premium alternatives.
+- **Cross-sell products** - checkout add-ons.
 
 Each link is written against the matching UnoPim product. Targets that don't exist in UnoPim are skipped and reported in the import summary.
 
@@ -158,16 +158,16 @@ Click **Import Now**. The summary lists how many associations were written and h
 
 For a clean, complete catalog import from Magento 2 into UnoPim, run the jobs in this order:
 
-1. [Magento Shop View Mapping](./shopview-mapping) — store view to channel / locale / currency mapping.
-2. [Magento Attribute Import](./import-attribute) — attributes.
-3. [Magento Attribute Group Import](./import-attribute) — attribute groups.
-4. [Magento Attribute Set Import](./import-attribute) — attribute families.
-5. [Magento Attribute Mapping Import](./import-attribute) — *(optional)* pre-populate the attribute mapping.
-6. [Magento Category Attribute Import](./import-category) — category fields.
-7. [Magento Category Import](./import-category) — categories.
-8. **Magento Simple Product Import** — simple products.
-9. **Magento Configurable Product Import** — configurable parents and their variants.
-10. **Magento Product Association Import** — related / up-sell / cross-sell links.
+1. [Magento Shop View Mapping](./shopview-mapping) - store view to channel / locale / currency mapping.
+2. [Magento Attribute Import](./import-attribute) - attributes.
+3. [Magento Attribute Group Import](./import-attribute) - attribute groups.
+4. [Magento Attribute Set Import](./import-attribute) - attribute families.
+5. [Magento Attribute Mapping Import](./import-attribute) - *(optional)* pre-populate the attribute mapping.
+6. [Magento Category Attribute Import](./import-category) - category fields.
+7. [Magento Category Import](./import-category) - categories.
+8. **Magento Simple Product Import** - simple products.
+9. **Magento Configurable Product Import** - configurable parents and their variants.
+10. **Magento Product Association Import** - related / up-sell / cross-sell links.
 
 ## Download Log
 

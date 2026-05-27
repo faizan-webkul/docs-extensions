@@ -2,11 +2,11 @@
 
 The **Magento Shop View Mapping** import job pulls store view configuration data from your Magento 2 store and saves it as part of your credential in UnoPim.
 
-This is a one-time setup step that makes it easier to map Magento store views to UnoPim channels, locales, and currencies — which is required for accurate product data export and import.
+This is a one-time setup step that makes it easier to map Magento store views to UnoPim channels, locales, and currencies - which is required for accurate product data export and import.
 
 ## What Is a Store View in Magento?
 
-In Magento 2, a **store view** defines a specific language, currency, and storefront configuration within a store. A single Magento store can have multiple store views — for example:
+In Magento 2, a **store view** defines a specific language, currency, and storefront configuration within a store. A single Magento store can have multiple store views - for example:
 
 - `en_US` for English (United States)
 - `fr_FR` for French (France)
@@ -18,7 +18,7 @@ Each store view can show a different language and currency to shoppers. When exp
 
 Without store view mapping, UnoPim cannot know which Magento store view corresponds to which UnoPim channel, locale, or currency.
 
-Once this mapping is configured, all subsequent export and import jobs use it automatically — so you don't have to reconfigure it every time.
+Once this mapping is configured, all subsequent export and import jobs use it automatically - so you don't have to reconfigure it every time.
 
 ## How to Create the Import Job
 
@@ -79,6 +79,6 @@ Once this mapping is saved, all export and import jobs that use this credential 
 
 ## Best Practice
 
-Run the **Shop View Mapping** import as early as possible in your setup — ideally right after creating your Magento credentials. Completing this step before running product exports ensures that localized product data is sent to the correct Magento store views.
+Run the **Shop View Mapping** import as early as possible in your setup - ideally right after creating your Magento credentials. Completing this step before running product exports ensures that localized product data is sent to the correct Magento store views.
 
 If your Magento store is restructured or new store views are added, re-run this import job and update the mapping accordingly.

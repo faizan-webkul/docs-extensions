@@ -1,14 +1,14 @@
 # Export attributes
 
-Push UnoPim attributes to CS-Cart as **features**. Run this once before exporting products that use those attributes — otherwise CS-Cart has no field to store the values in.
+Push UnoPim attributes to CS-Cart as **features**. Run this once before exporting products that use those attributes - otherwise CS-Cart has no field to store the values in.
 
-> **Before you start.** Add a [CS-Cart credential](./credentials) and map every locale you plan to export — see [Map locales](./locale-mapping).
+> **Before you start.** Add a [CS-Cart credential](./credentials) and map every locale you plan to export - see [Map locales](./locale-mapping).
 
 **Open it from:** *Data Transfer → Export*
 
 ![Create export profile page](./assets/export/data-transfer.png)
 
-<!-- TODO: capture screenshot — cscart-export-attributes-profile.png — Create export profile for attributes -->
+<!-- TODO: capture screenshot - cscart-export-attributes-profile.png - Create export profile for attributes -->
 
 ## Steps
 
@@ -18,8 +18,8 @@ Push UnoPim attributes to CS-Cart as **features**. Run this once before exportin
 
 ![Create export profile form](./assets/export/create_export.png)
 
-2. **Type** — pick **CsCart Attributes Export**.
-3. **Code** — any short identifier, e.g. `cscart_attributes_daily`.
+2. **Type** - pick **CsCart Attributes Export**.
+3. **Code** - any short identifier, e.g. `cscart_attributes_daily`.
 
 ![Export profile form filled](./assets/export/attribute-export.png)
 
@@ -33,7 +33,7 @@ The export needs:
 | **Credential** | Which CS-Cart store to export to. |
 | **Store** | Which CS-Cart storefront inside that store. *(Multi-Vendor / multi-storefront only.)* |
 | **Channel** | The UnoPim channel whose attribute values you're exporting. |
-| **Locale** | One or more UnoPim locales to push translations for. **Each must be mapped** — see [Map locales](./locale-mapping). |
+| **Locale** | One or more UnoPim locales to push translations for. **Each must be mapped** - see [Map locales](./locale-mapping). |
 
 ![Export profile filters](./assets/export/attribute-fields.png)
 

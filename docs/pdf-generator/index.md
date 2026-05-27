@@ -1,5 +1,7 @@
 # PDF Generator
 
+Store Link: [View on Webkul Store](https://store.webkul.com/unopim-pdf-generator.html)
+
 Unopim PDF Generator helps you create custom PDF templates with structured layouts, dynamic product attributes, and advanced styling controls.
 
 With this module, you can design professional, brand-aligned PDFs and download them directly from the product view.
@@ -22,3 +24,11 @@ With this module, you can design professional, brand-aligned PDFs and download t
 - Let users build templates through a drag-and-drop interface without needing coding or design expertise.
 - Reduce mistakes by pulling real-time product attributes directly into the PDF template.
 - Share accurate and visually appealing PDFs with clients, partners, and customers in just a few clicks.
+
+## Requirements
+
+| Requirement | Version |
+|---|---|
+| **UnoPim** | 2.0.0 |
+| **PHP** | 8.3 or higher |
+| **Laravel** | 12.x |

@@ -5,6 +5,9 @@ hero:
   name: Unopim Extensions
   text: Documentation hub
   tagline: Guides, references, and integration docs for every Unopim extension.
+  image:
+    src: /doc-extn.png
+    alt: UnoPim Doc Extension
   actions:
     - theme: brand
       text: Browse extensions
@@ -12,12 +15,15 @@ hero:
     - theme: alt
       text: GitHub
       link: https://github.com/unopim
+    - theme: alt
+      text: Webkul Store
+      link: https://store.webkul.com/unopim.html
 
 features:
-  - title: AI Product Feed (OpenAI)
-    details: AI product feed for ChatGPT / OpenAI Search.
-    link: /ai-product-feed-openai/
-    linkText: Read docs
+  # - title: AI Product Feed (OpenAI)
+  #   details: AI product feed for ChatGPT / OpenAI Search.
+  #   link: /ai-product-feed-openai/
+  #   linkText: Read docs
   - title: Auto SKU Generator
     details: Automatically generate unique, rule-based SKUs for products on creation.
     link: /auto-sku-generator/

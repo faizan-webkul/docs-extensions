@@ -15,7 +15,7 @@ Before installing the Bagisto REST API, ensure your environment meets the follow
 
 ## Installation
 
-### Step 1 — Install the REST API Package
+### Step 1 - Install the REST API Package
 
 Install the Bagisto REST API package using Composer:
 
@@ -25,7 +25,7 @@ composer require unopim/bagisto-rest-api
 
 This command downloads and installs the REST API package along with all required dependencies.
 
-### Step 2 — Configure Environment Variables
+### Step 2 - Configure Environment Variables
 
 Open your project's ``.env`` file and add the Sanctum configuration. Replace the domain with your actual Bagisto store domain:
 
@@ -39,7 +39,7 @@ SANCTUM_STATEFUL_DOMAINS=http://localhost/public
 - **Production:** `SANCTUM_STATEFUL_DOMAINS=https://yourdomain.com`
 - **Multiple domains:** `SANCTUM_STATEFUL_DOMAINS=http://localhost/public,https://yourdomain.com`
 
-### Step 3 — Install and Configure L5-Swagger
+### Step 3 - Install and Configure L5-Swagger
 
 Run the installation command to set up L5-Swagger documentation for the REST API:
 
@@ -52,7 +52,7 @@ This command:
 - Sets up API documentation
 - Configures necessary routes
 
-### Step 4 — Verify the Installation
+### Step 4 - Verify the Installation
 
 Once installation is complete, you can access the API documentation in your browser:
 
@@ -74,7 +74,7 @@ Replace `http://localhost/public` with your actual domain in a production enviro
 
 The Bulk Product API can process large batches of products efficiently using Laravel's queue system. This ensures your application remains responsive while bulk operations run in the background.
 
-### Step 1 — Configure Queue Driver
+### Step 1 - Configure Queue Driver
 
 Open your ``.env`` file and set the queue driver to database:
 
@@ -93,7 +93,7 @@ REDIS_PASSWORD=null
 REDIS_PORT=6379
 ```
 
-### Step 2 — Create Queue Tables (Database Driver Only)
+### Step 2 - Create Queue Tables (Database Driver Only)
 
 If using the database queue driver, you need to set up the required database tables:
 
@@ -104,7 +104,7 @@ php artisan migrate
 
 These commands create the `jobs` and `failed_jobs` tables used by the queue system.
 
-### Step 3 — Start the Queue Worker
+### Step 3 - Start the Queue Worker
 
 Once configured, start the queue worker to process bulk operations:
 
@@ -120,7 +120,7 @@ php artisan queue:work --queue=default --tries=3 --timeout=3600
 
 Keep this process running continuously. It's recommended to use a process manager like Supervisor or systemd for production deployments.
 
-### Step 4 — Configure for Production (Optional)
+### Step 4 - Configure for Production (Optional)
 
 If using Supervisor to manage the queue worker, update your Supervisor configuration and restart it after changes:
 
