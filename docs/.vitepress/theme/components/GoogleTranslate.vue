@@ -337,15 +337,32 @@ onBeforeUnmount(() => {
 <style>
 /* Global styles to hide Google Translate's native UI */
 .goog-te-banner-frame,
+.goog-te-banner-frame.skiptranslate,
 .goog-te-gadget-simple,
 .goog-logo-link,
-.goog-te-gadget .goog-logo-link {
+.goog-te-gadget .goog-logo-link,
+.goog-te-spinner-pos,
+.goog-te-spinner-animation,
+iframe.goog-te-banner-frame,
+iframe.skiptranslate,
+.skiptranslate > iframe,
+#goog-gt-tt,
+.goog-te-balloon-frame {
   display: none !important;
   visibility: hidden !important;
+  height: 0 !important;
+  width: 0 !important;
 }
 
+html,
 body {
   top: 0 !important;
+  min-height: 0 !important;
+}
+
+.goog-text-highlight {
+  background: none !important;
+  box-shadow: none !important;
 }
 
 /* Hide the dropdown menu when it appears */

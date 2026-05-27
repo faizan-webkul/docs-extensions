@@ -57,11 +57,12 @@ onBeforeUnmount(() => {
 .vp-nav-icons {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding-left: 0.5rem;
+  gap: 0.75rem;
+  padding-left: 0.75rem;
 }
 
 .vp-nav-icon {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -71,6 +72,18 @@ onBeforeUnmount(() => {
   border-radius: 9999px;
   color: var(--vp-c-text-1);
   transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.vp-nav-icon::before {
+  content: '';
+  position: absolute;
+  left: -0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 1.25rem;
+  background-color: var(--vp-c-divider);
+  pointer-events: none;
 }
 
 .vp-nav-icon:hover {
