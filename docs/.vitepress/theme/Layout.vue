@@ -2,6 +2,7 @@
 import { onMounted, onBeforeUnmount } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import GoogleTranslate from './components/GoogleTranslate.vue'
+import AutoImageZoom from './components/AutoImageZoom.vue'
 
 const { Layout } = DefaultTheme
 
@@ -49,6 +50,9 @@ onBeforeUnmount(() => {
         </a>
         <GoogleTranslate class="vp-nav-icon vp-nav-icon--translate" />
       </div>
+    </template>
+    <template #layout-bottom>
+      <AutoImageZoom />
     </template>
   </Layout>
 </template>
