@@ -1,124 +1,205 @@
-# Auto SKU Generator - User Guide
+# Auto SKU Generator - Usage Guide
 
-## Quick Start
+## Overview
 
-The Auto SKU Generator automatically creates unique SKUs for your products. During product creation, the SKU field is populated automatically in real-time as you fill in details, showing a live preview before you save.
-
----
-
-## Basic Workflow
-
-### Creating a Simple Product with Auto SKU
-
-1. **Go to Catalog → Products**
-
-
-2. **Click "Create Product"** and select **Simple Product**
-
-![alt text](./assets/simple-product.png)
-
-3. **Fill in product details** (name, description, etc.)
-4. **The SKU is automatically generated** and displayed in the SKU field in real-time.
-5. **Click Save**.
-6. The product is saved with the auto-generated SKU.
-
-**During Creation:**
-```
-SKU field: APPAREL-Red-M-1001 (auto-filled in real-time)
-```
-
-**After saving:**
-```
-SKU field: APPAREL-Red-M-1001 (saved value)
-```
+The Auto SKU Generator automatically generates unique SKUs for your products based on your configured format rules. This guide covers three primary usage scenarios.
 
 ---
 
+## 1. Simple Products
 
-## Working with Product Variants
+Simple products are standalone items without variants (e.g., a book, individual t-shirt, or single-color item).
 
-### Adding Variants to Configurable Products
+### How Auto-Generation Works for Simple Products
 
-Configurable products (like a shirt available in multiple colors and sizes) are supported.
+When you create a simple product with an empty SKU field, the extension generates a SKU using your configured pattern:
 
-**Steps:**
+```
+[Prefix] + [Attribute Values] + [Sequence Number] + [Suffix]
+```
 
-1. Create a **Configurable Product**
-2. Navigate to the **Variants** section click **Add Variant**
+**Example:**
+- Prefix: `APPAREL`
+- Attribute: Color = Red, Size = M
+- Sequence: 1001
+- Generated SKU: `APPAREL-Red-M-1001`
 
+### Steps to Create a Simple Product
 
-![alt text](./assets/add-variant.png)
+1. Navigate to **Catalog → Products**
+2. Click **Create Product** and select **Simple Product**
 
+![Simple Product Creation](./assets/simple-product.png)
 
+3. Fill in product details (type and family)
+4. **Leave the SKU field empty** or blank
+5. The SKU is automatically generated and displayed in real-time as you complete the form
+6. Click **Save Product**
 
-4. Select attribute values (e.g., Color: Red, Size: M)
-
-![alt text](./assets/added-variant.png)
-
-5. SKU will be auto generated for each variant
-
-
-6. Save the product
-
-![alt text](./assets/variants.png)
-
-
-**Result:**
-- Variant 1: Red, Small → `TSH-Red-Small-2000`
-- Variant 2: Red, Medium → `TSH-Red-Medium-2001`
-- Variant 3: Blue, Small → `TSH-Blue-Small-2002`
-
-Each variant gets its own unique SKU automatically.
+**Result:** Your product is saved with the auto-generated SKU. The next simple product created will receive the next sequential number (e.g., `sku-3`).
 
 ---
 
-## Manual SKU Override
+## 2. Configurable Products
 
-Need a custom SKU for a special product? You can manually enter one.
+Configurable products are items available in multiple variations (e.g., a t-shirt in different colors and sizes). Each variant automatically receives its own unique SKU.
 
-**When to use:**
-- Limited edition products
-- Special promotions
-- Products imported from other systems
-- Testing products
+### How Auto-Generation Works for Variants
 
-**How:**
+When you add a variant to a configurable product with an empty SKU field, the extension generates a unique SKU for that variant:
 
-1. Open product creation form
-2. **Enter your custom SKU** (e.g., `XMAS-SPECIAL-2024`)
-3. Save the product
-4. Your custom SKU is used (auto-generator is skipped)
-5. The sequence counter continues normally for other products
-
-**Result:**
 ```
-Auto-generated SKU: SKU-1001
-Your manual entry: XMAS-SPECIAL-2024
-Next auto-generated: SKU-1002 (unaffected)
+[Prefix] + [Color] + [Size] + [Sequence Number] + [Suffix]
 ```
+
+**Example with Multiple Variants:**
+- Variant 1 (Red, Small): `TSH-Red-Small-2000`
+- Variant 2 (Red, Medium): `TSH-Red-Medium-2001`
+- Variant 3 (Blue, Small): `TSH-Blue-Small-2002`
+
+Each variant gets its own unique sequence number, ensuring no duplicate SKUs.
+
+### Steps to Add Variants
+
+1. Create a **Configurable Product** and fill in base details
+2. Navigate to the **Variants** section
+3. Click **Add Variant**
+
+![Add Variant Button](./assets/add-variant.png)
+
+4. Select attribute values for the variant (e.g., Color: Red, Size: Medium)
+
+![Variant Configuration](./assets/added-variant.png)
+
+5. **Leave the SKU field empty** for auto-generation
+6. The variant SKU is automatically generated based on the selected attributes
+7. Repeat to add additional variants
+
+![Variants Overview](./assets/variants.png)
+
+8. Click **Save** to save all variants
+
+**Result:** Each variant is saved with its own unique auto-generated SKU.
+
+### Manual SKU Entry (Optional)
+
+If you need a custom SKU for a specific variant:
+1. In the variant form, **enter a custom SKU** instead of leaving it blank
+2. The auto-generator will skip this variant
+3. Other variants continue to receive auto-generated SKUs normally
 
 ---
 
-## Read-Only SKU Mode
+## 3. Product Imports
 
-### What is Read-Only?
+When importing products from external sources or bulk operations, SKU handling follows specific rules. There are three distinct import scenarios, each with different requirements and outcomes.
 
-When read-only mode is enabled:
-- The SKU field is **locked and cannot be edited**
-- All SKUs come from auto-generation only
-- Users cannot manually override SKUs
+---
 
-### When to Use
+### Scenario A: Import Without SKU (Recommended)
 
-- Enforce strict SKU naming rules
-- Prevent accidental SKU changes
-- Ensure catalog consistency
+This is the recommended approach when you want the Auto SKU Generator to automatically create SKUs for imported products.
 
-### Example
+**When to Use:** You have product data without SKU values, or you want auto-generated SKUs for consistency.
 
-With read-only enabled:
-1. Create product → SKU field is grayed out and auto-filled
-2. Verify the auto-generated SKU (which cannot be edited manually)
-3. Save product
-4. SKU field remains locked (cannot edit)
+#### Step 1: Prepare Your Import File
 
+1. Navigate to **Data Transfer → Import**
+
+![Import Menu](./assets/usage/import-menu.png)
+
+2. Click on  **Create Import**
+
+![Create Import Button](./assets/usage/create-import.png)
+
+3. Create a CSV or Excel file with the following:
+   - **Required columns:** Product Name, Description, Price
+   - **SKU column:** Leave empty.
+
+**Example File Structure:**
+
+![Import File Example](./assets/usage/sample-csv-1.png)
+
+#### Step 2: Upload Your File
+
+1. Click **Choose File** and select your prepared file
+
+![Choose File Button](./assets/usage/upload.png)
+ 
+3. After uploading, click on **Save Import** to proceed to the next step
+
+![Save Import Button](./assets/usage/save-import.png)
+
+#### Step 4: Start the Import
+
+4. Click **Import Now** to begin the import process
+
+![Import Now Button](./assets/usage/import-now.png)
+
+![Import Progress](./assets/usage/with-sku.png)
+
+#### Step 5: Verify Results
+
+1. Navigate to **Catalog → Products**
+2. Locate your newly imported products
+3. Confirm each product has an auto-generated SKU
+
+
+
+**What Happens:**
+- All products are imported successfully
+- Each product receives a unique auto-generated SKU
+- SKU sequence counter increments for each product
+- No products are skipped
+
+---
+
+### Scenario B: Import With SKU (Not Supported Directly)
+
+When your import file contains pre-defined SKU values, the standard import process does not import those products.
+
+
+**Example:**
+
+![Import File with SKU](./assets/usage/sku-exists.png)
+
+
+#### Workaround: Remove SKUs and Re-Import
+
+If you need to import products that have existing SKU data:
+
+**Step 1: Modify Your Import File**
+
+1. Open your import file in a spreadsheet application
+2. Locate the SKU column
+3. **Delete the entire data in the SKU column** or clear all values in it
+4. Save the modified file
+
+**Before:**
+```
+Product Name | SKU    | Price | Color
+Red Shirt    | RS-001 | 29.99 | Red
+Blue Shirt   | BS-001 | 29.99 | Blue
+```
+
+**After:**
+```
+Product Name |SKU| Price | Color
+Red Shirt    |   |29.99 | Red
+Blue Shirt   |   |29.99 | Blue
+```
+
+**Example:**
+
+![Modified Import File](./assets/usage/sample-csv-1.png)
+
+
+## Summary Table
+
+| Scenario | SKU Field Status | Auto-Generation | Result |
+|----------|------------------|-----------------|--------|
+| Create Simple Product | Empty | Yes | SKU auto-generated |
+| Create Simple Product | Filled | No | Custom SKU preserved |
+| Add Configurable Variant | Empty | Yes | Variant SKU auto-generated |
+| Import Without SKU | Empty | Yes | Product imported with auto-generated SKU |
+| Import With SKU | Filled | No | Product **not imported** |
