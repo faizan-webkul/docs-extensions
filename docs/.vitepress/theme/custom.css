@@ -73,7 +73,8 @@
 .VPHero .VPImage {
   filter: drop-shadow(-2px 4px 6px rgba(0, 0, 0, 0.2));
   padding: 18px;
-  scale: 1.2;
+  margin-top: 1em;
+  scale: 1.1;
 }
 
 /* Ensure Hero Name Uses Gradient */
@@ -232,7 +233,7 @@
   color: #fff; /* White text on hover */
 }
 
-/* Dark mode — palette inspired by unopim.com */
+/* Dark mode - palette inspired by unopim.com */
 .dark {
   --vp-c-bg: #1a1d23;
   --vp-c-bg-alt: #22262d;

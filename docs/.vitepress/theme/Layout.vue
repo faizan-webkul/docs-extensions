@@ -2,6 +2,7 @@
 import { onMounted, onBeforeUnmount } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import GoogleTranslate from './components/GoogleTranslate.vue'
+import AutoImageZoom from './components/AutoImageZoom.vue'
 
 const { Layout } = DefaultTheme
 
@@ -50,5 +51,52 @@ onBeforeUnmount(() => {
         <GoogleTranslate class="vp-nav-icon vp-nav-icon--translate" />
       </div>
     </template>
+    <template #layout-bottom>
+      <AutoImageZoom />
+    </template>
   </Layout>
 </template>
+
+<style scoped>
+.vp-nav-icons {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-left: 0.75rem;
+}
+
+.vp-nav-icon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.25rem;
+  border-radius: 9999px;
+  color: var(--vp-c-text-1);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.vp-nav-icon::before {
+  content: '';
+  position: absolute;
+  left: -0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 1.25rem;
+  background-color: var(--vp-c-divider);
+  pointer-events: none;
+}
+
+.vp-nav-icon:hover {
+  background-color: var(--vp-c-default-soft);
+  color: var(--vp-c-brand);
+}
+
+.vp-nav-icon :deep(img),
+.vp-nav-icon :deep(svg) {
+  display: block;
+}
+</style>

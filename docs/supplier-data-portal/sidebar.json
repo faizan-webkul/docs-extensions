@@ -2,10 +2,40 @@
   {
     "text": "Supplier Data Portal",
     "items": [
-      { "text": "Overview",       "link": "/supplier-data-portal/" },
-      { "text": "Installation",   "link": "/supplier-data-portal/installation" },
-      { "text": "Admin Guide",    "link": "/supplier-data-portal/admin-guide" },
-      { "text": "Supplier Guide", "link": "/supplier-data-portal/supplier-guide" }
+      {
+        "text": "Overview",
+        "link": "/supplier-data-portal/"
+      },
+      {
+        "text": "Installation",
+        "link": "/supplier-data-portal/installation"
+      }
+    ]
+  },
+  {
+    "text": "Usage",
+    "items": [
+      {
+        "text": "How to use the Unopim Supplier Data Portal",
+        "link": "/supplier-data-portal/how-to-use"
+      },
+      {
+        "text": "Admin Setup Guide",
+        "link": "/supplier-data-portal/admin-setup-guide"
+      },
+      {
+        "text": "Supplier Setup Guide",
+        "link": "/supplier-data-portal/supplier-setup-guide"
+      }
+    ]
+  },
+  {
+    "text": "Support",
+    "items": [
+      {
+        "text": "Contact Support",
+        "link": "/supplier-data-portal/contact-support"
+      }
     ]
   }
 ]

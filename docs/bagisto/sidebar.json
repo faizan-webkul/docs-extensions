@@ -2,7 +2,34 @@
   {
     "text": "Bagisto",
     "items": [
-      { "text": "Overview", "link": "/bagisto/" }
+      { "text": "Overview", "link": "/bagisto/" },
+      {"text" : "Installation", "link": "/bagisto/installation" },
+      {"text" : "REST API Setup", "link": "/bagisto/rest-api-setup" },  
+      {"text" : "Credentials Setup", "link": "/bagisto/credentials-setup" }
     ]
+  },
+
+  {
+    "text" : "Mapping Templates",
+    "items" : [
+      {"text" : "Attribute Mapping Template", "link": "/bagisto/attribute-mapping-template" },
+      {"text" : "Category Mapping Template", "link": "/bagisto/category-mapping-template" }
+    ]
+  },
+
+  {
+    "text" : "Export Jobs",
+    "items" : [
+      {"text" : "Products Export", "link": "/bagisto/product-export" },
+      {"text" : "Other Export", "link": "/bagisto/other-export" }
+    ]
+  },
+
+  {
+    "text" : "Support",
+    "items" : [
+      {"text" : "Contact Support", "link": "/bagisto/contact-support" }
+    ]
+
   }
 ]

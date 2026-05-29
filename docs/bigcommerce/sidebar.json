@@ -1,8 +1,41 @@
 [
   {
-    "text": "BigCommerce",
+    "text": "Setup",
     "items": [
-      { "text": "Overview", "link": "/bigcommerce/" }
+      { "text": "Overview",                  "link": "/bigcommerce/" },
+      { "text": "Installation",              "link": "/bigcommerce/installation" },
+      { "text": "Add BigCommerce credentials","link": "/bigcommerce/credentials" }
+    ]
+  },
+  {
+    "text": "Mappings",
+    "items": [
+      { "text": "Attribute mapping",         "link": "/bigcommerce/standard-mapping" },
+      { "text": "Custom mapping",            "link": "/bigcommerce/custom-mapping" },
+      { "text": "Other mapping",             "link": "/bigcommerce/other-mapping" },
+      { "text": "Mapping history",           "link": "/bigcommerce/mapping-history" }
+    ]
+  },
+  {
+    "text": "Export to BigCommerce",
+    "items": [
+      { "text": "Export categories",         "link": "/bigcommerce/export-categories" },
+      { "text": "Export products",           "link": "/bigcommerce/export-products" },
+      { "text": "Export configurable products","link": "/bigcommerce/export-product-models" }
+    ]
+  },
+  {
+    "text": "Import from BigCommerce",
+    "items": [
+      { "text": "Import categories",         "link": "/bigcommerce/import-categories" },
+      { "text": "Import products",           "link": "/bigcommerce/import-products" }
+    ]
+  },
+
+  {
+    "text": "Support",
+    "items": [
+      { "text": "Contact Support",           "link": "/bigcommerce/contact-support" }
     ]
   }
 ]

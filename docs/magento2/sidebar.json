@@ -2,7 +2,47 @@
   {
     "text": "Magento 2",
     "items": [
-      { "text": "Overview", "link": "/magento2/" }
+      { "text": "Overview", "link": "/magento2/" },
+      { "text": "Installation", "link": "/magento2/installation" },
+      { "text": "Setup Credentials in UnoPim", "link": "/magento2/setup-credentials" }
+    ]
+  },
+
+  {
+    "text" : "Mapping",
+    "items": [
+      { "text": "Attribute Mapping", "link": "/magento2/attribute-mapping" },
+      { "text": "Image Mappings", "link": "/magento2/image-mapping" },
+      { "text": "Video Mapping", "link": "/magento2/video-mapping" },
+      { "text": "Category Mapping", "link": "/magento2/category-mapping" }
+    ]
+  },
+
+  {
+    "text" : "Export Jobs",
+    "items": [
+      {"text" : "Export Category" , "link": "/magento2/export-category" },
+      {"text" : "Export Magento attribute", "link": "/magento2/export-attribute" },
+      {"text" : "Export Magento Attribute Set", "link": "/magento2/export-attribute-set" },
+      {"text" : "Export Magento Product", "link": "/magento2/export-product" }
+    ]
+  },
+
+  {
+    "text" : "Import Jobs",
+    "items": [
+      {"text" : "Magento Category & Category Attribute", "link": "/magento2/import-category" },
+      {"text" : "Magento ShopView Mapping", "link": "/magento2/shopview-mapping" },
+      {"text" : "Magento Attribute", "link": "/magento2/import-attribute" },
+      {"text" : "Magento Product", "link": "/magento2/import-product" },
+      {"text" : "Magento Store View Details", "link": "/magento2/import-store-view" }
+    ]
+  },
+
+  {
+    "text" : "Support",
+    "items": [
+      {"text" : "Contact Support", "link": "/magento2/contact-support" }
     ]
   }
 ]

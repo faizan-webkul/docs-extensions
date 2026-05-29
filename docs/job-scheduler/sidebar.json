@@ -2,7 +2,24 @@
   {
     "text": "Job Scheduler",
     "items": [
-      { "text": "Overview", "link": "/job-scheduler/" }
+      { "text": "Overview", "link": "/job-scheduler/" },
+      { "text": "Installation", "link": "/job-scheduler/installation"}
+    ]
+  },
+
+  {
+    "text" : "Setup & Usage",
+    "items": [
+      { "text": "Setup Schedule jobs in Unopim", "link": "/job-scheduler/setup" },
+      {"text" : "Execution History", "link": "/job-scheduler/execution-history"},
+      {"text" : "Execution Log", "link": "/job-scheduler/execution-log"}
+    ]
+  },
+
+  {
+    "text": "Support",
+    "items": [
+      { "text": "Contact Support", "link": "/job-scheduler/contact-support" }
     ]
   }
 ]
