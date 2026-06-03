@@ -20,6 +20,7 @@ PROJECTS=(
   "shopify:unopim/unopim-shopify"
   "magento2:unopim/unopim-magento2"
   "odoo-erp:unopim/unopim-odoo-erp"
+  "erpnext:unopim/unopim-erpnext-connector"
   "bigcommerce:unopim/unopim-bigcommerce"
   "shopware6:unopim/unopim-shopware6"
   "woocommerce:unopim/unopim-woocommerce"

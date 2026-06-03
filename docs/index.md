@@ -60,6 +60,10 @@ features:
     details: Automatically generate translations from one locale to other locales.
     link: /deepl/
     linkText: Read docs
+  - title: ERPNext
+    details: Bidirectional sync of products, categories, attributes, and brands between Unopim and ERPNext.
+    link: /erpnext/
+    linkText: Read docs
   # - title: Icecat
   #   details: Connect PIM with the Icecat catalog.
   #   link: /icecat/
