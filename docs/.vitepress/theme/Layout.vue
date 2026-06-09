@@ -3,6 +3,7 @@ import { onMounted, onBeforeUnmount } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import GoogleTranslate from './components/GoogleTranslate.vue'
 import AutoImageZoom from './components/AutoImageZoom.vue'
+import PromoBar from './components/PromoBar.vue'
 
 const { Layout } = DefaultTheme
 
@@ -34,6 +35,9 @@ onBeforeUnmount(() => {
 
 <template>
   <Layout>
+    <template #layout-top>
+      <PromoBar />
+    </template>
     <template #nav-bar-content-after>
       <div class="vp-nav-icons">
         <a
