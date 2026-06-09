@@ -17,6 +17,7 @@ function loadSidebar(project: string): DefaultTheme.SidebarItem[] {
 }
 
 const projects = [
+  { slug: 'akeneo-migration', label: 'Akeneo Migration' },
   // { slug: 'ai-product-feed-openai', label: 'AI Product Feed (OpenAI)' },
   { slug: 'auto-sku-generator', label: 'Auto SKU Generator' },
   { slug: 'aws-integration', label: 'AWS Integration' },

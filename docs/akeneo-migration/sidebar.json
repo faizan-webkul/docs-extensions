@@ -1,0 +1,38 @@
+[
+  {
+    "text": "Getting Started",
+    "items": [
+      { "text": "Overview", "link": "/akeneo-migration/" },
+      { "text": "Installation", "link": "/akeneo-migration/installation" }
+    ]
+  },
+
+  {
+    "text": "Connections",
+    "items": [
+      { "text": "Create & Test a Connection", "link": "/akeneo-migration/create-connection" }
+    ]
+  },
+
+  {
+    "text": "Migration",
+    "items": [
+      { "text": "Run a Migration", "link": "/akeneo-migration/run-migration" },
+      { "text": "Migration History", "link": "/akeneo-migration/migration-history" }
+    ]
+  },
+
+  {
+    "text": "Reference",
+    "items": [
+      { "text": "Permissions", "link": "/akeneo-migration/permissions" }
+    ]
+  },
+
+  {
+    "text": "Support",
+    "items": [
+      { "text": "Contact Support", "link": "/akeneo-migration/contact-support" }
+    ]
+  }
+]
