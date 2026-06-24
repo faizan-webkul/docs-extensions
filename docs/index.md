@@ -24,6 +24,10 @@ features:
   #   details: AI product feed for ChatGPT / OpenAI Search.
   #   link: /ai-product-feed-openai/
   #   linkText: Read docs
+  - title: Akeneo Migration
+    details: Migrate catalog data from Akeneo into UnoPim.
+    link: /akeneo-migration/
+    linkText: Read docs
   - title: Auto SKU Generator
     details: Automatically generate unique, rule-based SKUs for products on creation.
     link: /auto-sku-generator/
@@ -63,6 +67,10 @@ features:
   - title: ERPNext
     details: Bidirectional sync of products, categories, attributes, and brands between Unopim and ERPNext.
     link: /erpnext/
+    linkText: Read docs
+  - title: Google Shopping
+    details: Export product data from UnoPim to Google Shopping and Merchant Center.
+    link: /google-shopping/
     linkText: Read docs
   # - title: Icecat
   #   details: Connect PIM with the Icecat catalog.
