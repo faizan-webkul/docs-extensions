@@ -30,6 +30,7 @@ const projects = [
   // { slug: 'dam-webdav', label: 'DAM NextCloud' },
   { slug: 'deepl', label: 'DeepL Translator' },
   { slug: 'erpnext', label: 'ERPNext' },
+  { slug: 'google-shopping', label: 'Google Shopping' },
   // { slug: 'icecat', label: 'Icecat' },
   { slug: 'job-scheduler', label: 'Job Scheduler' },
   { slug: 'maker-checker-workflow', label: 'Maker Checker Workflow' },
