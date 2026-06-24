@@ -1,0 +1,46 @@
+[
+  {
+    "text": "ERPNext",
+    "items": [
+      { "text": "Overview", "link": "/erpnext/" },
+      { "text": "ERPNext Setup", "link": "/erpnext/erpnext-setup" },
+      { "text": "Installation", "link": "/erpnext/installation" },
+      { "text": "Setup ERPNext Credentials in UnoPim", "link": "/erpnext/setup-credentials" }
+    ]
+  },
+
+  {
+    "text": "Configuration",
+    "items": [
+      { "text": "Attribute Mapping", "link": "/erpnext/attribute-mapping" },
+      { "text": "Other Mappings", "link": "/erpnext/other-mappings" }
+    ]
+  },
+
+  {
+    "text": "Export Jobs",
+    "items": [
+      { "text": "Export Attributes", "link": "/erpnext/export-attributes" },
+      { "text": "Export Categories", "link": "/erpnext/export-categories" },
+      { "text": "Export Brands", "link": "/erpnext/export-brands" },
+      { "text": "Export Products", "link": "/erpnext/export-products" }
+    ]
+  },
+
+  {
+    "text": "Import Jobs",
+    "items": [
+      { "text": "Import Attributes", "link": "/erpnext/import-attributes" },
+      { "text": "Import Categories", "link": "/erpnext/import-categories" },
+      { "text": "Import Brands", "link": "/erpnext/import-brands" },
+      { "text": "Import Products", "link": "/erpnext/import-products" }
+    ]
+  },
+
+  {
+    "text": "Support",
+    "items": [
+      { "text": "Contact & Support", "link": "/erpnext/contact" }
+    ]
+  }
+]

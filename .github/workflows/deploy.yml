@@ -17,6 +17,7 @@ name: Build and deploy docs
 #   shopify                 → unopim/unopim-shopify
 #   magento2                → unopim/unopim-magento2
 #   odoo-erp                → unopim/unopim-odoo-erp
+#   erpnext                 → unopim/unopim-erpnext-connector
 #   bigcommerce             → unopim/unopim-bigcommerce
 #   shopware6               → unopim/unopim-shopware6
 #   woocommerce             → unopim/unopim-woocommerce
@@ -89,6 +90,15 @@ jobs:
         with:
           repository: unopim/unopim-odoo-erp
           path: tmp/odoo-erp
+          sparse-checkout: docs
+          sparse-checkout-cone-mode: false
+
+      - name: Pull erpnext docs
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          repository: unopim/unopim-erpnext-connector
+          path: tmp/erpnext
           sparse-checkout: docs
           sparse-checkout-cone-mode: false
 
@@ -253,7 +263,7 @@ jobs:
         run: |
           set -e
           for slug in \
-              shopify magento2 odoo-erp bigcommerce \
+              shopify magento2 odoo-erp erpnext bigcommerce \
               shopware6 woocommerce bagisto cs-cart prestashop icecat \
               xml-connector aws-integration ai-product-feed-openai \
               job-scheduler supplier-data-portal public-image-url \
