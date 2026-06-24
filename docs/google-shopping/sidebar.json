@@ -1,0 +1,12 @@
+[
+  {
+    "text": "Google Shopping",
+    "items": [
+      { "text": "Overview",       "link": "/google-shopping/" },
+      { "text": "Installation",   "link": "/google-shopping/installation" },
+      { "text": "Configuration",  "link": "/google-shopping/configuration" },
+      { "text": "Author Guide",   "link": "/google-shopping/author-guide" },
+      { "text": "Operator Guide", "link": "/google-shopping/operator-guide" }
+    ]
+  }
+]

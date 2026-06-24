@@ -1,0 +1,12 @@
+[
+  {
+    "text": "Pricing Rule Module",
+    "items": [
+      { "text": "Overview",        "link": "/pricing-rule-module/" },
+      { "text": "Installation",    "link": "/pricing-rule-module/installation" },
+      { "text": "Configuration",   "link": "/pricing-rule-module/configuration" },
+      { "text": "Author Guide",    "link": "/pricing-rule-module/author-guide" },
+      { "text": "Operator Guide",  "link": "/pricing-rule-module/operator-guide" }
+    ]
+  }
+]
