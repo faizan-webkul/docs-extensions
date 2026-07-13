@@ -93,7 +93,7 @@ Before you begin, make sure the following are in place:
 | Requirement | Detail |
 |---|---|
 | **UnoPim Version** | v2.0.0 |
-| **Shopify API Version** | 2026-01 |
+| **Shopify API Version** | 2026-07 |
 | **Shopify Plan** | Any plan with Admin API access |
 | **Shopify Admin Access** | Needed to create a custom app and generate API credentials |
 | **Terminal / Server Access** | Required to run installation commands |

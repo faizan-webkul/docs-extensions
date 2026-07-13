@@ -36,14 +36,24 @@ Choose the UnoPim attribute you want to link to this metafield. When a product i
 ### Type
 Select the data type for the metafield value. Available options are:
 
-| Type | When to use |
-|---|---|
-| **Single line text** | Short text values like a material name or colour code |
-| **Multi-line text** | Longer descriptions or notes |
-| **Color** | Hex colour values |
-| **Rating** | Numerical rating values |
-| **URL** | Links or reference URLs |
-| **JSON** | Structured or complex data |
+| Type | Shopify type | When to use |
+|---|---|---|
+| **Single line text** | `single_line_text_field` | Short text values like a material name or colour code |
+| **Multi-line text** | `multi_line_text_field` | Longer descriptions or notes |
+| **Color** | `color` | Hex colour values |
+| **Rating** | `rating` | Numerical rating values |
+| **URL** | `url` | Links or reference URLs |
+| **JSON** | `json` | Structured or complex data |
+| **Image (file)** | `file_reference` | An image stored in Shopify's Files — for example a size chart or a care-label graphic |
+| **File** | `file_reference` | Any non-image file — for example a PDF spec sheet or a safety datasheet |
+| **Email** | `single_line_text_field` | An email address — for example a supplier or warranty contact |
+| **Link** | `link` | A text-and-URL pair, so you can store the link label alongside the address |
+| **Product reference** | `product_reference` | Points to another product — useful for "goes well with" or replacement-part relationships |
+| **Product variant reference** | `variant_reference` | Points to a specific product variant rather than the whole product |
+
+> **Note on Image vs File:** Shopify stores both as the same underlying type (`file_reference`). The difference is a validation — **Image (file)** restricts uploads to images, while **File** accepts any file type.
+
+> **Note on Email:** Shopify has no dedicated email metafield type. An email metafield is a `single_line_text_field` with a validation rule that checks the value looks like an email address.
 
 ---
 
