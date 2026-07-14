@@ -44,6 +44,12 @@ Select the data type for the metafield value. Available options are:
 | **Rating** | `rating` | Numerical rating values |
 | **URL** | `url` | Links or reference URLs |
 | **JSON** | `json` | Structured or complex data |
+| **Weight** | `weight` | A weight value with its unit — for example `2.5 kg` |
+| **Volume** | `volume` | A volume value with its unit — for example `750 ml` |
+| **Dimension** | `dimension` | A length value with its unit — for example `30 cm` |
+| **Boolean** | `boolean` | A true/false flag — for example "Machine washable" |
+| **Date** | `date` | A calendar date — for example a release or expiry date |
+| **Number** | `number_integer` / `number_decimal` | A numeric value, whole or decimal |
 | **Image (file)** | `file_reference` | An image stored in Shopify's Files — for example a size chart or a care-label graphic |
 | **File** | `file_reference` | Any non-image file — for example a PDF spec sheet or a safety datasheet |
 | **Email** | `single_line_text_field` | An email address — for example a supplier or warranty contact |

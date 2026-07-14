@@ -58,9 +58,15 @@ Shopify supports **metafields** — custom data fields that go beyond standard p
 - Weight
 - Volume
 - Dimension
-- boolean
+- Boolean
 - Date
 - Number
+- Image (file)
+- File
+- Email
+- Link
+- Product reference
+- Product variant reference
 
 These are exported without needing any additional mapping setup.
 
